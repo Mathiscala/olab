@@ -1,0 +1,374 @@
+Version 1.2 DevConfiguration
+Settings
+Instance
+BLDC_Mng
+Variables
+Variable	Description	DataType	DefaultValue
+BLDC_Mng.AlrmResetMng_BLDC1.ResetTyp_BLDC_Alrm	Automatically generated - Reset type: 0= Manual - 1= Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_BLDC1.RetryThrs	Automatically generated - Maximum semiautomatic alarm reset retry number	DINT	3
+BLDC_Mng.AlrmResetMng_BLDC1.TimeThrs	Automatically generated - Time threshold for semiautomatic reset	UDINT	60
+BLDC_Mng.AlrmResetMng_PWRP1.Al01_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al02_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al03_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al04_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al05_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al06_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al07_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al08_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al09_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al10_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al101_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al102_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al103_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al104_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al105_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al106_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al107_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al108_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al109_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al11_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al110_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al111_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al112_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al113_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al114_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al115_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al116_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al12_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al13_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al14_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al15_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al16_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al17_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al18_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al19_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al20_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al201_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al202_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al203_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al204_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al205_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al206_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al207_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al208_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al209_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al21_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al210_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al211_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al212_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al213_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al214_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al215_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al216_uSafeResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al22_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al23_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al24_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al25_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al26_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al27_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al28_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al29_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al98_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.Al99_uMotorResetTyp	Automatically generated - Reset type: 0=Manual - 1=Semiautomatic	BOOL	
+BLDC_Mng.AlrmResetMng_PWRP1.RetryThrs	Automatically generated - Maximum semiautomatic alarm reset retry number	DINT	3
+BLDC_Mng.AlrmResetMng_PWRP1.TimeThrs	Automatically generated - Time threshold for semiautomatic reset	UDINT	60
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_BypassMopStartUp	Configuration parameters for customization - Bypass MOP control in low compression ratio and minimun differential pressure at compressor start up	BOOL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgPMax	Configuration parameters for customization - Custom Envelope Limit of Discharge High Pressure [bar]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempAlrmThrsh	Configuration parameters for customization - Discharge gas limit temperature (SIAM Scroll only: for Zone 1b)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempAlrmThrshZone1a	Configuration parameters for customization - Discharge gas limit temperature for Zone 1a (SIAM Scroll only)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempCtrlThrsh	Configuration parameters for customization - Discharge gas temperature control threshold  (SIAM scroll only: for zone 1b)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempCtrlThrshZone1a	Configuration parameters for customization - Discharge gas temperature control threshold for Zone 1a (SIAM scroll only)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempDTActionPauseRes	Configuration parameters for customization - Value of Discharge Temp. increasing that require a new action	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempLimDistance	Configuration parameters for customization - Action distance from High Temperature limit (to reduce speed rate)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempPause	Configuration parameters for customization - Pause between speed reductions when discharge temp. is over control limit	INT	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempSpeedReduction	Configuration parameters for customization - Speed Reduction percentage when discharge temp is over control limit	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_EnMopLowCompRatio	Configuration parameters for customization - Enable MOP control in low compression ratio condition	BOOL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_EnSpeedUpMode	Configuration parameters for customization - Speed up mode enable to control zones 5, 6, 7, 8 (to come back into zone 1)	BOOL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_EnvOutMaxT	Configuration parameters for customization - Out of envelop alarm delay time	INT	180
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_LowDeltaPAlrmDelay	Configuration parameters for customization - Low Delta P alarm delay	INT	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_MaxSpeedXrps	Configuration parameters for customization - Maximum speed limit [rps] - 0.0rps disable this limit - remove RETAIN flag to use	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_MaxSpeedZone1c	Configuration parameters for customization - Max Speed in rps for Zone 1c (SIAM Scroll)  N.B.: integer rps!	INT	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_MinSpeedXrps	Configuration parameters for customization - Minimum speed limit [rps] - 0.0rps disable this limit - remove RETAIN flag to use	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_OutEnvMaxTSpecif	Configuration parameters for customization - Out of envelop alarm delay time to be used when specified by VAR_INPUT	INT	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_SuctPMin	Configuration parameters for customization - Custom Envelope Limit of Suction Low Pressure [bar]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_SuctTSaturationThrshZone1b1c	Configuration parameters for customization - Suction sat.temp. threshold from zone 1b (Max120rps) to zone 1c (Max90rps SIAM only)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DscgSHSetP	Configuration parameters for customization - SetPoint of Discharge SH (sent to EVD)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DscgTempNTCT	Configuration parameters for customization - Time constant of discharge temp sensor	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DscgTempSetP	Configuration parameters for customization - SetPoint of Discharge Temp (sent to EVD)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDLTHyst	Configuration parameters for customization - Hysteresys for Discharge Limit Temp. regulation deactivation	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDLTRegOn	Configuration parameters for customization - Setpoint offset for Discharge Limit Temp. regulation activation	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDscgSHHyst	Configuration parameters for customization - Hysteresys for Discharge Super Heat regulation deactivation	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDscgSHRegOn	Configuration parameters for customization - Setpoint offset for Discharge Super Heat regulation activation	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_SubTypeRegMode	Configuration parameters for customization - Regol. Evd SubType: 0=null; 1=SSH; 2=DSH; 3= DLT	INT	1
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_CompRatioMaxM	Configuration parameters for customization - Full Custom: Max compression ratio, m coefficient  (y=mx+q)	REAL	5.4
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_CompRatioMaxQ	Configuration parameters for customization - Full Custom: Max. compression ratio, q coefficient (y=mx+q)  [kPa abs]	INT	1365
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_CompRatioMin	Configuration parameters for customization - Full Custom: Minimum compression ratio	REAL	1
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_DscgPMax	Configuration parameters for customization - Full Custom: Envelope Limit of Discharge High Pressure [kPa abs]	INT	4251
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_DscgPMin	Configuration parameters for customization - Full Custom: Envelope Limit of Discharge Low Pressure [kPa abs]	INT	751
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_EnvCtrlLimDistance	Configuration parameters for customization - Full Custom: Envelope control limit distance	INT	500
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_MaxAM	Configuration parameters for customization - Full Custom: Max. current line, m coefficient  (y=mx+q) (be care: 1/100)	INT	-138
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_MaxAQ	Configuration parameters for customization - Full Custom: Max. current line, coefficient (y=mx+q) [kPa abs]	INT	6040
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_MinDeltaP	Configuration parameters for customization - Full Custom: Min difference between discharge pressure and suction pressure	INT	350
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_Rfrg	Configuration parameters for customization - Full Custom: Refrigerant gas type (1=R134a;2=R404A;3= R407C;4=R410A......)	INT	4
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_SuctPMax	Configuration parameters for customization - Full Custom: Envelope Limit of Suction High Pressure [kPa abs]	INT	1701
+BLDC_Mng.CfgEnvCtrl_BLDC1.FullCstm_SuctPMin	Configuration parameters for customization - Full Custom: Envelope Limit of Suction Low Pressure [kPa abs]	INT	301
+BLDC_Mng.CfgEnvCtrl_BLDC1.PmpDwn_En	Configuration parameters for customization - Pump down procedure enable	BOOL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.PmpDwn_MaxT	Configuration parameters for customization - Maximum time of pump down	INT	
+BLDC_Mng.CfgEnvCtrl_BLDC1.PmpDwn_SuctPThrsh	Configuration parameters for customization - Suction pressure threshold for pump down	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxDescendSpeedRate	Configuration parameters for customization - Max. decrease speed rate (in regulation) [rps/s]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxGoUpSpeedRate	Configuration parameters for customization - Max. increase speed rate (going to target speed in defrost) [rps/s]	REAL	1
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxRisingSpeedRate	Configuration parameters for customization - Max. increase speed rate (in regulation) [rps/s]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxSlowdownSpeedRate	Configuration parameters for customization - Decrease speed rate (to come back inside envelope) [rps/s]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxSpeedRpsCustom	Configuration parameters for customization - Max speed custom (rps)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MinSpeedControlled	Configuration parameters for customization - Min speed permitted to control compressor working conditions inside envelop	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MinSpeedRpsCustom	Configuration parameters for customization - Min speed custom (rps)	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_StartUpSpeed	Configuration parameters for customization - Start up speed	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_SwitchOffSpeedRate	Configuration parameters for customization - Decrease max speed rate (= max admitted value, to stop compressor) [rps/s]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_Attempts	Configuration parameters for customization - Max Number of starting attempts	INT	5
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_DeltaPDelay	Configuration parameters for customization - Delay to check increasing DeltaP to validate compressor started	INT	
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_DeltaPPercStartEVD	Configuration parameters for customization - Percentage of minimum Delta P admitted to startup EVD regulation	REAL	100
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_DeltaPVariation	Configuration parameters for customization - Min. variation of Delta P to considered compressor started [bar]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_EnEqualBPVlv	Configuration parameters for customization - By-pass equalization solenoid valve enable	BOOL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_EVDEqualMaxT	Configuration parameters for customization - Maximum time of EVD propening to equalize pressure	INT	10
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_EVDEqualPreopen	Configuration parameters for customization - Preopening of EVD in case of prestart to equalize pressure	INT	100
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_MaxDeltaP	Configuration parameters for customization - Max. permitted Delta P to start up [bar]	REAL	
+BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_RestartDelay	Configuration parameters for customization - Restart delay after a start failure	INT	
+BLDC_Mng.MiscMng_BLDC1.Mng_CarelReservedPsw	BLDC miscellaneous parameters - Use this variable only with Carel authorizations	UINT	
+BLDC_Mng.MiscMng_BLDC1.Mng_CompTyp	BLDC miscellaneous parameters - Compressor model to select a custom envelope	UINT	9999
+BLDC_Mng.MiscMng_BLDC1.Mng_CompTypPrev	BLDC miscellaneous parameters - Compressor model (previous value)	UINT	0
+BLDC_Mng.MiscMng_BLDC1.Mng_ModbusCmdDelay	BLDC miscellaneous parameters - Modbus command delay [ms]	UDINT	10
+BLDC_Mng.MiscMng_BLDC1.Mng_ModbusTimeout	BLDC miscellaneous parameters - Modbus communication timeout [ms]	UDINT	200
+BLDC_Mng.MiscMng_BLDC1.Mng_PwrpAddr	BLDC miscellaneous parameters - PowerPlus address	UDINT	1
+BLDC_Mng.MiscMng_BLDC1.Mng_PwrpMotTyp	BLDC miscellaneous parameters - Compressor model (PowerPlus)	UINT	1
+BLDC_Mng.MiscMng_BLDC1.Mng_ReservedFnMHI_MOP	BLDC miscellaneous parameters - Reserved function for MHI (MOP mng)	BOOL	
+BLDC_Mng.MiscMng_BLDC1.Time_MinOffT	BLDC miscellaneous parameters - Compressor min off time	UINT	180
+BLDC_Mng.MiscMng_BLDC1.Time_MinOnOnSameT	BLDC miscellaneous parameters - Compressor min on-on time	UINT	360
+BLDC_Mng.MiscMng_BLDC1.Time_MinOnT	BLDC miscellaneous parameters - Compressor min on time	UINT	180
+BLDC_Mng.MiscMng_BLDC1.Time_ResSafT	BLDC miscellaneous parameters - Compressor timing reset	BOOL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_CRC	Power+ miscellaneous parameters - Full custom - CRC value	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_DriveTyp	Power+ miscellaneous parameters - Full custom - Drive type	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR00_MotCtrlMode	Power+ miscellaneous parameters - Full custom - Motor control mode	UINT	0
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR01_MotBaseFreq	Power+ miscellaneous parameters - Full custom - Motor base frequency	REAL	360
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR02_MotBaseV	Power+ miscellaneous parameters - Full custom - Motor base voltage	UINT	362
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR03_MotRatedA	Power+ miscellaneous parameters - Full custom - Motor rated current	REAL	24
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR04_MotPwrFactor	Power+ miscellaneous parameters - Full custom - Motor power factor	UINT	100
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR05_MaxOutCurrent	Power+ miscellaneous parameters - Full custom - Max output current	REAL	100
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR06_MaxOutFreq	Power+ miscellaneous parameters - Full custom - Max output frequency	REAL	360
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR07_MinOutFreq	Power+ miscellaneous parameters - Full custom - Min output frequency	REAL	60
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR08_EnRevSpeed	Power+ miscellaneous parameters - Full custom - Reverse speed enable	UINT	0
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR12_SpeedProfileFreq1	Power+ miscellaneous parameters - Full custom - Speed profile: frequency 1	REAL	18
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR13_SpeedProfileFreq2	Power+ miscellaneous parameters - Full custom - Speed profile: frequency 2	REAL	180
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR14_SpeedProfileFreq3	Power+ miscellaneous parameters - Full custom - Speed profile: frequency 3	REAL	180
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR15_SpeedProfileAcceleration1	Power+ miscellaneous parameters - Full custom - Speed profile: acceleration 1 [Hz/s]	REAL	18
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR16_SpeedProfileAcceleration2	Power+ miscellaneous parameters - Full custom - Speed profile: acceleration 2 [Hz/s]	REAL	6
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR17_SpeedProfileAcceleration3	Power+ miscellaneous parameters - Full custom - Speed profile: acceleration 3 [Hz/s]	REAL	6
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR18_SpeedProfileAcceleration4	Power+ miscellaneous parameters - Full custom - Speed profile: acceleration 4 [Hz/s]	REAL	6
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR19_SpeedProfileDelay1	Power+ miscellaneous parameters - Full custom - Speed profile: delay 1	UINT	0
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR20_SpeedProfileDelay2	Power+ miscellaneous parameters - Full custom - Speed profile: delay 2	UINT	180
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR21_SpeedProfileDelay3	Power+ miscellaneous parameters - Full custom - Speed profile: delay 3	UINT	0
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR22_SpeedProfileStartMode	Power+ miscellaneous parameters - Full custom - Speed profile: start mode	UINT	3
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR23_SpeedProfileDeceleration	Power+ miscellaneous parameters - Full custom - Speed profile: deceleration [Hz/s]	REAL	6
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR24_SwitchingFreq	Power+ miscellaneous parameters - Full custom - Switching frequency	UINT	1
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR29_DataCommTimeout	Power+ miscellaneous parameters - Full custom - Data communication fault timeout	UINT	30
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR33_StopMode	Power+ miscellaneous parameters - Full custom - Stop mode	UINT	1
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR34_FlyingRestart	Power+ miscellaneous parameters - Full custom - Flying restart	UINT	0
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR38_Reserved	Power+ miscellaneous parameters - Full custom - Reserved HR38	UINT	0
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR46_StatorResistance	Power+ miscellaneous parameters - Full custom - Stator resistance [mohm]	UINT	369
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR48_StatorInductanceLd	Power+ miscellaneous parameters - Full custom - Stator inductance Ld [mH]	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR50_LqInductance	Power+ miscellaneous parameters - Full custom - Stator inductance Lq [mH]	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR51_MagnetizingTime	Power+ miscellaneous parameters - Full custom - Magnetizing time	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR52_Reserved	Power+ miscellaneous parameters - Full custom - Reserved HR52	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR53_RegenerationCurrentLimit	Power+ miscellaneous parameters - Full custom - Regeneration current limit	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR54_OvVCtrlALim	Power+ miscellaneous parameters - Full custom - Overvoltage control current limit	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR55_SpeedLoopKp	Power+ miscellaneous parameters - Full custom - Speed loop Kp	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR56_SpeedLoopTi	Power+ miscellaneous parameters - Full custom - Speed loop Ti	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR57_StartingCurrent	Power+ miscellaneous parameters - Full custom -Starting current	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR58_StartingAFreq	Power+ miscellaneous parameters - Full custom - Frequency for starting current	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR74_Reserved	Power+ miscellaneous parameters - Full custom - Reserved HR74	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR75_Reserved	Power+ miscellaneous parameters - Full custom - Reserved HR75	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_HR77_InductSaturFactor	Power+ miscellaneous parameters - Full custom - Inductance saturation factor	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_Poles	Power+ miscellaneous parameters - Full custom - Pole pairs	UINT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_01	Power+ miscellaneous parameters - Full custom - Safety parameter 01	INT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_02	Power+ miscellaneous parameters - Full custom - Safety parameter 02	REAL	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_03	Power+ miscellaneous parameters - Full custom - Safety parameter 03	INT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_04	Power+ miscellaneous parameters - Full custom - Safety parameter 04	INT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_05	Power+ miscellaneous parameters - Full custom - Safety parameter 05	INT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_06	Power+ miscellaneous parameters - Full custom - Safety parameter 06	INT	
+BLDC_Mng.MiscMng_PWRP1.FullCstm_SafePar_07	Power+ miscellaneous parameters - Full custom - Safety parameter 07	REAL	
+BLDC_Mng.MiscMng_PWRP1.Mng_CarelReservedPsw	Power+ miscellaneous parameters - Use this variable only with Carel authorizations	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_DriveTyp	Power+ miscellaneous parameters - Drive type	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_LoadDefDone	Power+ miscellaneous parameters - Motor parameters load default done	BOOL	FALSE
+BLDC_Mng.MiscMng_PWRP1.Mng_MotPoles	Power+ miscellaneous parameters - Motor pole pairs	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_PSD_ParamLstID	Power+ miscellaneous parameters - PSD parameter list identification	USINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_SerNo_MemW1	Power+ miscellaneous parameters - Serial number part 1 recorded	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_SerNo_MemW2	Power+ miscellaneous parameters - Serial number part 2 recorded	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_SerNo_MemW3	Power+ miscellaneous parameters - Serial number part 3 recorded	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_SerNo_MemW4	Power+ miscellaneous parameters - Serial number part 4 recorded	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_SerNoCtrl_En	Power+ miscellaneous parameters - Serial number control enable	BOOL	
+BLDC_Mng.MiscMng_PWRP1.Mng_SpeedTyp	Power+ miscellaneous parameters - Speed display measure [Hz/rps]	UINT	
+BLDC_Mng.MiscMng_PWRP1.Mng_WriteDefault	Power+ miscellaneous parameters - Write default request	INT	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_CustomDataNotSaved	Power+ miscellaneous parameters - Custom data not saved	BOOL	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_CustomDataSaved	Power+ miscellaneous parameters - Custom data saved	BOOL	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_MotTypCustom	Power+ miscellaneous parameters - Motor type: custom	BOOL	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_MotTypLowLim	Power+ miscellaneous parameters - Motor type: input field min limit	UINT	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_MotTypNotCustom	Power+ miscellaneous parameters - Motor type: not custom	BOOL	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_MotTypSource	Power+ miscellaneous parameters - Custom motor type source	UINT	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_SaveCustomCfg	Power+ miscellaneous parameters - Save custom config. command	BOOL	
+BLDC_Mng.MiscMng_PWRP1.MngCstm_SaveCustomCfgInProgress	Power+ miscellaneous parameters - Custom cofiguration data saving in progress	BOOL	
+BLDC_Mng.MiscMng_PWRP1.SafePar_CfgMode	Power+ miscellaneous parameters - Safety parameters - config mode: 0=manual mode; 1= automatic mode	BOOL	
+BLDC_Mng.MiscMng_PWRP1.SafePar_LoadCfg	Power+ miscellaneous parameters - Safety parameters - first automatic configuration done	BOOL	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_01	Power+ miscellaneous parameters - Safety parameter 01	INT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_02	Power+ miscellaneous parameters - Safety parameter 02	REAL	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_03	Power+ miscellaneous parameters - Safety parameter 03	INT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_04	Power+ miscellaneous parameters - Safety parameter 04	INT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_05	Power+ miscellaneous parameters - Safety parameter 05	INT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_06	Power+ miscellaneous parameters - Safety parameter 06	INT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafePar_07	Power+ miscellaneous parameters - Safety parameter 07	REAL	
+BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V1	Power+ miscellaneous parameters - Safety CRC value 1	UINT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V2	Power+ miscellaneous parameters - Safety CRC value 2	UINT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V3	Power+ miscellaneous parameters - Safety CRC value 3	UINT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V4	Power+ miscellaneous parameters - Safety CRC value 4	UINT	
+BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V5	Power+ miscellaneous parameters - Safety CRC value 5	UINT	
+EVD_EVO_2_MNG.BLDC_Params_EVD_1.Dscg_SHSet	BLDC parameters - Discharge Superheat setpoint	REAL	35
+EVD_EVO_2_MNG.BLDC_Params_EVD_1.Dscg_TempSet	BLDC parameters - Discharge temperature setpoint	REAL	105
+EVD_EVO_2_MNG.CfgParams_EVD_1.CondHiTemp_Ti	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - High condensing temperature: integral time (for Aux = 2, 9 or 10)	REAL	-777.7
+EVD_EVO_2_MNG.CfgParams_EVD_1.CondHiTempThrsh	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - High condensing temperature: threshold (for Aux = 2, 9 or 10)	REAL	-777.7
+EVD_EVO_2_MNG.CfgParams_EVD_1.Din1_BckReg	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Backup value of regulation in case that digital input is not used for backup	BOOL	TRUE
+EVD_EVO_2_MNG.CfgParams_EVD_1.Din1_Cfg	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - DI1 configuration	UINT	6
+EVD_EVO_2_MNG.CfgParams_EVD_1.Din2_BckReg	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Backup value of regulation in case that digital input is not used for backup	BOOL	TRUE
+EVD_EVO_2_MNG.CfgParams_EVD_1.Din2_Cfg	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - DI2 configuration	UINT	6
+EVD_EVO_2_MNG.CfgParams_EVD_1.DT_CondHiTempAlrm	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - High condensing temperature alarm delay	UINT	600
+EVD_EVO_2_MNG.CfgParams_EVD_1.EN_DC_Supply	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Enable of DC supply (no valve closure is performed)	BOOL	FALSE
+EVD_EVO_2_MNG.CfgParams_EVD_1.PostDfrDT	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Post defrost delay (min) (only for single driver)	UINT	10
+EVD_EVO_2_MNG.CfgParams_EVD_1.Thermo_Diff	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Modulating thermostat: differential (for Aux = 3 or 10)	REAL	-777.7
+EVD_EVO_2_MNG.CfgParams_EVD_1.Thermo_SetP	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Modulating thermostat: setpoint (for Aux = 3 or 10)	REAL	-777.7
+EVD_EVO_2_MNG.CfgParams_EVD_1.Thermo_SH_Offset	Configuration parameters (DI1 config., DI2 config., Condensing high temperature threshold, ecc...) - Modulating thermostat: offset SH setpoint (for Aux = 3 or 10); 0 = disabled	REAL	-777.7
+EVD_EVO_2_MNG.Default_Memory_EVD_1	Default values installation: stored request	BOOL	
+EVD_EVO_2_MNG.DevAddr_EVD_1	Network address of EVDEVO	UDINT	2
+EVD_EVO_2_MNG.En_EVD_1	Enable module	BOOL	FALSE
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.AlrmDT	Probe configuration - Alarm delay (0: disabled) from FW >= 6.6	INT	
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.AlrmThrshHigh	Probe configuration	REAL	17.3
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.AlrmThrshLow	Probe configuration	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.AlrmWhatToDo	Probe configuration - Probe: alarm management	UINT	2
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.EnAlrm	Probe configuration	BOOL	TRUE
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.PrbOffset	Probe configuration - Calibration offset	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.PrbRangeMax	Probe configuration	REAL	17.3
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.PrbRangeMin	Probe configuration	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S1.PrbTyp	Probe configuration	UINT	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.AlrmDT	Probe configuration - Alarm delay (0: disabled) from FW >= 6.6	INT	
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.AlrmThrshHigh	Probe configuration	REAL	105
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.AlrmThrshLow	Probe configuration	REAL	-50
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.AlrmWhatToDo	Probe configuration - Probe: alarm management	UINT	2
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.EnAlrm	Probe configuration	BOOL	TRUE
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.PrbOffset	Probe configuration - Calibration offset	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S2.PrbTyp	Probe configuration	UINT	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.AlrmDT	Probe configuration - Alarm delay (0: disabled) from FW >= 6.6	INT	
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.AlrmThrshHigh	Probe configuration	REAL	17.3
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.AlrmThrshLow	Probe configuration	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.AlrmWhatToDo	Probe configuration - Probe: alarm management	UINT	2
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.EnAlrm	Probe configuration	BOOL	TRUE
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.PrbOffset	Probe configuration - Calibration offset	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.PrbRangeMax	Probe configuration	REAL	17.3
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.PrbRangeMin	Probe configuration	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S3.PrbTyp	Probe configuration	UINT	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.AlrmDT	Probe configuration - Alarm delay (0: disabled) from FW >= 6.6	INT	
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.AlrmThrshHigh	Probe configuration	REAL	150
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.AlrmThrshLow	Probe configuration	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.AlrmWhatToDo	Probe configuration - Probe: alarm management	UINT	2
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.EnAlrm	Probe configuration	BOOL	TRUE
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.PrbOffset	Probe configuration - Calibration offset	REAL	0
+EVD_EVO_2_MNG.PrbCfg_EVD_1.S4.PrbTyp	Probe configuration	UINT	0
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.DutyCycle_Cst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - (%) Only for Universal Valve Driver	UINT	30
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.ExtraCloseEn_Cst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	BOOL	TRUE
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.ExtraOpenEn_Cst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	BOOL	TRUE
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.FastCloseStepsRateCst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	150
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.FullCloseStepsCst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	500
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.HoldingA_Cst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - (mA) Only for Universal Valve Driver	UINT	100
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.MaxStepsCst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	480
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.MinStepsCst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	50
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.MoveA_Cst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - (mA) Only for Universal Valve Driver	UINT	450
+EVD_EVO_2_MNG.VlvA_CstParams_EVD_1.NomStepsRateCst	Valve A: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	50
+EVD_EVO_2_MNG.VlvA_EVD_1.AuxReg	Valve A parameters (EEV type, Refrigerant type, ecc..) - Auxiliary Regulation (only for single driver)	UINT	1
+EVD_EVO_2_MNG.VlvA_EVD_1.DoutCfg	Valve A parameters (EEV type, Refrigerant type, ecc..) - Digital output configuration	UINT	1
+EVD_EVO_2_MNG.VlvA_EVD_1.DT_LOP_Alrm	Valve A parameters (EEV type, Refrigerant type, ecc..) - LOP: low evaporation temperature alarm delay	UINT	10
+EVD_EVO_2_MNG.VlvA_EVD_1.DT_LowSH_Alrm	Valve A parameters (EEV type, Refrigerant type, ecc..) - LowSH: low superheat alarm delay	UINT	10
+EVD_EVO_2_MNG.VlvA_EVD_1.DT_LowSuctTempAlrm	Valve A parameters (EEV type, Refrigerant type, ecc..) - Alarm delay low suction temperature	UINT	300
+EVD_EVO_2_MNG.VlvA_EVD_1.DT_MOP_Alrm	Valve A parameters (EEV type, Refrigerant type, ecc..) - MOP: high temperature evaporation alarm delay	UINT	10
+EVD_EVO_2_MNG.VlvA_EVD_1.EEV_Typ	Valve A parameters (EEV type, Refrigerant type, ecc..) - Valve type	UINT	1
+EVD_EVO_2_MNG.VlvA_EVD_1.En_FrequentChgParams	Valve A parameters (EEV type, Refrigerant type, ecc..) - Reserved	INT	-1
+EVD_EVO_2_MNG.VlvA_EVD_1.En_ManPos	Valve A parameters (EEV type, Refrigerant type, ecc..) - Enable manual positioning	BOOL	FALSE
+EVD_EVO_2_MNG.VlvA_EVD_1.En_VlvOpenInStby	Valve A parameters (EEV type, Refrigerant type, ecc..) - Valve opened in standby (0=disabled=valve closed; 1=enabled = valve open according to parameter VlvOpenInStby)	BOOL	FALSE
+EVD_EVO_2_MNG.VlvA_EVD_1.EVD_PID_Reg.Kp	Valve A parameters (EEV type, Refrigerant type, ecc..) - EVD PID parameters - Proportional gain	REAL	15
+EVD_EVO_2_MNG.VlvA_EVD_1.EVD_PID_Reg.Td	Valve A parameters (EEV type, Refrigerant type, ecc..) - EVD PID parameters - Derivative time	REAL	2
+EVD_EVO_2_MNG.VlvA_EVD_1.EVD_PID_Reg.Ti	Valve A parameters (EEV type, Refrigerant type, ecc..) - EVD PID parameters - Integral time	INT	150
+EVD_EVO_2_MNG.VlvA_EVD_1.LOP_Prot_Ti	Valve A parameters (EEV type, Refrigerant type, ecc..) - Low Superheat protection integral time	REAL	600
+EVD_EVO_2_MNG.VlvA_EVD_1.LOP_Thrsh	Valve A parameters (EEV type, Refrigerant type, ecc..) - LOP: threshold for low temperature of evaporation	REAL	-50
+EVD_EVO_2_MNG.VlvA_EVD_1.Low_SH_Prot_Ti	Valve A parameters (EEV type, Refrigerant type, ecc..) - Low Superheat protection integral time	REAL	600
+EVD_EVO_2_MNG.VlvA_EVD_1.LowSH_Thrsh	Valve A parameters (EEV type, Refrigerant type, ecc..) - LowSH: threshold low superheat	REAL	3
+EVD_EVO_2_MNG.VlvA_EVD_1.LowSuctTempAlrmThrsh	Valve A parameters (EEV type, Refrigerant type, ecc..) - Alarm threshold low temperature suction	REAL	-50
+EVD_EVO_2_MNG.VlvA_EVD_1.MainReg	Valve A parameters (EEV type, Refrigerant type, ecc..) - Main Regulation type	UINT	1
+EVD_EVO_2_MNG.VlvA_EVD_1.MOP_InhibThrsh	Valve A parameters (EEV type, Refrigerant type, ecc..) - MOP inibition threshold	REAL	30
+EVD_EVO_2_MNG.VlvA_EVD_1.MOP_Prot_Ti	Valve A parameters (EEV type, Refrigerant type, ecc..) - MOP: integral time temperature of evaporation	REAL	600
+EVD_EVO_2_MNG.VlvA_EVD_1.MOP_Thrsh	Valve A parameters (EEV type, Refrigerant type, ecc..) - MOP: threshold high temperature evaporation	REAL	50
+EVD_EVO_2_MNG.VlvA_EVD_1.RfrgVlv	Valve A parameters (EEV type, Refrigerant type, ecc..) - Gas type - check documentation for gas values	INT	4
+EVD_EVO_2_MNG.VlvA_EVD_1.SH_OptFilt	Valve A parameters (EEV type, Refrigerant type, ecc..) - Coefficient (sec) for superheat filter	INT	500
+EVD_EVO_2_MNG.VlvA_EVD_1.SH_SetP	Valve A parameters (EEV type, Refrigerant type, ecc..) - Superheat setpoint	REAL	10
+EVD_EVO_2_MNG.VlvA_EVD_1.VlvOpenInStby	Valve A parameters (EEV type, Refrigerant type, ecc..) -  Valve position in stand-by in %	UINT	0
+EVD_EVO_2_MNG.VlvA_EVD_1.VlvPrePosDelay	Valve A parameters (EEV type, Refrigerant type, ecc..) - Regulation delay after power-on (sec)	UINT	0
+EVD_EVO_2_MNG.VlvA_EVD_1.VlvStartUpOp	Valve A parameters (EEV type, Refrigerant type, ecc..) - Valve opening at start-up  (capacity ratio EVAP / EEV) - Percentage	UINT	50
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.DutyCycle_Cst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - (%) Only for Universal Valve Driver	UINT	30
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.ExtraCloseEn_Cst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	BOOL	TRUE
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.ExtraOpenEn_Cst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	BOOL	TRUE
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.FastCloseStepsRateCst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	150
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.FullCloseStepsCst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	500
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.HoldingA_Cst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - (mA) Only for Universal Valve Driver	UINT	100
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.MaxStepsCst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	480
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.MinStepsCst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	50
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.MoveA_Cst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - (mA) Only for Universal Valve Driver	UINT	450
+EVD_EVO_2_MNG.VlvB_CstParams_EVD_1.NomStepsRateCst	Valve B: custom parameters (Min steps custom, max steps custom, ecc…) - Only for Universal Valve Driver	UINT	50
+EVD_EVO_2_MNG.VlvB_EVD_1.DoutCfg	Valve B parameters (EEV type, Refrigerant type, ecc..) - Digital output configuration	UINT	1
+EVD_EVO_2_MNG.VlvB_EVD_1.DT_LOP_Alrm	Valve B parameters (EEV type, Refrigerant type, ecc..) - LOP: low evaporation temperature alarm delay	UINT	10
+EVD_EVO_2_MNG.VlvB_EVD_1.DT_LowSH_Alrm	Valve B parameters (EEV type, Refrigerant type, ecc..) - LowSH: low superheat alarm delay	UINT	10
+EVD_EVO_2_MNG.VlvB_EVD_1.DT_LowSuctTempAlrm	Valve B parameters (EEV type, Refrigerant type, ecc..) - Alarm delay low suction temperature	UINT	300
+EVD_EVO_2_MNG.VlvB_EVD_1.DT_MOP_Alrm	Valve B parameters (EEV type, Refrigerant type, ecc..) - MOP: high temperature evaporation alarm delay	UINT	10
+EVD_EVO_2_MNG.VlvB_EVD_1.EEV_Typ	Valve B parameters (EEV type, Refrigerant type, ecc..) - Valve type	UINT	1
+EVD_EVO_2_MNG.VlvB_EVD_1.En_FrequentChgParams	Valve B parameters (EEV type, Refrigerant type, ecc..) - Reserved	INT	0
+EVD_EVO_2_MNG.VlvB_EVD_1.En_ManPos	Valve B parameters (EEV type, Refrigerant type, ecc..) - Enable manual positioning	BOOL	FALSE
+EVD_EVO_2_MNG.VlvB_EVD_1.En_VlvOpenInStby	Valve B parameters (EEV type, Refrigerant type, ecc..) - Valve opened in standby (0=disabled=valve closed; 1=enabled = valve open according to parameter VlvOpenInStby)	BOOL	FALSE
+EVD_EVO_2_MNG.VlvB_EVD_1.EVD_PID_Reg.Kp	Valve B parameters (EEV type, Refrigerant type, ecc..) - EVD PID parameters - Proportional gain	REAL	15
+EVD_EVO_2_MNG.VlvB_EVD_1.EVD_PID_Reg.Td	Valve B parameters (EEV type, Refrigerant type, ecc..) - EVD PID parameters - Derivative time	REAL	2
+EVD_EVO_2_MNG.VlvB_EVD_1.EVD_PID_Reg.Ti	Valve B parameters (EEV type, Refrigerant type, ecc..) - EVD PID parameters - Integral time	INT	150
+EVD_EVO_2_MNG.VlvB_EVD_1.LOP_Prot_Ti	Valve B parameters (EEV type, Refrigerant type, ecc..) - Low Superheat protection integral time	REAL	600
+EVD_EVO_2_MNG.VlvB_EVD_1.LOP_Thrsh	Valve B parameters (EEV type, Refrigerant type, ecc..) - LOP: threshold for low temperature of evaporation	REAL	-50
+EVD_EVO_2_MNG.VlvB_EVD_1.Low_SH_Prot_Ti	Valve B parameters (EEV type, Refrigerant type, ecc..) - Low Superheat protection integral time	REAL	600
+EVD_EVO_2_MNG.VlvB_EVD_1.LowSH_Thrsh	Valve B parameters (EEV type, Refrigerant type, ecc..) - LowSH: threshold low superheat	REAL	3
+EVD_EVO_2_MNG.VlvB_EVD_1.LowSuctTempAlrmThrsh	Valve B parameters (EEV type, Refrigerant type, ecc..) - Alarm threshold low temperature suction	REAL	-50
+EVD_EVO_2_MNG.VlvB_EVD_1.MainReg	Valve B parameters (EEV type, Refrigerant type, ecc..) - Main Regulation type	UINT	1
+EVD_EVO_2_MNG.VlvB_EVD_1.MOP_InhibThrsh	Valve B parameters (EEV type, Refrigerant type, ecc..) - MOP inibition threshold	REAL	30
+EVD_EVO_2_MNG.VlvB_EVD_1.MOP_Prot_Ti	Valve B parameters (EEV type, Refrigerant type, ecc..) - MOP: integral time temperature of evaporation	REAL	600
+EVD_EVO_2_MNG.VlvB_EVD_1.MOP_Thrsh	Valve B parameters (EEV type, Refrigerant type, ecc..) - MOP: threshold high temperature evaporation	REAL	50
+EVD_EVO_2_MNG.VlvB_EVD_1.RfrgVlv	Valve B parameters (EEV type, Refrigerant type, ecc..) - Gas type - check documentation for gas values	INT	4
+EVD_EVO_2_MNG.VlvB_EVD_1.SH_OptFilt	Valve B parameters (EEV type, Refrigerant type, ecc..) - Coefficient (sec) for superheat filter	INT	500
+EVD_EVO_2_MNG.VlvB_EVD_1.SH_SetP	Valve B parameters (EEV type, Refrigerant type, ecc..) - Superheat setpoint	REAL	10
+EVD_EVO_2_MNG.VlvB_EVD_1.VlvOpenInStby	Valve B parameters (EEV type, Refrigerant type, ecc..) -  Valve position in stand-by in %	UINT	0
+EVD_EVO_2_MNG.VlvB_EVD_1.VlvPrePosDelay	Valve B parameters (EEV type, Refrigerant type, ecc..) - Regulation delay after power-on (sec)	UINT	0
+EVD_EVO_2_MNG.VlvB_EVD_1.VlvStartUpOp	Valve B parameters (EEV type, Refrigerant type, ecc..) - Valve opening at start-up  (capacity ratio EVAP / EEV) - Percentage	UINT	50
+EVD_EVO_2_MNG.WorkAsSingle_EVD_1	Enable single mode on a twin EVDEVO	BOOL	TRUE
+GeneralMng.FB2_Baudrate		USINT	4
+GeneralMng.FB2_Baudrate_Val		UDINT	19200
+GeneralMng.FB2_Parity		USINT	0
+GeneralMng.FB2_StopBit		USINT	2
+GeneralMng.ID_Lang		DINT	
+GeneralMng.PwdManuf	Manufacturer password	UINT	3
+GeneralMng.PwdPassepartout		UINT	1234
+GeneralMng.PwdService	Service password	UINT	2
+GeneralMng.PwdUser	User password	UINT	1
+GeneralMng.RESERVED3	RESERVED	BOOL	
+GeneralMng.VersionChk_2_1.D	D version of the application	UINT	
+GeneralMng.VersionChk_2_1.IsBeta	Beta enable	BOOL	
+GeneralMng.VersionChk_2_1.IsDemo	Demo enable	BOOL	
+GeneralMng.VersionChk_2_1.WriteVer	Enable the application version write after a wipe retain.	BOOL	
+GeneralMng.VersionChk_2_1.X	X version of the application	UINT	
+GeneralMng.VersionChk_2_1.Y	Y version of the application	UINT	
+GeneralMng.VersionChk_2_1.Z	Z version of the application	UINT	
+OnOffUnitMng.KeybOnOff	Unit On/Off by keyboard	BOOL	FALSE

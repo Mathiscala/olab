@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="resetIn" Comment="" AccessRights="Read" DataType="UINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="FW_Reboot" Comment="" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="reset" Comment="" AccessRights="Write" DataType="UINT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="FW_Reboot_Old" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+  </Variables>
+</Manifest>

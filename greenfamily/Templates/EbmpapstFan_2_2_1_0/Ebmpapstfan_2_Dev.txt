@@ -1,0 +1,47 @@
+Version 1.1 DevConfiguration
+Settings
+Instance
+EbmpapstFan_1_Mng
+Variables
+Variable	Description	DataType	DefaultValue
+EbmpapstFan_1_Mng.CfgParams_EBM_1.CtrlModeDay	Automatically generated - Automatically generated	UINT	2
+EbmpapstFan_1_Mng.CfgParams_EBM_1.CtrlModeNight	Automatically generated - Automatically generated	UINT	2
+EbmpapstFan_1_Mng.CfgParams_EBM_1.CurrSenValSrc	Automatically generated - Automatically generated	UINT	0
+EbmpapstFan_1_Mng.CfgParams_EBM_1.InternParamSet	Automatically generated - Automatically generated	UINT	0
+EbmpapstFan_1_Mng.CfgParams_EBM_1.IOConf1	Automatically generated - Automatically generated	UINT	0
+EbmpapstFan_1_Mng.CfgParams_EBM_1.IOConf2	Automatically generated - Automatically generated	UINT	1
+EbmpapstFan_1_Mng.CfgParams_EBM_1.IOConf3	Automatically generated - Automatically generated	UINT	2
+EbmpapstFan_1_Mng.CfgParams_EBM_1.ParamSetSrc	Automatically generated - Automatically generated	UINT	1
+EbmpapstFan_1_Mng.CfgParams_EBM_1.PrefRunDir	Automatically generated - Automatically generated	BOOL	FALSE
+EbmpapstFan_1_Mng.CfgParams_EBM_1.RampDwnT	Automatically generated - Automatically generated	UINT	10
+EbmpapstFan_1_Mng.CfgParams_EBM_1.RampUpT	Automatically generated - Automatically generated	UINT	10
+EbmpapstFan_1_Mng.CfgParams_EBM_1.RFIDen	Automatically generated - Automatically generated	UINT	0
+EbmpapstFan_1_Mng.CfgParams_EBM_1.SrcSetVal	Automatically generated - Automatically generated	UINT	1
+EbmpapstFan_1_Mng.CfgParams_EBM_1.SwitchEnableSource	Automatically generated - Automatically generated	UINT	1
+EbmpapstFan_1_Mng.DetectionInterval		UINT	5
+EbmpapstFan_1_Mng.EmergencySet_perc_EBM_1	Fan speed in emergency in percent	REAL	30.0
+EbmpapstFan_1_Mng.EmergencySet_rpm_EBM_1	Fan speed in emergency in rpm	DINT	840
+EbmpapstFan_1_Mng.EmergencySet_V_EBM_1	Fan speed in emergency in Volt	REAL	3.0
+EbmpapstFan_1_Mng.En_EbmpapstFan_1	Enable Ebmpapst fan management	BOOL	FALSE
+EbmpapstFan_1_Mng.FB1_Baudrate		UDINT	19200
+EbmpapstFan_1_Mng.FB1_Parity	0: NONE; 1: ODD; 2: EVEN;	USINT	2
+EbmpapstFan_1_Mng.FB1_StopBit		USINT	1
+EbmpapstFan_1_Mng.FctEmerg_EBM_1.EmergFunctSource	Automatically generated - Automatically generated	UINT	0
+EbmpapstFan_1_Mng.FctEmerg_EBM_1.EmergLagT	Automatically generated - Automatically generated	UINT	5000
+EbmpapstFan_1_Mng.FctEmerg_EBM_1.EmergSpeed	Automatically generated - Automatically generated	REAL	0.0
+EbmpapstFan_1_Mng.FctEmerg_EBM_1.En_EmergFunct	Automatically generated - Automatically generated	BOOL	
+EbmpapstFan_1_Mng.pollingDelay		UDINT	
+EbmpapstFan_1_Mng.RetriesNo		USINT	3
+EbmpapstFan_1_Mng.SerInterfaceSet_EBM_1.CfgProtocol.CmdDT	Automatically generated - Automatically generated - Automatically generated	UDINT	2
+EbmpapstFan_1_Mng.SerInterfaceSet_EBM_1.CfgProtocol.DevAddr	Automatically generated - Automatically generated - Automatically generated	UDINT	1
+EbmpapstFan_1_Mng.SerInterfaceSet_EBM_1.CfgProtocol.Timeout	Automatically generated - Automatically generated - Automatically generated	UDINT	500
+EbmpapstFan_1_Mng.SerInterfaceSet_EBM_1.FanSerInterfSet.Baudrate	Automatically generated - Automatically generated - Automatically generated	UINT	4
+EbmpapstFan_1_Mng.SerInterfaceSet_EBM_1.FanSerInterfSet.ParityConf	Automatically generated - Automatically generated - Automatically generated	UINT	0
+GeneralMng.DefInst	Enable for End default mask. If FALSE, default have been succesfully installed	BOOL	
+GeneralMng.VersionChk_1.D	D version of the application	UINT	
+GeneralMng.VersionChk_1.IsBeta	Beta enable	BOOL	
+GeneralMng.VersionChk_1.IsDemo	Demo enable	BOOL	
+GeneralMng.VersionChk_1.WriteVer	Enable the application version write after a wipe retain.	BOOL	
+GeneralMng.VersionChk_1.X	X version of the application	UINT	
+GeneralMng.VersionChk_1.Y	Y version of the application	UINT	
+GeneralMng.VersionChk_1.Z	Z version of the application	UINT	

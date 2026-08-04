@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Name="TemplateSelector_Ebmpapst" Version="1.1.0">
+  <Variables>
+    <Variable Name="En_Modbus_5" Comment="" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="En_Modbus_6" Comment="" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="En_RadiCal" Comment="" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="En_templates" Comment="" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="Identification" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+  </Variables>
+</Manifest>

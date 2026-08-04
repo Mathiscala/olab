@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest
+  Name="M3HfactorK"
+  Version="1.1.0">
+  <Variables>
+    <Variable
+      Name="k"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      IsRetained="false"
+      Alarm="false"
+      UoM="NoUnits"
+      Access="ReadWrite"
+      Decimals="1"
+      Min=""
+      Max=""
+      StringSize="0" />
+    <Variable
+      Name="M3H"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      IsRetained="false"
+      Alarm="false"
+      UoM="NoUnits"
+      Access="ReadWrite"
+      Decimals="1"
+      Min=""
+      Max=""
+      StringSize="0" />
+    <Variable
+      Name="pa"
+      Comment=""
+      DataType="INT"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      IsRetained="false"
+      Alarm="false"
+      UoM="NoUnits"
+      Access="ReadWrite"
+      Min=""
+      Max=""
+      StringSize="0" />
+  </Variables>
+</Manifest>

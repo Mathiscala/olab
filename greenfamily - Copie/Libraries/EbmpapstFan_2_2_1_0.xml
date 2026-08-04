@@ -1,0 +1,1478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Version="1.0.1"
+  IsLibrary="true">
+  <Pou
+    Name="ConvertCurrSpeed_Ebmpapst"
+    Moniker="ConvertCurrSpeed_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="MaxSpeed_rpm"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="CurrSpeed"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="ConvertCurrSpeed_Ebmpapst"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="PriorityMng_UINT_Ebmpapst"
+    Moniker="PriorityMng_UINT_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="VariableIn"
+      Comment="Variable used on the strategy"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="SerialIn"
+      Comment="Variable flag as Protocol"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Variable"
+      Comment="Variable flag as Protocol"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Serial"
+      Comment="Variable used on the strategy"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="UpdtDn"
+      Comment="Update done"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="PWD_L_Ebmpapst"
+    Moniker="PWD_L_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="PWD_L_Ebmpapst"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="ResetFirmware_Ebmpapst"
+    Moniker="ResetFirmware_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="resetIn"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="FW_Reboot"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="reset"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="FW_Reboot_Old"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="PWD_M_Ebmpapst"
+    Moniker="PWD_M_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="PWD_M_Ebmpapst"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="ConvertSpeed_Ebmpapst"
+    Moniker="ConvertSpeed_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="SpeedSetP"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ActiveCtrMode"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="MaxSpeed_rpm"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="RampUpT"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="RampDwnT"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="VrefAir"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="VrefMass"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="CurrSensor"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="DefSetValue"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="RampUpCurve"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="RampDwnCurve"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ValueChanged"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="PWD_H_Ebmpapst"
+    Moniker="PWD_H_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="PWD_H_Ebmpapst"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="ElectricalInfo_Ebmpapst"
+    Moniker="ElectricalInfo_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Voltage_in"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Current_in"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Power_Out_MB"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Voltage_ref_val"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Current_ref_val"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="MaxPower_in"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Voltage_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Current_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Power_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="MaxPower_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Power_out_Real"
+      Comment=""
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ReUz"
+      Comment=""
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ReIz"
+      Comment=""
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Voltage_in_tmp"
+      Comment=""
+      DataType="DINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="ResetInternErr_Ebmpapst"
+    Moniker="ResetInternErr_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="tmp_var"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ResetInternErr_Ebmpapst"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="ConvertIOConf_Ebmpapst"
+    Moniker="ConvertIOConf_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="IOconf1_in"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="IOconf2_in"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="IOconf3_in"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="IOconf1_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="IOconf2_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="IOconf3_out"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="ConvertData_Ebmpapst"
+    Moniker="ConvertData_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="ActiveControl_mode"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="MBM_Data"
+      Comment=""
+      DataType="MBM_PARAM_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="CurrModLev_msk"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="CurrSet_value"
+      Comment=""
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="FanInfo"
+      Comment=""
+      DataType="FAN_INFO_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="SensorReadings"
+      Comment=""
+      DataType="AIN_VALUE_EBM"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="DecodeStatusInfo_Ebmpapst"
+    Moniker="DecodeStatusInfo_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="IR_MotStatus"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EBM"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="DevErr"
+      Comment=""
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="MotStatus"
+      Comment=""
+      DataType="MOT_STATUS_EBM"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="DecodeWarning_Ebmpapst"
+    Moniker="DecodeWarning_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="IR_Warning"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EBM"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Warn_EBM"
+      Comment=""
+      DataType="WARNING_EBM"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="WriteAdoptParams_Ebmpapst"
+    Moniker="WriteAdoptParams_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="MBM_ParamsIn"
+      Comment=""
+      DataType="MBM_PARAM_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="CfgParamsFromPins"
+      Comment=""
+      DataType="CONFIG_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="RampUpCurveVal"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="RampDwnCurveVal"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="EmergencyMode"
+      Comment=""
+      DataType="EMERGENCY_MODE_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="BypassDefSetValue"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="WriteReqInput"
+      Comment="other request of write parameters"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Online"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="LoadNewValues"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IOconf1Val"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="IOconf2Val"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="IOconf3Val"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="MBM_Params"
+      Comment=""
+      DataType="MBM_PARAM_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="WriteParamsReq"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Write_PWD"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ValuePrev_0"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_1"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_2"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_3"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_4"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_5"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_6"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ValuePrev_7"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="AdoptParams"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="TP_LoadNewVal"
+      Comment=""
+      DataType="TP"
+      Kind="Var" />
+    <Variable
+      Name="TON_IsChangedDelayed"
+      Comment=""
+      DataType="TON"
+      Kind="Var" />
+    <Variable
+      Name="IsChanged_Internal"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="F_TRIG_1"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="F_TRIG_LoadNewVal"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_ResetWriteReq"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_otherWritereq"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="EmergencyMode_Prev"
+      Comment=""
+      DataType="EMERGENCY_MODE_EBM"
+      Kind="Var" />
+    <Variable
+      Name="FirstCycle"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="WriteReqInput_WR"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="WritePasswordReq"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="TON_SendingPwd"
+      Comment=""
+      DataType="TON"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="ChangeAddress_Ebmpapst"
+    Moniker="ChangeAddress_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="DevAddr_tmp_In"
+      Comment=""
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="MBM_Params_In"
+      Comment=""
+      DataType="MBM_PARAM_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="DevAddr"
+      Comment=""
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="SpeedReq_EBM"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="CurrSpeed"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Al_Offline"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="OnlineStatus"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="DevErr"
+      Comment=""
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_ChgAddr"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EBM"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="DevAddr_tmp"
+      Comment=""
+      DataType="UDINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="MBM_Params"
+      Comment=""
+      DataType="MBM_PARAM_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="SpeedReq_tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ChgAddr_Proc"
+      Comment=""
+      DataType="USINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="R_TRIG_ChgAddr"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="ResetReg"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="TON_SendReset"
+      Comment=""
+      DataType="TON"
+      Kind="Var" />
+    <Variable
+      Name="DebugString"
+      Comment=""
+      DataType="STRING"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_Init"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="ChangeInterfaceSettings_Ebmpapst"
+    Moniker="ChangeInterfaceSettings_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="ModbusHR_IN"
+      Comment=""
+      DataType="HOLDING_REG_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="FanSerialInterface"
+      Comment=""
+      DataType="FAN_SER_INTERF_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="OnlineStatus"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Offline"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_FB"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ModbusHR"
+      Comment=""
+      DataType="HOLDING_REG_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="Write_PWD"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="SetAdoptParams"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="SerInterfStateMachineToken"
+      Comment=""
+      DataType="USINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Debug_SerInterfStateMachineToken"
+      Comment=""
+      DataType="STRING"
+      Kind="Var" />
+    <Variable
+      Name="TON_WriteParams"
+      Comment=""
+      DataType="TON"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_request"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="TON_SendingPwd"
+      Comment=""
+      DataType="TON"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="PeriodicWritePwd_Ebmpapst"
+    Moniker="PeriodicWritePwd_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Enable"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="WritePwd"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="TON_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="ComStatus_Ebmpapst"
+    Moniker="ComStatus_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="DevErr"
+      Comment=""
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="LastCycle"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ComStatus"
+      Comment=""
+      DataType="USINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="OnlineStatus"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Al_Offline"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="FirstPollingLoop"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="ResetOutput_Ebmpapst"
+    Moniker="ResetOutput_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="SpeedInfo_In"
+      Comment="Speed info of the Ebmpapst fan"
+      DataType="SPEED_INFO_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="ElectricalInfo_In"
+      Comment="Electrical info (DC link voltage and current, power, ...)"
+      DataType="ELECTRICAL_INFO_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="SensorsVal_In"
+      Comment="Ebmpapst sensors values"
+      DataType="AIN_VALUE_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="MotorStatus_In"
+      Comment="Motor status defines errors currently detected for Ebmpapst fan"
+      DataType="MOT_STATUS_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="Warning_In"
+      Comment="Warning bitfield variable for Ebmpast fan"
+      DataType="WARNING_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="ComStatus_In"
+      Comment=""
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="OnlineStatus_In"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Al_Offline_In"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="WriteParamsIn"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="FB_Enabled"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="SpeedInfo"
+      Comment="Speed info of the Ebmpapst fan"
+      DataType="SPEED_INFO_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="ElectricalInfo"
+      Comment="Electrical info (DC link voltage and current, power, ...)"
+      DataType="ELECTRICAL_INFO_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="SensorsVal"
+      Comment="Ebmpapst sensors values"
+      DataType="AIN_VALUE_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="MotorStatus"
+      Comment="Motor status defines errors currently detected for Ebmpapst fan"
+      DataType="MOT_STATUS_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="Warning"
+      Comment="Warning bitfield variable for Ebmpast fan"
+      DataType="WARNING_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="ComStatus"
+      Comment=""
+      DataType="USINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="OnlineStatus"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Al_Offline"
+      Comment="Fan offline alarm"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="WriteParams"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="EbmpapstFan_2"
+    Moniker="EbmpapstFan_2.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="true"
+    Deprecated="false">
+    <Variable
+      Name="SpeedReq_EBM"
+      Comment="Speed input in [rpm/V/%] according to the control mode for Ebmpapst fan"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="CfgParams_EBM"
+      Comment="Configuration parameters (Running dir., Rump up/down time, control mode, etc..)"
+      DataType="CONFIG_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="SerInterfaceSet_EBM"
+      Comment="Serial interface settings (Address, baudrate, parity configuration)"
+      DataType="SER_INTERF_SETTINGS_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="FctEmerg_EBM"
+      Comment="Settings of the emergency function"
+      DataType="EMERGENCY_MODE_EBM"
+      Kind="VarInput" />
+    <Variable
+      Name="FW_Reebot_EBM"
+      Comment="User Software reset (includes Reset error and Adopt parameters) for Ebmpapst fan"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="LdNewVal_EBM"
+      Comment="TRUE: All parameters are copied from EEPROM into the RAM; FALSE: nothing"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ResAlrmInternal_EBM"
+      Comment="Reset internal alarms of the fan"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EbmpapstFan"
+      Comment="Enable Ebmpapst fan management"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Online_EBM"
+      Comment="Online status (TRUE: online; FALSE: not online;)"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="InfoSpeed_EBM"
+      Comment="Speed info of the Ebmpapst fan"
+      DataType="SPEED_INFO_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="CtrlModeAct_EBM"
+      Comment="0: closed loop speed control (rpm),1: closed loop sensor control (0-10V),2: open loop PWM control (%)"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="CntWorkHrsBkp_EBM"
+      Comment="Working hour counter for Ebmpapst fan"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="CurrRotDir_EBM"
+      Comment="Current rotation direction 0: Left; 1: Right; for Ebmpapst fan"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="CurrParam_EBM"
+      Comment="Current parameter set (0: parameter set 1 (day);1: parameter set 2 (night))"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ElectrInfo_EBM"
+      Comment="Electrical info (DC link voltage and current, power, ...)"
+      DataType="ELECTRICAL_INFO_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="SenVal_EBM"
+      Comment="Ebmpapst sensors values"
+      DataType="AIN_VALUE_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="FanInfo_EBM"
+      Comment="Fan information (Fan type, Serial number, Firmware info, customer data)"
+      DataType="FAN_INFO_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="MotStatus_EBM"
+      Comment="Motor status defines errors currently detected for Ebmpapst fan"
+      DataType="MOT_STATUS_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="ParamsChgComStatus_EBM"
+      Comment="Status of the change communication parameters procedure"
+      DataType="FAN_CHANGEPROC_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="Warn_EBM"
+      Comment="Warning bitfield variable for Ebmpast fan"
+      DataType="WARNING_EBM"
+      Kind="VarOutput" />
+    <Variable
+      Name="ComStatus_EBM"
+      Comment="Communication status (0:Online; 1:Offline; 2:Invalid packet; 3:Exception; 4:Connecting;)"
+      DataType="USINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="WriteParamsReq_EBM"
+      Comment="write parameters command is required (LoadNewValues_EBM)"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Al_Offline_EBM"
+      Comment="Fan offline alarm"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ResetOutput_1"
+      Comment=""
+      DataType="ResetOutput_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="LastCycle"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="MBM_Params"
+      Comment=""
+      DataType="MBM_PARAM_EBM"
+      Kind="Var" />
+    <Variable
+      Name="ConvertSpeed_Ebmpapst_1"
+      Comment=""
+      DataType="ConvertSpeed_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ConvertSpeed_Ebmpapst_2"
+      Comment=""
+      DataType="ConvertSpeed_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ConvertData_Ebmpapst_1"
+      Comment=""
+      DataType="ConvertData_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ElectricalInfo_Ebmpapst_1"
+      Comment=""
+      DataType="ElectricalInfo_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="DecodeStatusInfo_Ebmpapst_1"
+      Comment=""
+      DataType="DecodeStatusInfo_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="DecodeWarning_Ebmpapst_1"
+      Comment=""
+      DataType="DecodeWarning_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ChangeAddress_Ebmpapst_1"
+      Comment=""
+      DataType="ChangeAddress_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="DevAddr_tmp"
+      Comment=""
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="SpeedReq_tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ValIsChanged_1"
+      Comment="Automatically generated"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="En_EbmFan_tmp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="IsChanged_1"
+      Comment="Automatically generated"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ResetOutput_Ebmpapst_1"
+      Comment=""
+      DataType="ResetOutput_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="F_TRIG_LastCycle"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_FirstCycle"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_1"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_2"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="ChangeInterfaceSettings_Ebmpapst_1"
+      Comment=""
+      DataType="ChangeInterfaceSettings_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="WritePwd_ChgInterfSet"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="SetAdoptParamChgInterfSet"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_3"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="PeriodicWritePwd_Ebmpapst_1"
+      Comment=""
+      DataType="PeriodicWritePwd_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ComStatus_Ebmpapst_1"
+      Comment=""
+      DataType="ComStatus_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ResetFirmware_Ebmpapst_1"
+      Comment=""
+      DataType="ResetFirmware_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="TP_1"
+      Comment=""
+      DataType="TP"
+      Kind="Var" />
+    <Variable
+      Name="PriorityMng_UINT_Ebmpapst_1"
+      Comment=""
+      DataType="PriorityMng_UINT_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ResetHR"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="PriorityMng_UINT_Ebmpapst_2"
+      Comment=""
+      DataType="PriorityMng_UINT_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="DefSetValueHR"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="PriorityMng_UINT_Ebmpapst_3"
+      Comment=""
+      DataType="PriorityMng_UINT_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="PriorityMng_UINT_Ebmpapst_4"
+      Comment=""
+      DataType="PriorityMng_UINT_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="PriorityMng_UINT_Ebmpapst_5"
+      Comment=""
+      DataType="PriorityMng_UINT_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="PWD_1_HR"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="PWD_2_HR"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="PWD_3_HR"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="RampUpCurveCalc"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="RampDwnCurveCalc"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="BypassDefSetValueCalc"
+      Comment=""
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="WriteAdoptParams_Ebmpapst_1"
+      Comment=""
+      DataType="WriteAdoptParams_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="ConvertIOConf_Ebmpapst_1"
+      Comment=""
+      DataType="ConvertIOConf_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="IOconf1Conv"
+      Comment="configuratin of I/O 1"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="IOconf2Conv"
+      Comment="configuratin of I/O 2"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="IOconf3Conv"
+      Comment="configuratin of I/O 1"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="PollingId_Temp"
+      Comment=""
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="En_MBM_Line"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="WritePwd_ChgAdoptParam"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_4"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="FanType_Ebmpapst_1"
+      Comment=""
+      DataType="TemplateSelector_Ebmpapst"
+      Kind="Var" />
+    <Variable
+      Name="En_Modbus_5"
+      Comment="Automatically generated"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="En_Modbus_6"
+      Comment="Automatically generated"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="En_RadiCal"
+      Comment="Automatically generated"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="TemplateSelector_Ebmpapst"
+    Moniker="TemplateSelector_Ebmpapst.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Identification"
+      Comment=""
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_templates"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_Modbus_5"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="En_Modbus_6"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="En_RadiCal"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+</Manifest>

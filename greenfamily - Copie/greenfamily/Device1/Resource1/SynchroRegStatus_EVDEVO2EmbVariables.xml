@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="CycBlink" Comment="" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" />
+    <Variable Name="EEV_PositionSteps" Comment="" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" />
+    <Variable Name="ExtPosit" Comment="external positioner configuration parameters (input)" DataType="TEEV" Kind="VarOutput">
+      <Variable Name="Enable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="PositionToSet" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="VariationToSet" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="CurrentEstimatedPosition" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="VariationRemaining" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="MaxSteps" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="MinSteps" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="ClosingSteps" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="NominalCurrent" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Milliamperes" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="HoldingCurrent" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Milliamperes" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="Speed" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="DutyCycle" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Percent" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="DutyCycleEnable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="OpeningXSteps" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="ClosingXSteps" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="FastClosingSpeed" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="FastClosingSpeedEnable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="Alarms" DataType="USINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" />
+    </Variable>
+    <Variable Name="ExtPositIn" Comment="external positioner configuration parameters (input)" DataType="TEEV" Kind="VarInput">
+      <Variable Name="Enable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="PositionToSet" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="VariationToSet" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="CurrentEstimatedPosition" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="VariationRemaining" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="MaxSteps" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="MinSteps" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="ClosingSteps" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="NominalCurrent" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Milliamperes" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="HoldingCurrent" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Milliamperes" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="Speed" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="DutyCycle" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Percent" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="DutyCycleEnable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="OpeningXSteps" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="ClosingXSteps" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="FastClosingSpeed" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="FastClosingSpeedEnable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+      <Variable Name="Alarms" DataType="USINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" />
+    </Variable>
+    <Variable Name="RegStatus_Emb" Comment="" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" />
+    <Variable Name="RegStatus_EVO" Comment="" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" />
+    <Variable Name="VlvReadyToGo" Comment="" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" />
+  </Variables>
+</Manifest>

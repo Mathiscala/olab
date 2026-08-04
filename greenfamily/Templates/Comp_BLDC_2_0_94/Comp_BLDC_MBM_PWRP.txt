@@ -1,0 +1,164 @@
+Version 1.1 ModbusMasterDevice RepoVersion 3.6.6
+
+Settings
+NameLine	NetworkAddress	NetworkAddressText	HostNameVariable	HostName	UnitAddress	Status	Timeout	PeekTime	UoM	DelayCommandTime	DeviceError	DeviceErrorCode	ErrorsID	PollsID	Priority	Endianess	ReadPoints	WritePoints	Cmd17ArrayVarName	Cmd17ReadMode	ReadBoolPoints	WriteBoolPoints	Instance	EnableWriteSinglePoint	EnableWriteMultiplePoint	EnableWriteSingleRegister	EnableWriteMultipleRegister	
+PWRP	BLDC_Mng.Comp_BLDC_1.PWRP.MBM_Pwrp.PSD_Addr					BLDC_Mng.Comp_BLDC_1.PWRP.MBM_Pwrp.PSD_EnProtocol	BLDC_Mng.Comp_BLDC_1.PWRP.MBM_Pwrp.CommTimeout	200	0	BLDC_Mng.Comp_BLDC_1.PWRP.MBM_Pwrp.CommDelayCmd	BLDC_Mng.Comp_BLDC_1.PWRP.MBM_Pwrp.PSD_DevErr	BLDC_Mng.Comp_BLDC_1.PWRP.MBM_Pwrp.PSD_DevErrCode			Normal	BigEndian	80	1	BLDC_Mng.Comp_BLDC_1.PWRP.MBM_DataBuffer_Pwrp	ReadOnline	8	8	BLDC_Mng.Comp_BLDC_1	True	True	True	True	
+
+Variables
+Status	Type	Index	Variable	Occupation	ReadWriteMode	Priority	Hysteresis	Description
+True	HoldingRegister	0	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR00_MotCtrlMode		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	1	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR01_MotBaseFreq	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	2	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR02_MotBaseV		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	3	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR03_MotRatedA	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	4	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR04_MotPwrFactor		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	5	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR05_MaxOutCurrent	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	6	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR06_MaxOutFreq	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	7	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR07_MinOutFreq	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	8	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR08_EnRevSpeed		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	9	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR09_SpeedDeratingMode		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	10	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR10_SkipFreqSetP	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	11	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR11_SkipFreqBand	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	12	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR12_SpeedProfileFreq1	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	13	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR13_SpeedProfileFreq2	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	14	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR14_SpeedProfileFreq3	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	15	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR15_SpeedProfileAcceleration1	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	16	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR16_SpeedProfileAcceleration2	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	17	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR17_SpeedProfileAcceleration3	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	18	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR18_SpeedProfileAcceleration4	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	19	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR19_SpeedProfileDelay1		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	20	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR20_SpeedProfileDelay2		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	21	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR21_SpeedProfileDelay3		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	22	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR22_SpeedProfileStartMode		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	23	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR23_SpeedProfileDeceleration	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	24	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR24_SwitchingFreq		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	25	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR25_SwitchingFreqDerating		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	26	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR26_RelayCfg		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	27	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR27_MotOvTempAlrmPTC_En		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	28	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR28_MotOvTempAlrmPTC_Delay		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	29	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR29_DataCommTimeout		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	30	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR30_DataCommBaudrate		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	31	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR31_DataCommParity		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	32	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR32_BaseAddr		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	33	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR33_StopMode		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	34	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR34_FlyingRestart		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	35	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR35_V_F_BoostV	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	36	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR36_V_F_FreqAdj	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	37	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR37_V_F_VAdj	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	38	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR38_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	39	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR39_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	40	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR40_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	41	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR41_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	42	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR42_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	43	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR43_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	44	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR44_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	45	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR45_MotMagnetizingCurrent	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	46	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR46_StatorResistance		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	47	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR47_RotorResistance		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	48	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR48_StatorInductanceLd	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	49	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR49_LeakageFactor		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	50	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR50_LqInductance	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	51	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR51_MagnetizingTime		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	52	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR52_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR53_RegenerationCurrentLimit	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	54	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR54_OvVCtrlALim	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	55	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR55_SpeedLoopKp	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	56	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR56_SpeedLoopTi		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	57	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR57_StartingCurrent	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	58	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR58_StartingAFreq	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	59	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR59_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	60	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR60_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	61	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR61_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	62	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR62_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	63	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR63_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	64	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR64_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	65	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR65_CrankCaseHeaterCurrent	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	66	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR66_STOResetStrategy		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	67	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR67_SkipFreqSetP_2	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	68	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR68_SkipFreqBand_2	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	69	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR69_SkipFreqSetP_3	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	70	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR70_SkipFreqBand_3	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	71	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR71_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	72	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR72_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	73	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR73_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	74	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR74_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	75	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR75_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	76	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR76_ExtendedFn		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	77	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR77_InductSaturFactor	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	78	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR78_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	79	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR79_Reserved		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	100	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR100_RunStop_CW_CCW		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	101	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR101_Reset		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	102	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR102_FreqSetP	1	ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	103	BLDC_Mng.Comp_BLDC_1.PWRP.HR_ParamPSD.HR103_AutoTune		ReadOnline_WriteChange	Normal	1	
+True	InputRegister	104	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR104_DriveStatus		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	105	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR105_AlrmCode		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	106	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR106_StatusRegister		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	107	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR107_SpeedRegister		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	108	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR108_MotFreq_Hz	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	109	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR109_MotAmp	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	110	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR110_MotPwr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	111	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR111_MotVolt		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	112	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR112_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	113	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR113_DCBusVoltage		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	114	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR114_DriveTemp		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	115	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR115_DriveLifeTime		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	116	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR116_DriveRunTime		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	117	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR117_DriveRunTimeFromLastAlrm		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	118	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR118_kWh_Meter	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	119	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR119_MWh_Meter		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	120	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR120_DriveCommAddr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	121	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR121_AddrDipSwitchVal		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	122	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR122_ModbusCommErr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	123	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR123_ModbsuUartErrCode		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	124	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR124_OperatingSwitchingFreq		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	125	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR125_PreRampOutput_SpeedRef	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	126	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR126_PostRampOutput_SpeedRef	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	127	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR127_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	128	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR128_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	129	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR129_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	130	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR130_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	131	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR131_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	132	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR132_RotorFreq		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	133	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR133_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	134	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR134_DCBusRipple		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	135	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR135_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	136	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR136_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	137	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR137_AlrmLog1		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	138	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR138_AlrmLog2		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	139	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR139_AlrmLog3		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	140	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR140_AlrmLog4		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	141	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR141_BootLoaderRelease		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	142	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR142_FirmwareRelease		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	143	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR143_FirmwareCRC		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	144	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR144_MotCtrlRelease		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	145	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR145_SNo1		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	146	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR146_SNo2		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	147	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR147_SNo3		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	148	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR148_SNo4		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	149	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR149_HardwareIdentification		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	150	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR150_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	151	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR151_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	152	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR152_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	153	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR153_OvldMot_accumulator	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	154	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR154_OvldDrive_accumulator	1	ReadPoll_NoWrite	Normal	1	
+True	InputRegister	155	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR155_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	156	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR156_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	157	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR157_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	158	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR158_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	159	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR159_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	160	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR160_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	161	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR161_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	162	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR162_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	163	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR163_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	164	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR164_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	165	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR165_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	166	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR166_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	167	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR167_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	168	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR168_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	169	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR169_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	170	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR170_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	171	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR171_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	172	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR172_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	173	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR173_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	174	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR174_Reserved		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	175	BLDC_Mng.Comp_BLDC_1.PWRP.IR_ParamPSD_PWRP.IR175_Reserved		ReadPoll_NoWrite	Normal	1	

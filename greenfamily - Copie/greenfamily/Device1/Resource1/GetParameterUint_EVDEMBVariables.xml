@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Name="GetParameterUint_EVDEMB" Version="1.1.0">
+  <Variables>
+    <Variable Name="Par" Comment="EVDEMB: Descriptor UINT" DataType="DATA_TYPEDESCR_UINT_EVDEMB" Kind="VarOutput">
+      <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    </Variable>
+    <Variable Name="ParDescriptor" Comment="" DataType="DESCR_TYPEDESCR_EVDEMB" Kind="VarInput">
+      <Variable Name="MaxVal" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" Min="" Max="" StringSize="0" />
+      <Variable Name="MinVal" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" Min="" Max="" StringSize="0" />
+      <Variable Name="DataType" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="IsTemp" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="IsP" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="IsWritable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="IsRelative" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="Default" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" Min="" Max="" StringSize="0" />
+    </Variable>
+    <Variable Name="ParIn" Comment="EVDEMB: Descriptor UINT" DataType="DATA_TYPEDESCR_UINT_EVDEMB" Kind="VarInput">
+      <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    </Variable>
+    <Variable Name="RangeError" Comment="" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="RangeErrorIn" Comment="" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="Val" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+  </Variables>
+</Manifest>

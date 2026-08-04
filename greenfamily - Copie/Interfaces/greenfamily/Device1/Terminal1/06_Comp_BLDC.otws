@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Worksheet Name="06_Comp_BLDC" Version="1.0.0">
+  <Mask Name="Regulation_BLDC" Type="Normal" X="1" Y="0" Color="Orchid">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Loop Name="LOOP_BLDC" Type="Normal" X="0" Y="0">
+    <Mask Name="Status01_BLDC" Type="Normal" X="0" Y="1">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Compr.capacity regul." />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Required cap.:       %" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="Actual cap.:         %" />
+        <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Actual speed:      rps" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="15" Content="BLDC_Mng.Info_BLDC1.Info_CompRequest" Class="CL_REAL_1" Format="o+3.1" Min="0.0" Max="100.0" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="15" Content="BLDC_Mng.Info_BLDC1.Info_ReqSpeedToPWRP" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="13" Content="BLDC_Mng.Info_PWRP1.Info_RotorSpeed_rps" Class="CL_REAL_1" Format="o+3.1" Min="0.0" Max="999.9" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="3" Content="BLDC_Mng.Info_BLDC1.Mng_TestMode" Class="MngTestMode_BLDC" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="7" Column="0" Content="BLDC_Mng.Info_BLDC1.Info_SIAM_90rpsZone" Class="Zone90rps_BLDC" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="7" Column="3" Content="BLDC_Mng.Info_BLDC1.UI_EqualizationStatus" Class="EquValve_BLDC" Format="ob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text" Row="0" Column="1" Content="Comp_BLDC" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Status02_BLDC" Type="Normal" X="0" Y="2">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Envelope data" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Cond.press.:" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Evap.press.:" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Envelope status:" />
+        <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="Alarm countdown:     s" />
+        <Field Type="Variable" Name="Variable_1" Row="2" Column="12" Content="BLDC_Mng.Info_BLDC1.Press_DscgP_Bar" Class="CL_REAL_1" Format="o+3.1" Min="-99.9" Max="99.9" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="12" Content="BLDC_Mng.Info_BLDC1.Press_SuctP_Bar" Class="CL_REAL_1" Format="o+3.1" Min="-99.9" Max="99.9" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="0" Content="BLDC_Mng.Info_BLDC1.Info_EnvZone" Class="EnvZoneTxt_BLDC" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="16" Content="BLDC_Mng.Info_BLDC1.Time_CntDwnOutEnv" Class="CL_INT" Format="o5" Min="0" Max="32767" />
+        <Field Type="Variable" Name="Variable_5" Row="2" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Pressure_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Pressure_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_6" Row="0" Column="1" Content="Comp_BLDC" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Status03_BLDC" Type="Normal" X="0" Y="3">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Envelope data" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Press.diff.:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="Press.ratio:" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="Low PD countdown:    s" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="12" Content="BLDC_Mng.Info_BLDC1.Press_DeltaP" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="16" Content="BLDC_Mng.Info_BLDC1.Press_RatioP" Class="CL_REAL_1" Format="o+3.1" Min="0.0" Max="999.9" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="0" Content="BLDC_Mng.Info_BLDC1.UI_LowDeltaP" Class="LowDiffPress_BLDC" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="7" Column="18" Content="BLDC_Mng.Info_BLDC1.Time_CntDwnDeltaPAlrm" Class="CL_INT" Format="o3" Min="0" Max="999" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Pressure_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_5" Row="0" Column="1" Content="Comp_BLDC" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Status04_BLDC" Type="Normal" X="0" Y="4">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Discharge gas control" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="temperature:" />
+        <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Status:" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="15" Content="BLDC_Mng.Info_BLDC1.Info_DscgTemp" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="12" Content="BLDC_Mng.Info_BLDC1.Info_HTZone" Class="HTzone_BLDC" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_6" Row="7" Column="0" Content="BLDC_Mng.Info_BLDC1.EnvTyp_SiamComp" Class="HTzoneTxt_BLDC" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_7" Row="7" Column="15" Content="BLDC_Mng.Info_BLDC1.Info_ActiveDscgHTLim" Class="SiamHTdata_BLDC" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Variable" Name="Variable_1" Row="7" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_TempSiam_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Comp_BLDC" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.EVDEVOtoBLDC1.Enabled" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Status05_BLDC" Type="Normal" X="0" Y="5">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV Regulation" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Discharge gas" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="superheat:" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="Actual working mode:" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="15" Content="BLDC_Mng.Info_BLDC1.Info_DscgSH" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="0" Content="BLDC_Mng.BLDC1toEVDEVO.RegSubTyp" Class="EVDRegSubType_R_BLDC" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_K_F_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_5" Row="0" Column="1" Content="Comp_BLDC" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.EVDEVOtoBLDC1.Enabled" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg01_BLDC" Type="Normal" X="1" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Start-up pressure" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="differential control" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Max pressure differ." />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="admitted:" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="12" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_MaxDeltaP" Class="CL_REAL_1" Format="io+3.1" Min="0.0" Max="999.9" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Pressure_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg02_BLDC" Type="Normal" X="1" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Start-up pressure" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="differential control" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Equalization mode:" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="0" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_EnEqualBPVlv" Class="EquMode_BLDC" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="17" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_EVDEqualMaxT" Class="EVDEquMaxTime_BLDC" Format="io3" Min="0" Max="999" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="17" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_EVDEqualPreopen" Class="EVDEquPosit_BLDC" Format="io3" Min="0" Max="100" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg03_BLDC" Type="Normal" X="1" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Start-up failure" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="control" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Pressure difference" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="min.variation:" />
+        <Field Type="Text" Name="Text_6" Row="7" Column="0" Content="Control period:      s" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="14" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_DeltaPVariation" Class="CL_REAL_1" Format="io+1.1" Min="0.0" Max="2.0" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="19" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_DeltaPDelay" Class="CL_INT" Format="io2" Min="10" Max="99" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Pressure_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg04_BLDC" Type="Normal" X="1" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Start-up failure" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="control" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Restart delay:       s" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Max retry number:" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_RestartDelay" Class="CL_INT" Format="io3" Min="1" Max="360" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="21" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.StartUp_Attempts" Class="CL_INT" Format="io1" Min="0" Max="9" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg05_BLDC" Type="Normal" X="1" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Speed management" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Start-up forced" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="speed:             rps" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Max speed:         rps" />
+        <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="Min speed:         rps" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="13" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_StartUpSpeed" Class="CL_REAL_1" Format="io+3.1" Min="20.0" Max="120.0" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="13" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxSpeedRpsCustom" Class="CL_REAL_1" Format="io+3.1" Min="0.0" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="14" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MinSpeedRpsCustom" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="99.9" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg06_BLDC" Type="Normal" X="1" Y="6" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Speed management" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="17" Content="rps/s" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Deceleration rate:" />
+        <Field Type="Text" Name="Text_6" Row="5" Column="0" Content="Acceleration rate:" />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="Switch-off rate:" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxDescendSpeedRate" Class="CL_REAL_1" Format="io+1.1" Min="0.1" Max="9.9" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="18" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxRisingSpeedRate" Class="CL_REAL_1" Format="io+1.1" Min="0.1" Max="9.9" />
+        <Field Type="Variable" Name="Variable_3" Row="6" Column="18" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_SwitchOffSpeedRate" Class="CL_REAL_1" Format="io+1.1" Min="0.0" Max="9.9" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg07_BLDC" Type="Normal" X="1" Y="7" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Envelope control" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Speed reduction" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="rate:            rps/s  " />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Min speed" />
+        <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="admitted:          rps" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="13" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MaxSlowdownSpeedRate" Class="CL_REAL_1" Format="io+1.1" Min="0.1" Max="9.9" />
+        <Field Type="Variable" Name="Variable_2" Row="7" Column="14" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.Speed_MinSpeedControlled" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="99.9" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg08_BLDC" Type="Normal" X="1" Y="8" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Envelope control" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Out of envelope" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="alarm timeout:       s" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Low pressure diff." />
+        <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="alarm timeout:       s" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_EnvOutMaxT" Class="CL_INT" Format="io5" Min="0" Max="32000" />
+        <Field Type="Variable" Name="Variable_2" Row="7" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_LowDeltaPAlrmDelay" Class="CL_INT" Format="io5" Min="0" Max="32000" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg09_BLDC" Type="Normal" X="1" Y="9" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Envelope control" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="for zone 1c" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Evaporat.limit:" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Maximum admitted" />
+        <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="speed:             rps" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_SuctTSaturationThrshZone1b1c" Class="CL_REAL_1" Format="io+3.1" Min="0.0" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_MaxSpeedZone1c" Class="CL_INT" Format="io3" Min="20" Max="120" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.Info_BLDC1.EnvTyp_SiamScroll" />
+        <Var Name="BLDC_Mng.Info_BLDC1.EnvTyp_SiamScrollR407C" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg10_BLDC" Type="Normal" X="1" Y="10" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Envelope control" />
+        <Field Type="Text" Name="Text_4" Row="3" Column="0" Content="Low ratio management" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="By compr.speed up:" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="19" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_EnSpeedUpMode" Class="NoYes_BLDC" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="19" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_EnMopLowCompRatio" Class="MopLowCRCtrl_BLDC" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg11_BLDC" Type="Normal" X="1" Y="11" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Envelope control" />
+        <Field Type="Text" Name="Text" Row="2" Column="0" Content="Low comp.ratio &amp; low" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="0" Content="Bypass EEV management" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="at startup:" />
+        <Field Type="Variable" Name="Variable" Row="6" Column="19" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_BypassMopStartUp" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Text" Name="Text_5" Row="3" Column="0" Content="diff.pressure zone" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.EVDEVOtoBLDC1.Enabled" />
+      </EnableOn>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content="No" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_STD" FontHeight="9" ProportionalCharWidth="true" />
+        <Index Value="1" Content="Yes" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_STD" FontHeight="9" ProportionalCharWidth="true" />
+      </ResourceUsedOnBool>
+    </Mask>
+    <Mask Name="Reg12_BLDC" Type="Normal" X="1" Y="12" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Discharge gas control" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="in zone 1a" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="High discharge temp." />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Limit:" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Alarm:" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempCtrlThrshZone1a" Class="CL_REAL_1" Format="io+3.1" Min="70.0" Max="350.0" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempAlrmThrshZone1a" Class="CL_REAL_1" Format="io+3.1" Min="80.0" Max="350.0" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_3" Row="6" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.Info_BLDC1.EnvTyp_SiamComp" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg13_BLDC" Type="Normal" X="1" Y="13" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Discharge gas control" />
+        <Field Type="Variable" Name="Variable_1" Row="2" Column="0" Content="BLDC_Mng.Info_BLDC1.EnvTyp_SiamComp" Class="Zone1bSiam_BLDC" Format="ob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="High discharge temp." />
+        <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Limit:" />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="Alarm:" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempCtrlThrsh" Class="CL_REAL_1" Format="io+3.1" Min="70.0" Max="350.0" />
+        <Field Type="Variable" Name="Variable_5" Row="6" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempAlrmThrsh" Class="CL_REAL_1" Format="io+3.1" Min="80.0" Max="350.0" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_3" Row="6" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg14_BLDC" Type="Normal" X="1" Y="14" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Speed control due to" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="discharge gas" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Action distance:" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Action pause:        s" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Compressor speed" />
+        <Field Type="Text" Name="Text_7" Row="7" Column="0" Content="reduction:           %" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempLimDistance" Class="CL_REAL_1" Format="io+3.1" Min="10.0" Max="999.9" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="18" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempPause" Class="CL_INT" Format="io3" Min="1" Max="300" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.CstmEnv_DscgTempSpeedReduction" Class="CL_REAL_1" Format="io+2.1" Min="0.5" Max="60.0" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="RegEVD01_BLDC" Type="Normal" X="2" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV Regulation" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Mode:" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="Discharge temp.probe" />
+        <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="compensat.time:      s" />
+        <Field Type="Variable" Name="Variable_2" Row="7" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DscgTempNTCT" Class="CL_REAL_1" Format="io+3.1" Min="1.0" Max="800.0" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="0" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_SubTypeRegMode" Class="EVDRegSubType_W_BLDC" Format="io1" Min="1" Max="3" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.EVDEVOtoBLDC1.Enabled" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="RegEVD02_BLDC" Type="Normal" X="2" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV Regulation" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Discharge superheat" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Setpoint:" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Offset:" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Hysteresis:" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DscgSHSetP" Class="CL_REAL_1" Format="io+2.1" Min="10.0" Max="45.0" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDscgSHRegOn" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="99.9" />
+        <Field Type="Variable" Name="Variable_6" Row="6" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDscgSHHyst" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="99.9" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_K_F_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_K_F_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_K_F_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.EVDEVOtoBLDC1.Enabled" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="RegEVD03_BLDC" Type="Normal" X="2" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV Regulation" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Discharge temperature" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Setpoint:" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Offset:" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Hysteresis:" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="15" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DscgTempSetP" Class="CL_REAL_1" Format="io+3.1" Min="75.0" Max="110.0" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDLTRegOn" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="99.9" />
+        <Field Type="Variable" Name="Variable_6" Row="6" Column="16" Content="BLDC_Mng.CfgEnvCtrl_BLDC1.EvdReg_DTDLTHyst" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="99.9" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_K_F_BLDC" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_K_F_BLDC" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+        <Var Name="BLDC_Mng.EVDEVOtoBLDC1.Enabled" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="BLDC_Retry_settings" Type="Normal" X="3" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="BLDC Retry Settings" />
+        <Field Type="Variable" Name="Variable_1" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Retries number:" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Control time" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="retries:             m" />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="19" Content="BLDC_Mng.AlrmResetMng_BLDC1.RetryThrs" Class="CL_DINT" Format="io+1" Min="0" Max="5" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="17" Content="BLDC_Mng.AlrmResetMng_BLDC1.TimeThrs" Class="CL_UDINT" Format="io4" Min="1" Max="1440" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="BLDC_Type_Alarm" Type="Normal" X="3" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="BLDC Type Al.Config" />
+        <Field Type="Variable" Name="Variable_1" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Envelope alarms:" />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="19" Content="BLDC_Mng.AlrmResetMng_BLDC1.ResetTyp_BLDC_Alrm" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_3" Row="7" Column="0" Content="  :Manual    :Semiaut." />
+        <Field Type="Image" Name="Image_2" Row="7" Column="0" Content="man.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="11" Content="aut.bmp" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="Info01_BLDC" Type="Normal" X="4" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Text_1" Type="Text" Row="0" Column="1" Content="Comp_BLDC" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="FB version:" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="13" Content="BLDC_Mng.Info_BLDC1.Dbg_FBVersion_X" Class="CL_UINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_7" Row="3" Column="14" Content="." />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="15" Content="BLDC_Mng.Info_BLDC1.Dbg_FBVersion_Y" Class="CL_UINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_8" Row="3" Column="16" Content="." />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="17" Content="BLDC_Mng.Info_BLDC1.Dbg_FBVersion_Z" Class="CL_UINT" Format="o3" Min="0" Max="999" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="20" Content="BLDC_Mng.Info_BLDC1.Dbg_FBVersion_Beta" Class="FBVerBeta_BLDC" Format="o1" Min="0" Max="9" />
+        <Field Name="Text_3" Type="Text" Row="1" Column="0" Content="Information" />
+      </Fields>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content=" NO" Type="Text" Font="SimSun" />
+        <Index Value="1" Content="YES" Type="Text" Font="SimSun" />
+      </ResourceUsedOnBool>
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_BLDC1.Info_EnBLDC" />
+      </EnableOn>
+    </Mask>
+  </Loop>
+  <Mask Name="RegulationEVD_BLDC" Type="Normal" X="2" Y="0" Color="Pink">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Mask Name="Info_BLDC" Type="Normal" X="4" Y="0" Color="MediumSpringGreen">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Mask Name="Retry_Setting_BLDC" Type="Normal" X="3" Y="0" Color="DeepSkyBlue">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+</Worksheet>

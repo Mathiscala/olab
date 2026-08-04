@@ -1,0 +1,22 @@
+Version 1.1 ModbusMasterDevice RepoVersion 3.6.3
+
+Settings
+NameLine	NetworkAddress	NetworkAddressText	HostNameVariable	HostName	UnitAddress	Status	Timeout	PeekTime	UoM	DelayCommandTime	DeviceError	DeviceErrorCode	ErrorsID	PollsID	Priority	Endianess	ReadPoints	WritePoints	Cmd17ArrayVarName	Cmd17ReadMode	ReadBoolPoints	WriteBoolPoints	Instance
+EVDEVO2Emb_2_1_MNG	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DevAddr_EVDEVO2Emb					EVDEVO2Emb_1.EVDEVO2Emb_2_1.EEV_ModbusTemplate.En_MB_Mng_Template	200	200	0	10	EVDEVO2Emb_1.EVDEVO2Emb_2_1.CommErr_EVDEVO2Emb.DevErr_Mng	EVDEVO2Emb_1.CommErr_EVDEVO2Emb_1.ErrCode_Mng			Normal	BigEndian	60	60		NoRead	480	480	EVDEVO2Emb_1.EVDEVO2Emb_2_1
+
+Variables
+Status	Type	Index	Variable	Occupation	ReadWriteMode	Priority	Hysteresis	Description
+True	Coil	48	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D49_INCOMPLETE_CLOSING_ALARM		ReadOnline_WriteChange	Normal	1	
+True	Coil	58	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D59_NET_ALARM_STOPS_MAN_POS		NoRead_WriteChange_WriteOnline	Normal	1	
+True	DiscreteInput	2	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D3_EEPROM_ALARM		ReadPoll_NoWrite	Normal	1	
+True	DiscreteInput	3	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D4_S1_Alarm		ReadPoll_NoWrite	Normal	1	
+True	DiscreteInput	4	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D5_S2_Alarm		ReadPoll_NoWrite	Normal	1	
+True	DiscreteInput	5	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D6_S3_Alarm		ReadPoll_NoWrite	Normal	1	
+True	DiscreteInput	6	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D7_S4_Alarm		ReadPoll_NoWrite	Normal	1	
+True	DiscreteInput	24	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D25_BATTERY_ALARM		ReadPoll_NoWrite	Normal	1	
+True	DiscreteInput	44	EVDEVO2Emb_1.EVDEVO2Emb_2_1.DIG_Params.D45_EMERGENCY_CLOSING_ALARM		ReadPoll_NoWrite	Normal	1	
+True	HoldingRegister	208	EVDEVO2Emb_1.EVDEVO2Emb_2_1.INT_Params.I81_NET_PLAN_ALARM_DELAY		NoRead_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	220	EVDEVO2Emb_1.EVDEVO2Emb_2_1.INT_Params.I93_NET_COMMAND		NoRead_WriteChange_WriteOnline	Normal	1	
+True	InputRegister	24	EVDEVO2Emb_1.EVDEVO2Emb_2_1.AN_Params.A25_FW_RELEASE		ReadOnline_NoWrite	Normal	1	
+True	InputRegister	221	EVDEVO2Emb_1.EVDEVO2Emb_2_1.INT_Params.I94_MACHINE_TYPE_SPV		ReadOnline_NoWrite	Normal	1	
+True	InputRegister	222	EVDEVO2Emb_1.EVDEVO2Emb_2_1.INT_Params.I95_HW_CODE_SPV		ReadOnline_NoWrite	Normal	1	

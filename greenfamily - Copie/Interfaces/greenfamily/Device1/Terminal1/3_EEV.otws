@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Worksheet Name="3_EEV" Version="1.0.0">
+  <Loop Name="EEV" Type="Normal" X="1" Y="2">
+    <Mask Name="m_en_dev" Type="Normal" X="1" Y="3" Color="Transparent">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Enable_EVDemb_1" Type="Text" Row="5" Column="0" Content="Default request" />
+        <Field Name="Def_EVDEMB_1_1" Type="Variable" Row="5" Column="19" Content="EVD_Emb_1.Def_EVD_Emb_1" Class="Yes_No_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="19" Content="EVD_Emb_1.En_EVDEMB_1" Class="Yes_No_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="Enable EVD_Emb 1" />
+        <Field Name="Text_2" Type="Text" Row="4" Column="0" Content="Setup done" />
+        <Field Name="Variable_3" Type="Variable" Row="4" Column="19" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.System.EVD_CanGo.Val" Class="Yes_No_EVDEMB" Format="ob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Enable device" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="m_Synoptic_circuit__EEV1" Type="Normal" X="1" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="ImageField_1" Type="Image" Row="2" Column="18" Content="ExV_Detail.bmp" />
+        <Field Name="Field_2" Type="Text" Row="7" Column="0" Content="Suction SH:" />
+        <Field Name="Field_3" Type="Text" Row="0" Column="1" Content="EEV 1         circuit" />
+        <Field Name="Params_EVDEMB_1.Shared.Variables.DscgSH.Val_1" Type="Variable" Row="2" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.DscgSH.Val" Class="BLDC_EVDEMB" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Params_EVDEMB_1.EVD.Variables.EEV_PosPercent.Val_1" Type="Variable" Row="1" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.EEV_PosPercent.Val" Class="CL_REAL_2" Format="o+3.1" Min="0.0" Max="100.0" />
+        <Field Name="Params_EVDEMB_1.EVD.Variables.RegStatus.Val_1" Type="Variable" Row="4" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.RegStatus.Val" Class="regStatus_EVDEMB" Format="o+5" Min="-32768" Max="32767" />
+        <Field Name="Params_EVDEMB_1.EVD.Variables.EEV_PosSteps.Val_1" Type="Variable" Row="1" Column="5" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.EEV_PosSteps.Val" Class="CL_INT" Format="o+4" Min="-9999" Max="9999" />
+        <Field Name="Field_4" Type="Text" Row="1" Column="10" Content="stp ~" />
+        <Field Name="Params_EVDEMB_1.EVD.Variables.SH.Val_1" Type="Variable" Row="7" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SH.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Field_5" Type="Text" Row="1" Column="21" Content="%" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.ProtStatus.Val" Class="ProtectionStatus_EVDEMB" Format="o+5" Min="-32768" Max="32767" />
+        <Field Type="Text" Name="Text_1" Row="5" Column="0" Content="Protection:" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="17" Content="STD_UOM_ZONE_UI" Class="UoM_SH_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_4" Row="2" Column="17" Content="STD_UOM_ZONE_UI" Class="UoM_SH_onlyRead_BLDC_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_5" Row="2" Column="0" Content="STD_UOM_ZONE_UI" Class="DSH_LabelBLDC_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_2" Row="4" Column="0" Content="Status:" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="READY TO GO ~" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="14" Content="VlvReadyToGo_EVDEMB" Min="0" Max="1" Class="onoff" Format="ob" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="m_EEV1_Superparameters_1" Type="Normal" X="2" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="2" Column="0" Content="Valve:" />
+        <Field Name="S1_probe_1" Type="Text" Row="5" Column="0" Content="Main regulation:" />
+        <Field Name="Params_EVDEMB_1.Superparameters.EEVtype.Val_1" Type="Variable" Row="3" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.Superparameters.EEVtype.Val" Class="Valve_EVDEMB" Format="io2" Min="EVD_Emb_1.Params_EVDEMB_1.Superparameters.EEVtype.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.Superparameters.EEVtype.MskLimMax" />
+        <Field Name="Params_EVDEMB_1.Superparameters.MainRegulation.Val_1" Type="Variable" Row="6" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.Superparameters.MainRegulation.Val" Class="MainRegulation_EVDEMB" Format="io2" Min="EVD_Emb_1.Params_EVDEMB_1.Superparameters.MainRegulation.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.Superparameters.MainRegulation.MskLimMax" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Superparameters" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Superparameters_2" Type="Normal" X="2" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="2" Column="0" Content="Auxiliary regulation:" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Superparameters" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+        <Field Name="Variable_2" Type="Variable" Row="3" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.Superparameters.AuxRegulationCom.Val" Class="AuxRegulation_EVDEMB" Format="io2" Min="EVD_Emb_1.Params_EVDEMB_1.Superparameters.AuxRegulationCom.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.Superparameters.AuxRegulationCom.MskLimMax" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SuperparametersGAS" Type="Normal" X="2" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="S1_probe_1" Type="Text" Row="3" Column="0" Content="Main refrigerant:" />
+        <Field Name="Text_3" Type="Text" Row="6" Column="0" Content="Auxiliary refrigerant:" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="System configuration" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+        <Field Name="Variable_3" Type="Variable" Row="4" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.GasTyp.Val" Class="GasType_EVDEMB" Format="io2" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.GasTyp.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.GasTyp.MskLimMax" SimulationValue="" />
+        <Field Name="Variable_2" Type="Variable" Row="7" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Configuration.GasTypAux.Val" Class="GasTypeAux_EVDEMB" Format="io2" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Configuration.GasTypAux.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Configuration.GasTypAux.MskLimMax" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Refrigerants" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Thermo" Type="Normal" X="3" Y="3" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="thermost_temp_:_1" Type="Text" Row="4" Column="0" Content="Temperature:" />
+        <Field Name="Params_EVDEMB_1_Shared_Variables_ModThermTemp_Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.ModThermTemp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Inputs" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Modulating thermostat" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_ModTherm" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_PCtrlDir" Type="Normal" X="3" Y="4" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="4" Column="0" Content="Pressure:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.CtrlDirP_Set.Val_1" Type="Variable" Row="4" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CtrlDirP_P.Val" Class="CL_REAL_2" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Text" Name="Text_1" Row="2" Column="0" Content="EPR back pressure" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_P_CtrlDir" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_PCtrlRev" Type="Normal" X="3" Y="5" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Hot_gas_bypass_1" Type="Text" Row="4" Column="0" Content="Pressure:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.CtrlRevP_Set.Val_1" Type="Variable" Row="4" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CtrlRevP_P.Val" Class="CL_REAL_2" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Text" Name="Text_1" Row="2" Column="0" Content="Hot gas bypass" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_P_CtrlRev" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_TCtrlRev" Type="Normal" X="3" Y="6" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Actual_unit_cool__1" Type="Text" Row="4" Column="0" Content="Temperature:" />
+        <Field Name="Params_EVDEMB_1.EVD.Variables.CtrlRevTempTemp.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CtrlRevTempTemp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Hot gas bypass" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_TempCtrlRev" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_CO2" Type="Normal" X="3" Y="7" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Actual_unit_cool__1" Type="Text" Row="4" Column="0" Content="Temperature:" />
+        <Field Name="Params_EVDEMB_1.EVD.Variables.CtrlRevTempTemp.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CO2_Temp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="outlet_press_:_1" Type="Text" Row="5" Column="0" Content="Pressure:" />
+        <Field Name="Params_EVDEMB_1_EVD_Variables_CtrlRevTempTemp_Val_1" Type="Variable" Row="5" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CO2_P.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Text_1" Type="Text" Row="2" Column="0" Content="CO2 gas cooler outlet" />
+        <Field Name="Variable_2" Type="Variable" Row="6" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CO2_Set.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Text_2" Type="Text" Row="6" Column="0" Content="Setpoint:" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_1" Row="6" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_CO2" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SBC_1" Type="Normal" X="3" Y="8" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="4" Column="0" Content="Pressure:" />
+        <Field Name="Params_EVDEMB_1.Shared.Variables.SbC_CondP.Val_1" Type="Variable" Row="4" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SbC_CondP.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Params_EVDEMB_1_Shared_Variables_SbC_CondP_Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SbC_BubTemp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Cond__press__for_1" Type="Text" Row="5" Column="0" Content="Temperature:" />
+        <Field Name="Text_2" Type="Text" Row="2" Column="0" Content="Subcooling" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SBC" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SBC_2" Type="Normal" X="3" Y="9" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="4" Column="0" Content="Liquid temp.:" />
+        <Field Name="Params_EVDEMB_1.Shared.Variables.SbC_CondP.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SbC_LiqdTemp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Params_EVDEMB_1_Shared_Variables_SbC_CondP_Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SbC.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Cond__press__for_1" Type="Text" Row="5" Column="0" Content="SBC:" />
+        <Field Name="Text_2" Type="Text" Row="2" Column="0" Content="Subcooling" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SBC" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_LiqdCtrl_2" Type="Normal" X="3" Y="10" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Variable_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CtrlLiqdLev.Val" Class="CL_REAL_2" Format="o+3.1" Min="0.0" Max="100.0" />
+        <Field Name="Text_3" Type="Text" Row="4" Column="0" Content="Percentual:" />
+        <Field Type="Text" Name="Text_5" Row="2" Column="0" Content="Liquid level" />
+        <Field Type="Text" Name="Text_1" Row="4" Column="21" Content="%" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_CtrlLiqd" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_ProbeValue" Type="Normal" X="3" Y="11" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="3" Column="0" Content="S1:" />
+        <Field Name="Params_EVDEMB_1.Shared.Variables.SbC_CondP.Val_1" Type="Variable" Row="3" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.Inputs.S1.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="S1_probe_1" Type="Text" Row="4" Column="0" Content="S2:" />
+        <Field Name="Params_EVDEMB_1_Shared_Variables_SbC_LiqdTemp_Val_1" Type="Variable" Row="4" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.Inputs.S2.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Probes value" />
+        <Field Name="Variable_1" Type="Variable" Row="5" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.Inputs.S3.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Variable_3" Type="Variable" Row="6" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.Inputs.S4.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Name="Text_1" Type="Text" Row="6" Column="0" Content="S4:" />
+        <Field Name="Text_2" Type="Text" Row="5" Column="0" Content="S3:" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Text" Name="Text_5" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SelfTuning" Type="Normal" X="3" Y="12" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Actual_unit_cool__1" Type="Text" Row="4" Column="0" Content="Status:" />
+        <Field Name="Params_EVDEMB_1.EVD.SelfTuning.SelfTuningStatus.Val_1" Type="Variable" Row="4" Column="16" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.SelfTuning.SelfTuningStatus.Val" Class="CL_INT" Format="o+5" Min="-32768" Max="32767" />
+        <Field Name="Params_EVDEMB_1.EVD.SelfTuning.SelfTuningLastResult.Val_1" Type="Variable" Row="5" Column="16" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.SelfTuning.SelfTuningLastResult.Val" Class="CL_INT" Format="o+5" Min="-32768" Max="32767" />
+        <Field Type="Text" Name="Text_1" Row="2" Column="0" Content="Adaptative selftuning" />
+        <Field Name="Text_2" Type="Text" Row="5" Column="0" Content="Last result:" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Inputs" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SelfTuning" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SH_Set" Type="Normal" X="4" Y="3" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="4" Column="0" Content="Setpoint:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.SH_Set.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.SH_Set.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.SH_Set.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.SH_Set.MskLimMax" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Regulation" />
+        <Field Name="Text_2" Type="Text" Row="2" Column="0" Content="Superheat" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_SH_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SH" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Regulation_1" Type="Normal" X="4" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="superheat_1" Type="Text" Row="3" Column="0" Content="Valve opening at" />
+        <Field Name="setpoint:_1" Type="Text" Row="4" Column="0" Content="start-up:" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Regulation" />
+        <Field Name="Text_3" Type="Text" Row="6" Column="0" Content="Pre-positioning" />
+        <Field Name="Variable_1" Type="Variable" Row="7" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.SH_WaitDT.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.SH_WaitDT.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.SH_WaitDT.MskLimMax" />
+        <Field Name="Text_4" Type="Text" Row="7" Column="21" Content="s" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StartEEV_OpRatio.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StartEEV_OpRatio.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StartEEV_OpRatio.MskLimMax" />
+        <Field Type="Text" Name="Text_1" Row="4" Column="21" Content="%" />
+        <Field Name="Text_5" Type="Text" Row="7" Column="0" Content="time:" />
+        <Field Type="Text" Name="Text_6" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Regulation_2" Type="Normal" X="4" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Valve_opening_at_1" Type="Text" Row="7" Column="0" Content="Valve position:" />
+        <Field Name="Superheat_1" Type="Text" Row="4" Column="0" Content="Valve opened:" />
+        <Field Name="Params_EVDEMB_1.EVD.Regulation.StandByEEV_OpEn.Val_1" Type="Variable" Row="5" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StandByEEV_OpEn.Val" Class="DisEn_RW_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Name="Params_EVDEMB_1.EVD.Regulation.StandByEEV_OpPos.Val_1" Type="Variable" Row="7" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StandByEEV_OpPos.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StandByEEV_OpPos.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.StandByEEV_OpPos.MskLimMax" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Regulation" />
+        <Field Type="Text" Name="Text_3" Row="7" Column="21" Content="%" />
+        <Field Name="Text_1" Type="Text" Row="2" Column="0" Content="Stand-by" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_TCtrlRevSet" Type="Normal" X="4" Y="6" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Text_1" Type="Text" Row="4" Column="0" Content="Setpoint:" />
+        <Field Name="Valve_position_1" Type="Text" Row="2" Column="0" Content="Hot gas bypass temp." />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.CtrlRevTempSet.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlRevTempSet.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlRevTempSet.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlRevTempSet.MskLimMax" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Regulation" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_TempCtrlRev" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_PCtrlRevSet" Type="Normal" X="4" Y="7" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="2" Column="0" Content="Hot gas bypass press." />
+        <Field Name="management:_1" Type="Text" Row="4" Column="0" Content="Setpoint:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.CtrlRevP_Set.Val_1" Type="Variable" Row="4" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlRevP_Set.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlRevP_Set.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlRevP_Set.MskLimMax" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Regulation" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_P_CtrlRev" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_PCtrlDirSet" Type="Normal" X="4" Y="8" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Hot_gas_bypass_1" Type="Text" Row="2" Column="0" Content="EPR pressure" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.CtrlDirP_Set.Val_1" Type="Variable" Row="4" Column="12" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlDirP_Set.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlDirP_Set.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.CtrlDirP_Set.MskLimMax" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Regulation" />
+        <Field Name="Text_1" Type="Text" Row="4" Column="0" Content="Setpoint:" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_P_CtrlDir" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_LiqdCtrl" Type="Normal" X="4" Y="9" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Hot_gas_bypass_1" Type="Text" Row="2" Column="0" Content="Liquid level" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.CtrlDirP_Set.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CtrlLiqdSet.Val" Class="CL_REAL_1" Format="io+3.1" Min="0.0" Max="100.0" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Regulation" />
+        <Field Name="Text_3" Type="Text" Row="4" Column="21" Content="%" />
+        <Field Name="Text_1" Type="Text" Row="4" Column="0" Content="Setpoint:" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_CtrlLiqd" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_PID" Type="Normal" X="4" Y="10" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Params_EVDEMB_1_EVD_MainRegulation_PID_Kp_Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Kp.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Kp.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Kp.MskLimMax" />
+        <Field Name="Params_EVDEMB_1_EVD_MainRegulation_PID_Td_Val_1" Type="Variable" Row="6" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Td.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Td.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Td.MskLimMax" />
+        <Field Name="Params_EVDEMB_1_EVD_MainRegulation_PID_Ti_Val_1" Type="Variable" Row="5" Column="14" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Ti.Val" Class="CL_REAL_1" Format="io+4.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Ti.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.PID_Ti.MskLimMax" />
+        <Field Name="Kp_1" Type="Text" Row="4" Column="0" Content="Prop.gain:" />
+        <Field Name="Td_1" Type="Text" Row="6" Column="0" Content="Deriv.time:" />
+        <Field Name="Ti_1" Type="Text" Row="5" Column="0" Content="Integr.time:" />
+        <Field Name="Kp_2" Type="Text" Row="2" Column="0" Content="PID" />
+        <Field Name="Text_1" Type="Text" Row="0" Column="1" Content="Regulation" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_4" Row="5" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SH_Reg_1" Type="Normal" X="4" Y="11" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="in_stad-by:_2" Type="Text" Row="4" Column="0" Content="Threshold:" />
+        <Field Name="in_stad-by:_1" Type="Text" Row="2" Column="0" Content="Low SH protection" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.LowSH_Thrsh.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LowSH_Thrsh.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LowSH_Thrsh.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LowSH_Thrsh.MskLimMax" />
+        <Field Name="setpoint:_1" Type="Text" Row="5" Column="0" Content="Integral time:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.LowSH_Ti.Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LowSH_Ti.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LowSH_Ti.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LowSH_Ti.MskLimMax" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Regulation" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="21" Content="s" />
+        <Field Name="Text_1" Type="Text" Row="6" Column="0" Content="Alarm delay:" />
+        <Field Name="Variable_2" Type="Variable" Row="6" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSH_AlrmDT.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSH_AlrmDT.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSH_AlrmDT.MskLimMax" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_5" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SH" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SH_Reg_2" Type="Normal" X="4" Y="12" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_motor_error:_1" Type="Text" Row="2" Column="0" Content="LOP protection" />
+        <Field Name="management:_1" Type="Text" Row="4" Column="0" Content="Threshold:" />
+        <Field Name="temp_setpoint:_1" Type="Text" Row="5" Column="0" Content="Integral time:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.LOP_Thrsh.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LOP_Thrsh.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LOP_Thrsh.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LOP_Thrsh.MskLimMax" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.LOP_Ti.Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LOP_Ti.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LOP_Ti.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.LOP_Ti.MskLimMax" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Regulation" />
+        <Field Type="Text" Name="Text_2" Row="5" Column="21" Content="s" />
+        <Field Name="Text_1" Type="Text" Row="6" Column="0" Content="Alarm delay:" />
+        <Field Name="Variable_1" Type="Variable" Row="6" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LOP_AlrmDT.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LOP_AlrmDT.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LOP_AlrmDT.MskLimMax" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_5" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SH" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_SH_Reg_3" Type="Normal" X="4" Y="13" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="threshold:_1" Type="Text" Row="4" Column="0" Content="Threshold:" />
+        <Field Name="LOP_protection_1" Type="Text" Row="2" Column="0" Content="MOP protection" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.MOP_Thrsh.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.MOP_Thrsh.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.MOP_Thrsh.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.MOP_Thrsh.MskLimMax" />
+        <Field Name="integral_time:_1" Type="Text" Row="5" Column="0" Content="Integral time:" />
+        <Field Name="Params_EVDEMB_1.EVD.MainRegulation.MOP_Ti.Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.MOP_Ti.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.MOP_Ti.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.MainRegulation.MOP_Ti.MskLimMax" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Regulation" />
+        <Field Name="Variable_2" Type="Variable" Row="6" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.MOP_AlrmDT.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.MOP_AlrmDT.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.MOP_AlrmDT.MskLimMax" />
+        <Field Name="Text_3" Type="Text" Row="6" Column="0" Content="Alarm delay:" />
+        <Field Type="Text" Name="Text_1" Row="5" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_2" Row="6" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_5" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SH" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Regulation_3" Type="Normal" X="4" Y="14" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="in_stad-by:_1" Type="Text" Row="4" Column="0" Content="Enable:" />
+        <Field Name="Params_EVDEMB_1.EVD.Manual.ManPositEn.Val_1" Type="Variable" Row="5" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Manual.ManPositEn.Val" Class="DisEn_RW_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Name="MOP_protection_1" Type="Text" Row="7" Column="0" Content="Position:" />
+        <Field Name="Params_EVDEMB_1.EVD.Manual.ManPositSteps.Val_1" Type="Variable" Row="7" Column="13" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Manual.ManPositSteps.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Manual.ManPositSteps.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMaxPos.Val" />
+        <Field Name="Field_1" Type="Text" Row="7" Column="19" Content="stp" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Regulation" />
+        <Field Name="Text_1" Type="Text" Row="2" Column="0" Content="Manual positioning" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Adv_HiTCond" Type="Normal" X="5" Y="3" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="threshold:_1" Type="Text" Row="4" Column="0" Content="Threshold:" />
+        <Field Name="Params_EVDEMB_1.Shared.AuxRegulation.HiTempCondThrsh.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondThrsh.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondThrsh.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondThrsh.MskLimMax" />
+        <Field Name="threshold:_2" Type="Text" Row="5" Column="0" Content="Integral time:" />
+        <Field Name="High_Tcond__1" Type="Text" Row="2" Column="0" Content="High condensing temp." />
+        <Field Name="Params_EVDEMB_1.Shared.AuxRegulation.HiTempCondTi.Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondTi.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondTi.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondTi.MskLimMax" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Advanced" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="21" Content="s" />
+        <Field Name="Text_6" Type="Text" Row="6" Column="0" Content="Alarm timeout:" />
+        <Field Name="Variable_1" Type="Variable" Row="6" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondAlrmDT.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondAlrmDT.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.HiTempCondAlrmDT.MskLimMax" />
+        <Field Name="Text_2" Type="Text" Row="6" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_HiTempCond" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Adv_Thermo" Type="Normal" X="5" Y="4" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="integral_time:_1" Type="Text" Row="4" Column="0" Content="Setpoint:" />
+        <Field Name="High_Tcond__2" Type="Text" Row="2" Column="0" Content="Modulating thermostat" />
+        <Field Name="Params_EVDEMB_1.Shared.AuxRegulation.ModThermSet.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermSet.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermSet.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermSet.MskLimMax" />
+        <Field Name="setpoint:_1" Type="Text" Row="5" Column="0" Content="Differential:" />
+        <Field Name="Params_EVDEMB_1.Shared.AuxRegulation.ModThermDiff.Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermDiff.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermDiff.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermDiff.MskLimMax" />
+        <Field Type="Text" Name="Text_5" Row="0" Column="1" Content="Advanced" />
+        <Field Name="Text_1" Type="Text" Row="6" Column="0" Content="Offset:" />
+        <Field Name="Variable_3" Type="Variable" Row="6" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermSH_Offset.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermSH_Offset.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.AuxRegulation.ModThermSH_Offset.MskLimMax" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_ModTherm" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Adv_CO2" Type="Normal" X="5" Y="5" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="SHset_offset:_1" Type="Text" Row="4" Column="0" Content="&quot;A&quot;:" />
+        <Field Name="Modul_thermost_1" Type="Text" Row="2" Column="0" Content="CO2 gas cooler coeff." />
+        <Field Name="Params_EVDEMB_1.EVD.Regulation.CO2_A.Val_1" Type="Variable" Row="4" Column="16" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CO2_A.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CO2_A.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CO2_A.MskLimMax" />
+        <Field Name="Params_EVDEMB_1_EVD_Regulation_CO2_A_Val_1" Type="Variable" Row="5" Column="16" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CO2_B.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CO2_B.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.CO2_B.MskLimMax" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Advanced" />
+        <Field Name="Text_1" Type="Text" Row="5" Column="0" Content="&quot;B&quot;:" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_CO2" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Adv_SelfTuning" Type="Normal" X="5" Y="6" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="High_Tcond__2" Type="Text" Row="4" Column="0" Content="Manual start:" />
+        <Field Name="Params_EVDEMB_1.EVD.SelfTuning.SelfTuningMan.Val_1" Type="Variable" Row="5" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.SelfTuning.SelfTuningMan.Val" Class="DisEn_RW_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Name="Start_manual_1" Type="Text" Row="2" Column="0" Content="Adaptative selftuning" />
+        <Field Name="Params_EVDEMB_1.EVD.SelfTuning.SelfTuningMethod.Val_1" Type="Variable" Row="7" Column="16" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.SelfTuning.SelfTuningMethod.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.SelfTuning.SelfTuningMethod.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.SelfTuning.SelfTuningMethod.MskLimMax" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Advanced" />
+        <Field Name="Text_2" Type="Text" Row="7" Column="0" Content="Method:" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SelfTuning" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Adv_DC" Type="Normal" X="5" Y="7" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="LOP_protection_1" Type="Text" Row="2" Column="0" Content="Power supply" />
+        <Field Name="Params_EVDEMB_1.Shared.System.DC_SupplyEn.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.System.DC_SupplyEn.Val" Class="DCsupply_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Advanced" />
+        <Field Name="Text_1" Type="Text" Row="4" Column="0" Content="Mode:" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_AlarmConfig_SH_3" Type="Normal" X="6" Y="3" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="integral_time:_1" Type="Text" Row="4" Column="0" Content="Alarm thresh.:" />
+        <Field Name="High_Tcond__2" Type="Text" Row="2" Column="0" Content="Low suct.temperature" />
+        <Field Name="Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmThrsh.Val_1" Type="Variable" Row="4" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmThrsh.Val" Class="CL_REAL_1" Format="io+3.1" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmThrsh.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmThrsh.MskLimMax" />
+        <Field Name="alarm_threshold:_1" Type="Text" Row="5" Column="0" Content="Alarm timeout:" />
+        <Field Name="Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmDT.Val_1" Type="Variable" Row="5" Column="15" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmDT.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmDT.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.Regulation.LowSuctAlrmDT.MskLimMax" />
+        <Field Name="Field_1" Type="Text" Row="5" Column="21" Content="s" />
+        <Field Type="Text" Name="Text_5" Row="0" Column="1" Content="Alarms configuration" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_SH" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Valve_1" Type="Normal" X="7" Y="3" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="Low_superheat_1" Type="Text" Row="5" Column="0" Content="Max:" />
+        <Field Name="Params_EVDEMB_1.EVD.EEV_Config.RegMinPos.Val_1" Type="Variable" Row="4" Column="13" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMinPos.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMinPos.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMinPos.MskLimMax" />
+        <Field Name="Params_EVDEMB_1.EVD.EEV_Config.RegMaxPos.Val_1" Type="Variable" Row="5" Column="13" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMaxPos.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMaxPos.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.RegMaxPos.MskLimMax" />
+        <Field Name="stp_2" Type="Text" Row="5" Column="19" Content="stp" />
+        <Field Name="Text_1" Type="Text" Row="4" Column="19" Content="stp" />
+        <Field Name="steps:_1" Type="Text" Row="4" Column="0" Content="Min:" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Custom valve" />
+        <Field Name="Text_3" Type="Text" Row="2" Column="0" Content="Steps" />
+        <Field Name="Text_6" Type="Text" Row="6" Column="0" Content="Closing:" />
+        <Field Name="Variable_1" Type="Variable" Row="6" Column="13" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.FullClosSteps.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.FullClosSteps.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.FullClosSteps.MskLimMax" />
+        <Field Name="Text_4" Type="Text" Row="6" Column="19" Content="stp" />
+        <Field Type="Text" Name="Text_5" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_DisplayEEV_Params" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Valve_2" Type="Normal" X="7" Y="4" Color="245, 245, 245" Font="CAREL_TERM_INT">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Custom valve" />
+        <Field Name="Text_2" Type="Text" Row="4" Column="0" Content="Nominal:" />
+        <Field Name="Variable_1" Type="Variable" Row="4" Column="14" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveRate.Val" Class="CL_INT" Format="io+5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveRate.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveRate.MskLimMax" />
+        <Field Name="Text_5" Type="Text" Row="4" Column="20" Content="Hz" />
+        <Field Name="Text_6" Type="Text" Row="5" Column="0" Content="Emergency:" />
+        <Field Name="Variable_2" Type="Variable" Row="5" Column="14" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.FastClosMoveRate.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.FastClosMoveRate.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.FastClosMoveRate.MskLimMax" />
+        <Field Name="Text_9" Type="Text" Row="5" Column="20" Content="Hz" />
+        <Field Name="Text_3" Type="Text" Row="2" Column="0" Content="Step rate" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="Duty cycle:" />
+        <Field Type="Variable" Name="Variable_3" Row="6" Column="17" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveDuty.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveDuty.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveDuty.MskLimMax" />
+        <Field Type="Text" Name="Text_7" Row="6" Column="21" Content="%" />
+        <Field Type="Text" Name="Text_8" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_DisplayEEV_Params" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Valve_3" Type="Normal" X="7" Y="5" Color="245, 245, 245" Font="CAREL_TERM_INT">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Custom valve" />
+        <Field Name="Text_2" Type="Text" Row="4" Column="0" Content="Moving:" />
+        <Field Name="Variable_1" Type="Variable" Row="4" Column="14" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveCurr.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveCurr.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.MoveCurr.MskLimMax" />
+        <Field Name="Text_5" Type="Text" Row="4" Column="20" Content="mA" />
+        <Field Name="Text_6" Type="Text" Row="5" Column="0" Content="Holding:" />
+        <Field Name="Variable_2" Type="Variable" Row="5" Column="14" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.HoldCurr.Val" Class="CL_UINT" Format="io5" Min="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.HoldCurr.MskLimMin" Max="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.HoldCurr.MskLimMax" />
+        <Field Name="Text_9" Type="Text" Row="5" Column="20" Content="mA" />
+        <Field Name="Text_3" Type="Text" Row="2" Column="0" Content="Current" />
+        <Field Type="Text" Name="Text_8" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_DisplayEEV_Params" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="m_EEV1_Valve_4" Type="Normal" X="7" Y="6" Color="245, 245, 245">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="blockline_bmp_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+        <Field Name="EEV_closing_steps_1" Type="Text" Row="4" Column="0" Content="Opening:" />
+        <Field Name="EEV_nominal_step_1" Type="Text" Row="2" Column="0" Content="Synchronization" />
+        <Field Name="Params_EVDEMB_1.EVD.EEV_Config.ExtraOpEn.Val_1" Type="Variable" Row="4" Column="18" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.ExtraOpEn.Val" Class="DisEn_RW_light_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Name="EEV_opening_1" Type="Text" Row="6" Column="0" Content="Closing:" />
+        <Field Name="Params_EVDEMB_1_EVD_EEV_Config_ExtraOpEn_Val_1" Type="Variable" Row="6" Column="18" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.EEV_Config.ExtraClosEn.Val" Class="DisEn_RW_light_EVDEMB" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Custom valve" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="EEV nß1" />
+      </Fields>
+      <KeyBindings />
+      <EnableOn>
+        <Var Name="EVD_Emb_1.MaskEnableOn_EVDEMB_1.Fl_DisplayEEV_Params" />
+        <Var Name="EVD_Emb_1.En_EVDEMB_1" />
+      </EnableOn>
+    </Mask>
+  </Loop>
+  <Mask Name="SUPERPARAMETERS_EEV1" Type="Normal" X="2" Y="2" Color="Yellow">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="1" Content="This mask is the" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="1" Content="description" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="1" Content="of mask in column" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="1" Content="below here" />
+    </Fields>
+  </Mask>
+  <Mask Name="INPUTS_EEV1" Type="Normal" X="3" Y="2" Color="Yellow">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="1" Content="This mask is the" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="1" Content="description" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="1" Content="of mask in column" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="1" Content="below here" />
+    </Fields>
+  </Mask>
+  <Mask Name="REGULATION_EEV1" Type="Normal" X="4" Y="2" Color="Yellow">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="1" Content="This mask is the" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="1" Content="description" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="1" Content="of mask in column" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="1" Content="below here" />
+    </Fields>
+  </Mask>
+  <Mask Name="ADVANCED_EEV1" Type="Normal" X="5" Y="2" Color="Yellow">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="1" Content="This mask is the" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="1" Content="description" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="1" Content="of mask in column" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="1" Content="below here" />
+    </Fields>
+  </Mask>
+  <Mask Name="ALARMS_CONFIG_EEV1" Type="Normal" X="6" Y="2" Color="Yellow">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="1" Content="This mask is the" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="1" Content="description" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="1" Content="of mask in column" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="1" Content="below here" />
+    </Fields>
+  </Mask>
+  <Mask Name="VALVES_EEV1" Type="Normal" X="7" Y="2" Color="Yellow">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="1" Content="This mask is the" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="1" Content="description" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="1" Content="of mask in column" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="1" Content="below here" />
+    </Fields>
+  </Mask>
+  <Mask Name="m_Synoptic_comp_EEV1" Type="Normal" X="1" Y="4" Color="WhiteSmoke">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      <Field Name="ImageField_1" Type="Image" Row="0" Column="0" Content="blockline.bmp" />
+      <Field Name="ImageField_2" Type="Image" Row="2" Column="18" Content="Comp_Detail.bmp" />
+      <Field Name="Field_1" Type="Text" Row="2" Column="21" Content="T" />
+      <Field Name="T_1" Type="Text" Row="3" Column="21" Content="P" />
+      <Field Name="T_2" Type="Text" Row="6" Column="21" Content="T" />
+      <Field Name="P_1" Type="Text" Row="7" Column="21" Content="P" />
+      <Field Name="Field_2" Type="Text" Row="0" Column="1" Content="EVD 1      Compressor" />
+      <Field Name="Field_4" Type="Text" Row="1" Column="1" Content="Cooling capacity:" />
+      <Field Name="Params_EVDEMB_1.Shared.Variables.DscgTemp.Val_1" Type="Variable" Row="2" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.DscgTemp.Val" Class="BLDC_EVDEMB" Format="o+3.1" Min="-999.9" Max="999.9" />
+      <Field Name="Params_EVDEMB_1.Shared.Variables.CondTemp.Val_1" Type="Variable" Row="3" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CondTemp.Val" Class="HiTcond_EVDEMB" Format="o+3.1" Min="-999.9" Max="999.9" />
+      <Field Name="Params_EVDEMB_1.EVD.Variables.SH_SuctTemp.Val_1" Type="Variable" Row="6" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SH_SuctTemp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+      <Field Name="Params_EVDEMB_1.EVD.Variables.SH_EvapTemp.Val_1" Type="Variable" Row="7" Column="11" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SH_EvapTemp.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+      <Field Name="Params_EVDEMB_1.EVD.Variables.SH_EvapP.Val_1" Type="Variable" Row="7" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SH_EvapP.Val" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+      <Field Name="Params_EVDEMB_1.Shared.Variables.CondP.Val_1" Type="Variable" Row="3" Column="0" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.CondP.Val" Class="HiTcond_EVDEMB" Format="o+3.1" Min="-999.9" Max="999.9" />
+      <Field Name="%~_1" Type="Text" Row="1" Column="21" Content="%" />
+      <Field Type="Variable" Name="Variable_1" Row="1" Column="18" Content="EVD_Emb_1.Params_EVDEMB_1.EVD.Variables.SH_UnitCoolCap.Val" Class="CL_INT" Format="io3" Min="0" Max="100" />
+      <Field Type="Text" Name="Text_1" Row="7" Column="10" Content="~" />
+      <Field Type="Variable" Name="Variable_3" Row="7" Column="6" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_EVDEMB" Format="o4" Min="0" Max="6" />
+      <Field Type="Variable" Name="Variable_4" Row="7" Column="17" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      <Field Type="Variable" Name="Variable_5" Row="6" Column="17" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_EVDEMB" Format="o1" Min="0" Max="6" />
+      <Field Type="Variable" Name="Variable_6" Row="3" Column="6" Content="STD_UOM_ZONE_UI" Class="UoM_P_onlyRead_HiTCond_EVDEMB" Format="o4" Min="0" Max="6" />
+      <Field Type="Variable" Name="Variable_2" Row="3" Column="17" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyReadR_HiTCond_EVDEMB" Format="o1" Min="0" Max="6" />
+      <Field Type="Variable" Name="Variable_7" Row="2" Column="17" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_onlyRead_BLDC_EVDEMB" Format="o1" Min="0" Max="6" />
+      <Field Type="Variable" Name="Variable_8" Row="3" Column="10" Content="STD_UOM_ZONE_UI" Class="freccia_HiTCond_EVDEMB" Format="o1" Min="0" Max="6" />
+    </Fields>
+    <KeyBindings />
+  </Mask>
+</Worksheet>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest
+  Name="Round_REAL_BLDC"
+  Version="1.1.0">
+  <Variables>
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      IsRetained="false"
+      Alarm="false"
+      UoM="NoUnits"
+      Access="ReadWrite"
+      Acronym=""
+      Decimals="1"
+      Min=""
+      Max=""
+      StringSize="0" />
+    <Variable
+      Name="Round_REAL_BLDC"
+      Comment="Rounded input"
+      DataType="REAL"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      IsRetained="false"
+      Alarm="false"
+      UoM="NoUnits"
+      Access="ReadWrite"
+      Acronym=""
+      Decimals="1"
+      Min=""
+      Max=""
+      StringSize="0" />
+  </Variables>
+</Manifest>

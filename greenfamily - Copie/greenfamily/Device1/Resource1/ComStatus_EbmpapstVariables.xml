@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="DevErr" Comment="" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="LastCycle" Comment="" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="ComStatus" Comment="" AccessRights="Write" DataType="USINT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="OnlineStatus" Comment="" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Al_Offline" Comment="" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="FirstPollingLoop" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+  </Variables>
+</Manifest>

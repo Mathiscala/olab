@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="En_EBM" Comment="" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="IR_Warning" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="Warn_EBM" Comment="" DataType="WARNING_EBM" Kind="VarOutput">
+      <Variable Name="IR_Warn" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="WarnCode" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+      <Variable Name="WarnPresent" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    </Variable>
+  </Variables>
+</Manifest>

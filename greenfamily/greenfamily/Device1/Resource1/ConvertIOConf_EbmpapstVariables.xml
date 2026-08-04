@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="IOconf1_in" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="IOconf1_out" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="IOconf2_in" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="IOconf2_out" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="IOconf3_in" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="IOconf3_out" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+  </Variables>
+</Manifest>

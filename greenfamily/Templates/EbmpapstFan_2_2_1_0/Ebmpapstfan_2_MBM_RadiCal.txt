@@ -1,0 +1,19 @@
+Version 1.1 ModbusMasterDevice RepoVersion 3.5.9
+
+Settings
+NameLine	NetworkAddress	NetworkAddressText	HostNameVariable	HostName	UnitAddress	Status	Timeout	PeekTime	UoM	DelayCommandTime	DeviceError	DeviceErrorCode	ErrorsID	PollsID	Priority	Endianess	ReadPoints	WritePoints	Cmd17ArrayVarName	Cmd17ReadMode	ReadBoolPoints	WriteBoolPoints	Instance
+EbmpapstFan_RadiCal	EbmpapstFan_1_Mng.EbmpapstFan_2_1.DevAddr_tmp					EbmpapstFan_1_Mng.EbmpapstFan_2_1.En_RadiCal	200	200	0	0					Normal	BigEndian	8	8		NoRead	8	8	EbmpapstFan_1_Mng.EbmpapstFan_2_1
+
+Variables
+Status	Type	Index	Variable	Occupation	ReadWriteMode	Priority	Hysteresis	Description
+True	HoldingRegister	53741	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.AirFlowRef		ReadPoll_NoWrite	Normal	1	Ebmpapst holding registers parameters - Air flow reference value
+True	HoldingRegister	53742	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.MassFlowRef		ReadPoll_NoWrite	Normal	1	Ebmpapst holding registers parameters
+True	InputRegister	53294	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.TempPrb1		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53295	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.HumPrb1		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53296	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.TempPrb2		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53297	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.HumPrb2		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53298	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.AnemometerSpeed		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53299	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.AirFlow		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53300	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.MassFlow		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53304	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.PT1000_1		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters
+True	InputRegister	53305	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.PT1000_2		ReadPoll_NoWrite	Normal	1	Ebmpapst input registers parameters

@@ -1,0 +1,38 @@
+Version 1.1 Alarms RepoVersion 3.6.3
+Name	Type	Edge	Description	CounterMax	TimeValue	StorVar1	StorVar2
+Al_LowSH_EVDEMB	Auto reset	Positive	 Low superheat protection					
+Al_LOP_EVDEMB	Auto reset	Positive	 Low evaporation temperature protection					
+Al_MOP_EVDEMB	Auto reset	Positive	 High evaporation temperature protection					
+Al_HiTempCond_EVDEMB	Auto reset	Positive	High condensation temperature protection					
+Al_LowSuct_1_EVDEMB	Auto reset	Positive	Low suction temperature					
+Al_SelfTuning_1_EVDEMB	Auto reset	Positive	Ineffective adaptive control					
+Al_RangeError_EVDEMB	Auto reset	Positive	Parameter range error (some children in the data structure are out of bounds)					
+Al_ServicePosit_perc_EVDEMB	Auto reset	Positive	ServicePosit_perc must take value 0.0…100.0					
+Al_ValveID_EVDEMB	Auto reset	Positive	VlvID value out of bound					
+Al_S1_EVDEVO2Emb	Auto reset	Positive	Probe S1 alarm					
+Al_S2_EVDEVO2Emb	Auto reset	Positive	Probe S2 alarm					
+Al_S3_EVDEVO2Emb	Auto reset	Positive	Probe S3 alarm					
+Al_S4_EVDEVO2Emb	Auto reset	Positive	Probe S4 alarm					
+Al_EEVA_EVDEVO2Emb	Auto reset	Positive	EEV A motor error					
+Al_EEVB_EVDEVO2Emb	Auto reset	Positive	EEV B motor error					
+Al_EmClos_EVDEVO2Emb	Auto reset	Positive	Emergency closing alarm					
+Al_IncomClos_EVDEVO2Emb	User reset	Positive	Incomplete closing alarm					
+Al_FW_Compat_EVDEVO2Emb	Auto reset	Positive	FW compatibility error					
+Al_VlvA_Compat_EVDEVO2Emb	Auto reset	Positive	Valve A compatibility error					
+Al_VlvB_Compat_EVDEVO2Emb	Auto reset	Positive	Valve B compatibility error					
+Al_SuperAuxReg_EVDEVO2Emb	Auto reset	Positive	Super auxiliary regulation  mismatch between ParamsA  and ParamsB					
+Al_GasTypAux_EVDEVO2Emb	Auto reset	Positive	Auxilliary gas type mismatch between ParamsA  and ParamsB					
+Al_DCSupplyEn_EVDEVO2Emb	Auto reset	Positive	DC supply enable mismatch between ParamsA  and ParamsB					
+Al_S4_ThT_ConstNTC_EVDEVO2Emb	Auto reset	Positive	NTC S4 thermal time constant mismatch between ParamsA  and ParamsB					
+Al_Battery_EVDEVO2Emb	Auto reset	Positive	Battery alarm					
+Al_EEPROM_EVDEVO2Emb	Auto reset	Positive	EEPROM alarm					
+Al_Offline_EVDEVO2Emb	Auto reset	Positive	Offline alarm					
+Al_LowSH_EVDEMB_2	Auto reset	Positive	Low superheat protection					
+Al_LOP_EVDEMB_2	Auto reset	Positive	Low evaporation temperature protection					
+Al_MOP_EVDEMB_2	Auto reset	Positive	High evaporation temperature protection					
+Al_HiTempCond_EVDEMB_2	Auto reset	Positive	High condensation temperature protection					
+Al_LowSuct_1_EVDEMB_2	Auto reset	Positive	Low suction temperature					
+Al_SelfTuning_1_EVDEMB_2	Auto reset	Positive	Ineffective adaptive control					
+Al_RangeError_EVDEMB_2	Auto reset	Positive	Parameter range error (some children in the data structure are out of bounds)					
+Al_ServicePosit_perc_EVDEMB_2	Auto reset	Positive	ServicePosit_perc must take value 0.0…100.0					
+Al_ValveID_EVDEMB_2	Auto reset	Positive	VlvID value out of bound					

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Name="ConvertSpeed_Ebmpapst" Version="1.1.0">
+  <Variables>
+    <Variable Name="ActiveCtrMode" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="CurrSensor" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="DefSetValue" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="MaxSpeed_rpm" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="RampDwnCurve" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="RampDwnT" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="RampUpCurve" Comment="" DataType="UINT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="RampUpT" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="SpeedSetP" Comment="" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" Min="" Max="" StringSize="0" />
+    <Variable Name="ValueChanged" Comment="" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="VrefAir" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+    <Variable Name="VrefMass" Comment="" DataType="UINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="" Max="" StringSize="0" />
+  </Variables>
+</Manifest>

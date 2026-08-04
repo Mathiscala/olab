@@ -1,0 +1,78 @@
+Version 1.1 ModbusMasterDevice RepoVersion 3.5.9
+
+Settings
+NameLine	NetworkAddress	NetworkAddressText	HostNameVariable	HostName	UnitAddress	Status	Timeout	PeekTime	UoM	DelayCommandTime	DeviceError	DeviceErrorCode	ErrorsID	PollsID	Priority	Endianess	ReadPoints	WritePoints	Cmd17ArrayVarName	Cmd17ReadMode	ReadBoolPoints	WriteBoolPoints	Instance
+EbmpapstFan_Main	EbmpapstFan_1_Mng.EbmpapstFan_2_1.DevAddr_tmp					EbmpapstFan_1_Mng.EbmpapstFan_2_1.En_MBM_Line	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.Timeout	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.Timeout	0	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.CmdDT	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.DevErr	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.DevErrCode		EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.PollingId	Normal	BigEndian	9	123		NoRead	8	8	EbmpapstFan_1_Mng.EbmpapstFan_2_1
+
+Variables
+Status	Type	Index	Variable	Occupation	ReadWriteMode	Priority	Hysteresis	Description
+True	HoldingRegister	53248	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.Res		ReadPoll_WriteChange	Normal	1	
+True	HoldingRegister	53249	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.DefSetValue		ReadPoll_WriteChange	Normal	1	
+True	HoldingRegister	53250	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.Pwd_1		ReadPoll_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	53251	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.Pwd_2		ReadPoll_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	53252	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.Pwd_3		ReadPoll_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	53257	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.OperatingHoursCntBackup		ReadPoll_NoWrite	Normal	1	
+True	HoldingRegister	53504	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanAddr		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53505	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.SrcSetValue		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53506	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.PrefRunDir		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53507	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.StoreSetValue		NoRead_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	53510	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CtrlModeDay		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53529	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.MaxSpeed		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53535	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.RampUpCurve		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53536	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.RampDwnCurve		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53573	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.RunMonitoringSpeed		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53575	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.ActualSensorValueSrc		NoRead_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	53577	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.Baudrate		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53578	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.ParityConf		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53589	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.MaxPower		ReadPoll_NoWrite	Normal	1	
+True	HoldingRegister	53595	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FailsafeRotationDir		NoRead_WriteChange_WriteOnline	Normal	1	
+True	HoldingRegister	53596	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.EmergencyMode		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53597	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.BypassDefSetValue		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53598	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.BypassSpeedDT		ReadOnline_WriteChange	Normal	1	
+True	HoldingRegister	53616	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[0]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53617	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[1]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53618	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[2]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53619	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[3]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53620	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[4]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53621	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[5]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53622	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[6]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53623	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[7]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53624	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[8]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53625	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[9]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53626	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[10]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53627	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[11]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53628	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[12]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53629	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[13]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53630	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[14]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53631	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.CustomerData[15]		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53664	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.RefDCLinkVoltage		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53665	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.RefDCLinkCurrent		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53666	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.SerialNoLow		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53667	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.SerialNoHigh		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53668	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.ProductionDate		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53669	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanTyp_0		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53670	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanTyp_1		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53671	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanTyp_2		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53672	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanTyp_3		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53673	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanTyp_4		ReadOnline_NoWrite	Normal	1	
+True	HoldingRegister	53674	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.HR_Params.FanTyp_5		ReadOnline_NoWrite	Normal	1	
+True	InputRegister	53248	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.Identification		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53249	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.MaxNumBytes		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53250	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.SWNameBusContr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53251	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.SWVersionBusContr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53252	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.SWNameCommContr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53253	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.SWVersionCommContr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53264	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.CurrSpeed		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53265	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.MotStatus		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53266	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.Warning		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53267	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.DCLinkVoltage		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53268	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.DCLinkCurrent		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53271	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.ElectronicsTemp		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53272	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.RotCurrDir		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53273	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.CurrModLev		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53274	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.CurrSetValue		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53275	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.Reserved_D01B		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53276	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.Reserved_D01C		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53277	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.CurrParamSet		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53281	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.CurrPwr		ReadPoll_NoWrite	Normal	1	
+True	InputRegister	53283	EbmpapstFan_1_Mng.EbmpapstFan_2_1.MBM_Params.IR_Params.Prb1		ReadPoll_NoWrite	Normal	1	

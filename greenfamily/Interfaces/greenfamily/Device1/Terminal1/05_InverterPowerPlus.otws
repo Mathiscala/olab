@@ -1,0 +1,1177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Worksheet Name="05_InverterPowerPlus" Version="1.0.0">
+  <Mask Name="Info_PWRP" Type="Normal" X="5" Y="0" Color="MediumSpringGreen">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Loop Name="LOOP_PWRP" Type="Normal" X="0" Y="0">
+    <Mask Name="Status01_PWRP" Type="Normal" X="0" Y="1">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="NewField_1" Type="Text" Row="1" Column="0" Content="Status" />
+        <Field Name="NewField_2" Type="Text" Row="2" Column="0" Content="Drive status:" />
+        <Field Name="NewField_3" Type="Text" Row="3" Column="0" Content="[104]" />
+        <Field Name="NewField_4" Type="Text" Row="6" Column="0" Content="Alarm code [105]:" />
+        <Field Name="DriveStatus_1" Type="Variable" Row="3" Column="15" Content="BLDC_Mng.IRparam_PWRP1.IR104_DriveStatus" Class="DriveStatus_PWRP" Min="0" Max="9" Format="o1" />
+        <Field Name="AlrmCode_1" Type="Variable" Row="7" Column="0" Content="BLDC_Mng.IRparam_PWRP1.IR105_AlrmCode" Class="AlarmCode_PWRP" Min="0" Max="99" Format="o2" />
+        <Field Name="Text_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Text_2" Type="Text" Row="5" Column="0" Content="[114]" />
+        <Field Name="Variable_1" Type="Variable" Row="5" Column="15" Content="BLDC_Mng.Info_PWRP1.Info_DriveTemp" Format="o+3.1" Min="-999.9" Max="999.9" Class="CL_REAL_1" />
+        <Field Name="Text_3" Type="Text" Row="4" Column="0" Content="Drive temperature:" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="21" Content="STD_UOM_ZONE_UI" Class="UoM_Temp_PWRP" Format="o1" Min="0" Max="6" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Status02_PWRP" Type="Normal" X="0" Y="2">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Speed reference:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[102]" />
+        <Field Name="NewField_5" Type="Text" Row="5" Column="0" Content="Rotor speed:" />
+        <Field Name="NewField_7" Type="Text" Row="6" Column="19" Content="rpm" />
+        <Field Name="Hz_1" Type="Text" Row="3" Column="20" Content="Hz" />
+        <Field Name="Hz_3" Type="Text" Row="6" Column="12" Content="Hz" />
+        <Field Name="FreqSetP_1" Type="Variable" Row="3" Column="14" Content="BLDC_Mng.Info_PWRP1.Info_FreqSetP" Format="o+3.1" Min="-999.9" Max="999.9" Class="CL_REAL_1" />
+        <Field Name="RotorFreq_1" Type="Variable" Row="6" Column="5" Content="BLDC_Mng.Info_PWRP1.Info_RotorSpeed_Hz" Format="o+4.1" Min="-9999.9" Max="9999.9" Class="CL_REAL_1" />
+        <Field Name="RotorSpeedRpm_1" Type="Variable" Row="6" Column="14" Content="BLDC_Mng.Info_PWRP1.Info_RotorSpeed_rpm" Format="o5" Min="0" Max="65535" Class="CL_UINT" />
+        <Field Name="Text_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Text_3" Type="Text" Row="6" Column="0" Content="[132]" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Status03_PWRP" Type="Normal" X="0" Y="3">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Current:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[109]" />
+        <Field Name="NewField_3" Type="Text" Row="3" Column="18" Content="Arms" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Voltage:" />
+        <Field Name="NewField_5" Type="Text" Row="5" Column="0" Content="[111]" />
+        <Field Name="NewField_6" Type="Text" Row="5" Column="18" Content="Vrms" />
+        <Field Name="MotA_1" Type="Variable" Row="3" Column="11" Content="BLDC_Mng.Info_PWRP1.Info_MotA" Format="o+4.1" Min="0.0" Max="9999.9" Class="CL_REAL_1" />
+        <Field Name="MotV_1" Type="Variable" Row="5" Column="13" Content="BLDC_Mng.Info_PWRP1.Info_MotV" Format="o5" Min="0" Max="65535" Class="CL_UINT" />
+        <Field Name="Text_1" Type="Text" Row="6" Column="0" Content="Power:" />
+        <Field Name="Text_2" Type="Text" Row="7" Column="0" Content="[110]" />
+        <Field Name="Text_3" Type="Text" Row="7" Column="20" Content="kW" />
+        <Field Name="Variable_1" Type="Variable" Row="7" Column="12" Content="BLDC_Mng.Info_PWRP1.Info_MotPwr" Format="o+4.2" Min="-9999.99" Max="9999.99" Class="CL_REAL_2" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Motor" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Status04_PWRP" Type="Normal" X="0" Y="4">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Voltage:" />
+        <Field Name="NewField_2" Type="Text" Row="4" Column="0" Content="[113]" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="19" Content="Vdc" />
+        <Field Name="NewField_4" Type="Text" Row="6" Column="0" Content="Ripple:" />
+        <Field Name="NewField_5" Type="Text" Row="7" Column="0" Content="[134]" />
+        <Field Name="NewField_6" Type="Text" Row="7" Column="19" Content="Vdc" />
+        <Field Name="DCBusV_1" Type="Variable" Row="4" Column="16" Content="BLDC_Mng.IRparam_PWRP1.IR113_DCBusVoltage" Format="o3" Min="0" Max="999" Class="CL_UINT" />
+        <Field Name="DCBusRipple_1" Type="Variable" Row="7" Column="16" Content="BLDC_Mng.IRparam_PWRP1.IR134_DCBusRipple" Format="o3" Min="0" Max="999" Class="CL_UINT" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="DC Bus" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Status05_PWRP" Type="Normal" X="0" Y="5">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Text_1" Type="Text" Row="6" Column="0" Content="Pre-ramp setpoint:" />
+        <Field Name="Text_2" Type="Text" Row="7" Column="0" Content="[125]" />
+        <Field Name="Variable_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.IRparam_PWRP1.IR125_PreRampOutput_SpeedRef" Format="o+3.1" Min="-999.9" Max="999.9" Class="CL_REAL_1" />
+        <Field Name="Text_3" Type="Text" Row="7" Column="20" Content="Hz" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Text_6" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Text_4" Type="Text" Row="4" Column="0" Content="[124]" />
+        <Field Name="Text_5" Type="Text" Row="3" Column="0" Content="Operating switc. freq:" />
+        <Field Name="Variable_2" Type="Variable" Row="4" Column="17" Content="BLDC_Mng.IRparam_PWRP1.IR124_OperatingSwitchingFreq" Class="OpSwitchFreq_PWRP" Min="0" Max="4" Format="o1" />
+        <Field Name="Text_7" Type="Text" Row="4" Column="19" Content="kHz" />
+        <Field Type="Text" Name="Text_8" Row="1" Column="0" Content="Frequencies" />
+      </Fields>
+    </Mask>
+    <Mask Name="Status06_PWRP" Type="Normal" X="0" Y="6">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_5" Type="Text" Row="4" Column="0" Content="[106]" />
+        <Field Name="NewField_6" Type="Text" Row="6" Column="0" Content="Speed:" />
+        <Field Name="NewField_7" Type="Text" Row="7" Column="0" Content="[107]" />
+        <Field Name="bit15_1" Type="Variable" Row="4" Column="5" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_15" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit14_1" Type="Variable" Row="4" Column="6" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_14" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit13_1" Type="Variable" Row="4" Column="7" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_13" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit13_2" Type="Variable" Row="4" Column="8" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_12" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="DriveTripped_1" Type="Variable" Row="4" Column="9" Content="BLDC_Mng.Info_PWRP1.StatusReg_DriveTripped" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit10_1" Type="Variable" Row="4" Column="10" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_10" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="MainSupplyLossed_1" Type="Variable" Row="4" Column="11" Content="BLDC_Mng.Info_PWRP1.StatusReg_MainSupplyLossed" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="MotorOverload_1" Type="Variable" Row="4" Column="12" Content="BLDC_Mng.Info_PWRP1.StatusReg_MotorOverload" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="DriveInAutotune_1" Type="Variable" Row="4" Column="13" Content="BLDC_Mng.Info_PWRP1.StatusReg_DriveInAutotune" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit6_1" Type="Variable" Row="4" Column="14" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_06" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="SwitchFreqDeratingOn_1" Type="Variable" Row="4" Column="15" Content="BLDC_Mng.Info_PWRP1.StatusReg_SwitchingFreqDeratingON" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="FanOn_1" Type="Variable" Row="4" Column="16" Content="BLDC_Mng.Info_PWRP1.StatusReg_FanON" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="UnderVoltage_1" Type="Variable" Row="4" Column="17" Content="BLDC_Mng.Info_PWRP1.StatusReg_UnderVoltage" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="MotorPTCOverHeat_1" Type="Variable" Row="4" Column="18" Content="BLDC_Mng.Info_PWRP1.StatusReg_MotorPTC_OverHeat" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="KCfgOn_1" Type="Variable" Row="4" Column="19" Content="BLDC_Mng.Info_PWRP1.StatusReg_RelayConfigON" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="DriveInhibith_1" Type="Variable" Row="4" Column="20" Content="BLDC_Mng.Info_PWRP1.StatusReg_DriveInhibit" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit15_2" Type="Variable" Row="7" Column="5" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_15" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit14_2" Type="Variable" Row="7" Column="6" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_14" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit13_3" Type="Variable" Row="7" Column="7" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_13" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit12_1" Type="Variable" Row="7" Column="8" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_12" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit11_1" Type="Variable" Row="7" Column="9" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_11" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit10_2" Type="Variable" Row="7" Column="10" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_10" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit9_1" Type="Variable" Row="7" Column="11" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_09" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit8_1" Type="Variable" Row="7" Column="12" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_08" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit7_1" Type="Variable" Row="7" Column="13" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_07" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit6_2" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_06" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit5_1" Type="Variable" Row="7" Column="15" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_05" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit4_1" Type="Variable" Row="7" Column="16" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_04" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit3_1" Type="Variable" Row="7" Column="17" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_03" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit2_1" Type="Variable" Row="7" Column="18" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_02" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit1_1" Type="Variable" Row="7" Column="19" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_01" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Name="bit0_1" Type="Variable" Row="7" Column="20" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_00" Format="ob" Min="0" Max="1" Class="CL_BOOL_SWAP" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="Status:" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Registers" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Status07_PWRP" Type="Normal" X="0" Y="7">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_6" Type="Text" Row="6" Column="0" Content="Drive:" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="Motor:" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Overload accumulator:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="[153]" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="[154]" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="15" Content="BLDC_Mng.IRparam_PWRP1.IR153_OvldMot_accumulator" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Variable" Name="Variable_2" Row="7" Column="15" Content="BLDC_Mng.IRparam_PWRP1.IR154_OvldDrive_accumulator" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
+        <Field Type="Text" Name="Text_5" Row="4" Column="21" Content="%" />
+        <Field Type="Text" Name="Text_6" Row="7" Column="21" Content="%" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Config01_PWRP" Type="Normal" X="1" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="GotoNextField_PWRP" Min="0" Max="1" Format="ib" />
+        <Field Name="NewImageField_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="NewField_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_2" Type="Text" Row="2" Column="0" Content="Motor Type:" />
+        <Field Name="MotTyp_1" Type="Variable" Row="3" Column="0" Content="BLDC_Mng.MiscMng_BLDC1.Mng_PwrpMotTyp" Class="MotType_PWRP" Min="0" Max="BLDC_Mng.Info_BLDC1.UI_MaxMotTyp" Format="io3" />
+        <Field Type="Text" Name="Text_1" Row="5" Column="0" Content="Drive type:" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="Write defaults:" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="0" Content="BLDC_Mng.Info_PWRP1.Mng_CheckVI_NotOK" Class="CheckVInotOK_PWRP" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="6" Column="19" Content="BLDC_Mng.MiscMng_PWRP1.Mng_WriteDefault" Class="WriteMotDef_PWRP" Format="io1" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Default settings" />
+        <Field Name="Variable_1" Type="Variable" Row="5" Column="12" Content="BLDC_Mng.MiscMng_PWRP1.Mng_DriveTyp" Class="DriveTypeCustom_PWRP" Min="0" Max="34" Format="io2" />
+        <Field Name="Variable_2" Type="Variable" Row="5" Column="13" Content="BLDC_Mng.MiscMng_PWRP1.Mng_DriveTyp" Class="DriveTypNotCustom_PWRP" Min="0" Max="28" Format="o2" />
+        <Field Type="Variable" Name="Variable_4" Row="4" Column="0" Content="BLDC_Mng.MiscMng_BLDC1.Mng_CompTyp" Class="EnvType_PWRP" Format="io3" Min="1" Max="BLDC_Mng.Info_BLDC1.UI_MaxMotTyp" />
+        <Field Type="Variable" Name="Variable_5" Row="7" Column="0" Content="BLDC_Mng.Info_PWRP1.Mng_LoadDefFail" Class="LoadFailTxt_PWRP" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="0" Content="BLDC_Mng.Info_BLDC1.EnvTyp_FullCstm" Min="0" Max="1" Class="CstmType_PWRP" Format="ob" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Config02_PWRP" Type="Normal" X="1" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Power+" />
+        <Field Name="Text_3" Type="Text" Row="3" Column="0" Content="PSD type:" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Drive type" />
+        <Field Type="Text" Name="Text_2" Row="5" Column="0" Content="PSD set:" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="14" Content="BLDC_Mng.Info_PWRP1.Info_PSD_400V" Class="PSDconnectV_PWRP" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="14" Content="BLDC_Mng.Info_PWRP1.Mng_MotSelect_400V" Class="PSDreqV_PWRP" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="19" Content="BLDC_Mng.Info_PWRP1.Mng_MotSelect_AAa" Class="PSDreqA_PWRP" Format="o2" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="18" Content="BLDC_Mng.Info_PWRP1.Info_PSD_AAa" Class="PSDconnectA_PWRP" Format="o+2.0" Min="-99.0" Max="99.0" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="10" Content="BLDC_Mng.Info_PWRP1.Info_PSDPhase1" Min="0" Max="1" Class="PSD_Phase1" Format="ob" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="10" Content="BLDC_Mng.Info_PWRP1.Info_PSDPhase3" Min="0" Max="1" Class="PSD_Phase3" Format="ob" />
+        <Field Type="Variable" Name="Variable_6" Row="5" Column="10" Content="BLDC_Mng.Info_PWRP1.Mng_MotSelectPhase3" Min="0" Max="1" Class="Module_Phase3" Format="ob" />
+        <Field Type="Variable" Name="Variable_7" Row="5" Column="10" Content="BLDC_Mng.Info_PWRP1.Mng_MotSelectPhase1" Min="0" Max="1" Class="Module_Phase1" Format="ob" />
+      </Fields>
+    </Mask>
+    <Mask Name="Config03_PWRP" Type="Normal" X="1" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Config_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Data comunic.timeout:" />
+        <Field Name="NewField_2" Type="Text" Row="4" Column="0" Content="[029]" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="21" Content="s" />
+        <Field Name="DataCommunicationTimeout_1" Type="Variable" Row="4" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR29_DataCommTimeout" Class="CL_UINT" Format="io3" Min="0" Max="600" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Configuration" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="AutoInstall param.:" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="19" Content="BLDC_Mng.MiscMng_PWRP1.Mng_SerNoCtrl_En" Class="NoYes_PWRP" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Config04_PWRP" Type="Normal" X="1" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Config_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_1" Row="2" Column="0" Content="Activate reading?" />
+        <Field Type="Variable" Name="Variable" Row="2" Column="18" Content="BLDC_Mng.MiscMng_PWRP1.SafePar_ReadCmd" Min="0" Max="1" Class="uS_NoYes_R_PWRP" Format="iob" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeSto_Msk" Min="0" Max="1" Class="uS_STO_StatusMsk_R_PWRP" Format="ob" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeReadDone" Min="0" Max="1" Class="uS_ReadDone_PWRP" Format="ob" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeReadStp_Msk" Class="uS_SequenceStep_PWRP" Format="o2" Min="0" Max="10" />
+        <Field Type="Text" Name="Text" Row="4" Column="0" Content="1:" />
+        <Field Type="Text" Name="Text_2" Row="5" Column="0" Content="2:" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="3:" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="4:" />
+        <Field Type="Text" Name="Text_5" Row="4" Column="12" Content="5:" />
+        <Field Type="Text" Name="Text_6" Row="5" Column="12" Content="6:" />
+        <Field Type="Text" Name="Text_7" Row="6" Column="12" Content="7:" />
+        <Field Type="Variable" Name="Variable_5" Row="4" Column="2" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_01" Class="CL_INT" Format="o4z" Min="0" Max="9999" />
+        <Field Type="Variable" Name="Variable_6" Row="5" Column="1" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_02" Class="CL_REAL_1" Format="o+2.1z" Min="0.0" Max="99.9" />
+        <Field Type="Variable" Name="Variable_7" Row="6" Column="2" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_03" Min="0" Max="9999" Class="CL_INT" Format="o4z" />
+        <Field Type="Variable" Name="Variable_8" Row="7" Column="2" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_04" Min="0" Max="9999" Class="CL_INT" Format="o4z" />
+        <Field Type="Variable" Name="Variable_9" Row="4" Column="14" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_05" Min="0" Max="9999" Class="CL_INT" Format="o4z" />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="14" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_06" Min="0" Max="9999" Class="CL_INT" Format="o4z" />
+        <Field Type="Variable" Name="Variable_11" Row="6" Column="13" Content="BLDC_Mng.Info_PWRP1.UI_SafePar_07" Min="0.0" Max="1.0" Class="CL_REAL_2" Format="o+1.2z" />
+        <Field Type="Text" Name="Text_8" Row="0" Column="8" Content="Safety Param.R" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.Info_EnPowerPlus" />
+        <Var Name="BLDC_Mng.Info_PWRP1.Mng_PSDTyp_PSD2" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Config05_PWRP" Type="Normal" X="1" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Config_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Variable" Name="Variable" Row="2" Column="19" Content="BLDC_Mng.MiscMng_PWRP1.SafePar_WriteCmd" Min="0" Max="1" Class="uS_NoYes_W_PWRP" Format="iob" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeSto_Msk" Min="0" Max="1" Class="uS_STO_StatusMsk_W_PWRP" Format="ob" />
+        <Field Type="Text" Name="Text" Row="4" Column="0" Content="1:" />
+        <Field Type="Text" Name="Text_2" Row="5" Column="0" Content="2:" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="3:" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="4:" />
+        <Field Type="Text" Name="Text_5" Row="4" Column="12" Content="5:" />
+        <Field Type="Text" Name="Text_6" Row="5" Column="12" Content="6:" />
+        <Field Type="Text" Name="Text_7" Row="6" Column="12" Content="7:" />
+        <Field Type="Variable" Name="Variable_12" Row="2" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeCRC_Ok" Min="0" Max="1" Class="us_EnWrite_PWRP" Format="ob" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeWriteDone" Min="0" Max="1" Class="uS_WriteDone_PWRP" Format="ob" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeWriteStp_Msk" Min="0" Max="10" Class="uS_SequenceStep_PWRP" Format="o2" />
+        <Field Type="Variable" Name="Variable_13" Row="4" Column="2" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_01" Min="0" Max="9999" Class="CL_INT" Format="io4z" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="1" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_02" Min="0.0" Max="99.9" Class="CL_REAL_1" Format="io+2.1z" />
+        <Field Type="Variable" Name="Variable_6" Row="6" Column="2" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_03" Min="0" Max="9999" Class="CL_INT" Format="io4z" />
+        <Field Type="Variable" Name="Variable_7" Row="7" Column="2" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_04" Min="0" Max="9999" Class="CL_INT" Format="io4z" />
+        <Field Type="Variable" Name="Variable_8" Row="4" Column="14" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_05" Min="0" Max="9999" Class="CL_INT" Format="io4z" />
+        <Field Type="Variable" Name="Variable_9" Row="5" Column="14" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_06" Min="0" Max="9999" Class="CL_INT" Format="io4z" />
+        <Field Type="Variable" Name="Variable_10" Row="6" Column="13" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafePar_07" Min="0.0" Max="1.0" Class="CL_REAL_2" Format="io+1.2z" />
+        <Field Type="Text" Name="Text_8" Row="7" Column="12" Content="CRC:" />
+        <Field Type="Variable" Name="Variable_11" Row="7" Column="20" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V1" Min="0" Max="9" Class="CL_UINT" Format="io1" />
+        <Field Type="Variable" Name="Variable_14" Row="7" Column="19" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V2" Min="0" Max="9" Class="CL_UINT" Format="io1" />
+        <Field Type="Variable" Name="Variable_15" Row="7" Column="18" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V3" Min="0" Max="9" Class="CL_UINT" Format="io1" />
+        <Field Type="Variable" Name="Variable_16" Row="7" Column="17" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V4" Min="0" Max="9" Class="CL_UINT" Format="io1" />
+        <Field Type="Variable" Name="Variable_17" Row="7" Column="16" Content="BLDC_Mng.MiscMng_PWRP1.UI_SafeParCRC_V5" Min="0" Max="6" Class="CL_UINT" Format="io1" />
+        <Field Type="Text" Name="Text_9" Row="0" Column="8" Content="Safety Param.W" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.Info_EnPowerPlus" />
+        <Var Name="BLDC_Mng.Info_PWRP1.Mng_PSDTyp_PSD2" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg01_PWRP" Type="Normal" X="2" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Config_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Minimum:" />
+        <Field Name="Frequenza_minima:_1" Type="Text" Row="6" Column="0" Content="Maximum:" />
+        <Field Name="NewField_2" Type="Text" Row="7" Column="0" Content="[006]" />
+        <Field Name="_007__1" Type="Text" Row="4" Column="0" Content="[007]" />
+        <Field Name="MaxOutFreq_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR06_MaxOutFreq" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="20" Content="Hz" />
+        <Field Name="Hz_1" Type="Text" Row="7" Column="20" Content="Hz" />
+        <Field Name="PowerPlus_1.Comp.MinOutFreq_1" Type="Variable" Row="4" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR07_MinOutFreq" Class="CL_REAL_1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Format="io+3.1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Output frequency" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Reg02_PWRP" Type="Normal" X="2" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Setpoint:" />
+        <Field Name="NewField_2" Type="Text" Row="7" Column="0" Content="[011]" />
+        <Field Name="Salto_frequenza_set:_1" Type="Text" Row="6" Column="0" Content="Band:" />
+        <Field Name="_010__1" Type="Text" Row="4" Column="0" Content="[010]" />
+        <Field Name="Hz_2" Type="Text" Row="4" Column="20" Content="Hz" />
+        <Field Name="Hz_1" Type="Text" Row="7" Column="20" Content="Hz" />
+        <Field Name="SkipFreqSetP_1" Type="Variable" Row="4" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR10_SkipFreqSetP" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Name="SkipFreqBand_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR11_SkipFreqBand" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Skip frequency 1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Reg03_PWRP" Type="Normal" X="2" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Setpoint:" />
+        <Field Name="NewField_2" Type="Text" Row="7" Column="0" Content="[068]" />
+        <Field Name="Salto_frequenza_set:_1" Type="Text" Row="6" Column="0" Content="Band:" />
+        <Field Name="_010__1" Type="Text" Row="4" Column="0" Content="[067]" />
+        <Field Name="Hz_2" Type="Text" Row="4" Column="20" Content="Hz" />
+        <Field Name="Hz_1" Type="Text" Row="7" Column="20" Content="Hz" />
+        <Field Name="SkipFreqSetP_1" Type="Variable" Row="4" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR67_SkipFreqSetP_2" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Name="SkipFreqBand_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR68_SkipFreqBand_2" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Skip frequency 2" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg04_PWRP" Type="Normal" X="2" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Setpoint:" />
+        <Field Name="NewField_2" Type="Text" Row="7" Column="0" Content="[070]" />
+        <Field Name="Salto_frequenza_set:_1" Type="Text" Row="6" Column="0" Content="Band:" />
+        <Field Name="_010__1" Type="Text" Row="4" Column="0" Content="[069]" />
+        <Field Name="Hz_2" Type="Text" Row="4" Column="20" Content="Hz" />
+        <Field Name="Hz_1" Type="Text" Row="7" Column="20" Content="Hz" />
+        <Field Name="SkipFreqSetP_1" Type="Variable" Row="4" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR69_SkipFreqSetp_3" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Name="SkipFreqBand_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR70_SkipFreqBand_3" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Skip frequency 3" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Reg05_PWRP" Type="Normal" X="2" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Nominal:" />
+        <Field Name="NewField_2" Type="Text" Row="4" Column="0" Content="[024]" />
+        <Field Name="NewField_3" Type="Text" Row="6" Column="0" Content="Derating:" />
+        <Field Name="NewField_4" Type="Text" Row="7" Column="0" Content="[025]" />
+        <Field Name="SwitchingFreq_1" Type="Variable" Row="4" Column="17" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR24_SwitchingFreq" Class="SwitchingFreq_PWRP" Min="0" Max="2" Format="io1" />
+        <Field Name="SwitchingFreqDerating_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR25_SwitchingFreqDerating" Class="SwitchingFreqDer_PWRP" Min="0" Max="1" Format="io1" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Switching frequency" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Reg06_PWRP" Type="Normal" X="2" Y="6" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_2" Type="Text" Row="4" Column="0" Content="[027]" />
+        <Field Name="NewField_3" Type="Text" Row="1" Column="0" Content="PTC alarm" />
+        <Field Name="NewField_4" Type="Text" Row="6" Column="0" Content="Delay:" />
+        <Field Name="_027__1" Type="Text" Row="7" Column="0" Content="[028]" />
+        <Field Name="NewField_5" Type="Text" Row="7" Column="21" Content="s" />
+        <Field Name="MotOvTempAlrmPTCEn_1" Type="Variable" Row="4" Column="19" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR27_MotOvTempAlrmPTC_En" Class="NoYesINT_PWRP" Min="0" Max="1" Format="io1" />
+        <Field Name="MotOvTempAlrmPTCDelay_1" Type="Variable" Row="7" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR28_MotOvTempAlrmPTC_Delay" Class="CL_UINT" Format="io3" Min="0" Max="999" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="Enabling:" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Reg07_PWRP" Type="Normal" X="2" Y="7" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Text_1" Type="Text" Row="5" Column="0" Content="Speed derating mode:" />
+        <Field Name="Text_2" Type="Text" Row="6" Column="0" Content="[009]" />
+        <Field Name="Variable_1" Type="Variable" Row="6" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR09_SpeedDeratingMode" Format="io2" Min="0" Max="10" Class="SpeedDeratingMode_PWRP" />
+        <Field Name="Text_3" Type="Text" Row="3" Column="0" Content="[008]" />
+        <Field Name="Text_4" Type="Text" Row="2" Column="0" Content="Reverse speed:" />
+        <Field Name="Variable_2" Type="Variable" Row="3" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR08_EnRevSpeed" Class="DisEn_PWRP" Min="0" Max="1" Format="io1" />
+        <Field Name="Text_5" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      </Fields>
+    </Mask>
+    <Mask Name="Reg08_PWRP" Type="Normal" X="2" Y="8" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Stop mode:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[033]" />
+        <Field Name="NewField_5" Type="Text" Row="5" Column="0" Content="Flying restart:" />
+        <Field Name="NewField_6" Type="Text" Row="6" Column="0" Content="[034]" />
+        <Field Name="StopMode_1" Type="Variable" Row="3" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR33_StopMode" Class="DriveStopMode_PWRP" Min="0" Max="1" Format="io1" />
+        <Field Name="FlyingRestart_1" Type="Variable" Row="6" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR34_FlyingRestart" Class="DisEn_PWRP" Min="0" Max="1" Format="io1" />
+        <Field Type="Text" Name="Text" Row="3" Column="13" Content="---" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Reg09_PWRP" Type="Normal" X="2" Y="9" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Text_1" Type="Text" Row="2" Column="0" Content="Relay configuration:" />
+        <Field Name="Text_2" Type="Text" Row="3" Column="0" Content="[026]" />
+        <Field Name="Variable_1" Type="Variable" Row="2" Column="8" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR26_RelayCfg" Class="ReleOutCfg_PWRP" Min="0" Max="8" Format="io1" />
+        <Field Name="Text_3" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      </Fields>
+    </Mask>
+    <Mask Name="Custom01_PWRP" Type="Normal" X="3" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="GotoNextField_PWRP" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Reg_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="5" Column="0" Content="Motor control mode:" />
+        <Field Name="NewField_2" Type="Text" Row="6" Column="0" Content="[000]" />
+        <Field Name="MotCtrlMode_1" Type="Variable" Row="6" Column="7" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR00_MotCtrlMode" Class="MotCtrlMode_PWRP" Min="0" Max="2" Format="io1" />
+        <Field Name="Text_1" Type="Text" Row="2" Column="0" Content="Poles numbers:" />
+        <Field Name="Variable_1" Type="Variable" Row="3" Column="20" Content="BLDC_Mng.MiscMng_PWRP1.Mng_MotPoles" Class="MotPolesNotCustom_PWRP" Min="0" Max="9" Format="o1" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="21" Content="-" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="20" Content="BLDC_Mng.MiscMng_PWRP1.Mng_MotPoles" Class="MotPolesCustom_PWRP" Format="io1" Min="1" Max="5" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom02_PWRP" Type="Normal" X="3" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="GotoNextField_PWRP" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Motor base frequency:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[001]" />
+        <Field Name="NewField_3" Type="Text" Row="5" Column="0" Content="Motor base voltage:" />
+        <Field Name="NewField_4" Type="Text" Row="6" Column="0" Content="[002]" />
+        <Field Name="NewField_5" Type="Text" Row="6" Column="18" Content="Vrms" />
+        <Field Name="Hz_3" Type="Text" Row="3" Column="20" Content="Hz" />
+        <Field Name="MotBaseFreq_1" Type="Variable" Row="3" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR01_MotBaseFreq" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Name="MotBaseV_1" Type="Variable" Row="6" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR02_MotBaseV" Class="CL_UINT" Format="io3" Min="BLDC_Mng.Info_PWRP1.UI_MotBaseV_MinLim" Max="BLDC_Mng.Info_PWRP1.UI_MotBaseV_MaxLim" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom03_PWRP" Type="Normal" X="3" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="GotoNextField_PWRP" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Motor rated current:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[003]" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="0" Content="Motor power factor:" />
+        <Field Name="NewField_4" Type="Text" Row="5" Column="0" Content="[004]" />
+        <Field Name="NewField_5" Type="Text" Row="6" Column="0" Content="Out current maximum:" />
+        <Field Name="NewField_6" Type="Text" Row="7" Column="0" Content="[005]" />
+        <Field Name="NewField_7" Type="Text" Row="3" Column="18" Content="Arms" />
+        <Field Name="NewField_8" Type="Text" Row="7" Column="21" Content="%" />
+        <Field Name="MotRatedA_1" Type="Variable" Row="3" Column="12" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR03_MotRatedA" Min="BLDC_Mng.Info_PWRP1.UI_MotBaseA_MinLim" Max="BLDC_Mng.Info_PWRP1.UI_MotBaseA_MaxLim" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Name="MotPwrFactor_1" Type="Variable" Row="5" Column="19" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR04_MotPwrFactor" Class="CL_UINT" Format="io3" Min="0" Max="100" />
+        <Field Name="MaxOutA_1" Type="Variable" Row="7" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR05_MaxOutCurrent" Format="io+3.1" Min="0.0" Max="200.0" Class="CL_REAL_1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom04_PWRP" Type="Normal" X="3" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="NewField_1" Type="Text" Row="1" Column="0" Content="Speed profile" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="Freq. 1 [012]:      Hz" />
+        <Field Name="Freq__1__012_:_1" Type="Text" Row="4" Column="0" Content="Freq. 2 [013]:     -Hz" />
+        <Field Name="Freq__1__012_:_2" Type="Text" Row="5" Column="0" Content="Freq. 3 [014]:     -Hz" />
+        <Field Name="SpeedFreqProfile1_1" Type="Variable" Row="3" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR12_SpeedProfileFreq1" Format="io+3.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" />
+        <Field Name="SpeedFreqProfile2_1" Type="Variable" Row="4" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR13_SpeedProfileFreq2" Format="io+3.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="SpeedProfileSetHz_PWRP" />
+        <Field Name="SpeedFreqProfile3_1" Type="Variable" Row="5" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR14_SpeedProfileFreq3" Format="io+3.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="SpeedProfileSetHz_PWRP" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom05_PWRP" Type="Normal" X="3" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="Power+_Custom_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Profilo_di_velocita'_1" Type="Text" Row="1" Column="0" Content="Speed profile" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Acc.1 [015]:" />
+        <Field Name="Acc_1__015_:_1" Type="Text" Row="4" Column="0" Content="Acc.2 [016]:" />
+        <Field Name="Acc_1__015_:_2" Type="Text" Row="5" Column="0" Content="Acc.3 [017]:" />
+        <Field Name="Acc_1__015_:_3" Type="Text" Row="6" Column="0" Content="Acc.4 [018]:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="18" Content="Hz/s" />
+        <Field Name="Hz/s_1" Type="Text" Row="4" Column="18" Content="Hz/s" />
+        <Field Name="Hz/s_2" Type="Text" Row="5" Column="18" Content="Hz/s" />
+        <Field Name="Hz/s_3" Type="Text" Row="6" Column="18" Content="Hz/s" />
+        <Field Name="SpeedAccelerationProfile1_1" Type="Variable" Row="3" Column="12" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR15_SpeedProfileAcceleration1" Format="io+3.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit500Hz" Class="CL_REAL_1" />
+        <Field Name="SpeedAccelerationProfile2_1" Type="Variable" Row="4" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR16_SpeedProfileAcceleration2" Format="io+2.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit50Hz" Class="CL_REAL_1" />
+        <Field Name="SpeedAccelerationProfile3_1" Type="Variable" Row="5" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR17_SpeedProfileAcceleration3" Format="io+2.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit50Hz" Class="CL_REAL_1" />
+        <Field Name="SpeedAccelerationProfile4_1" Type="Variable" Row="6" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR18_SpeedProfileAcceleration4" Format="io+2.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit50Hz" Class="CL_REAL_1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom06_PWRP" Type="Normal" X="3" Y="6" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Profilo_velocita'_1" Type="Text" Row="1" Column="0" Content="Speed profile" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Delay 1 [019]:      -s" />
+        <Field Name="Attesa_T1__019_:_____s_1" Type="Text" Row="4" Column="0" Content="Delay 2 [020]:      -s" />
+        <Field Name="Attesa_T1__019_:_____s_2" Type="Text" Row="5" Column="0" Content="Delay 3 [021]:      -s" />
+        <Field Name="SpeedDelayProfile1_1" Type="Variable" Row="3" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR19_SpeedProfileDelay1" Class="SpeedProfileDelay_PWRP" Format="io3" Min="0" Max="600" />
+        <Field Name="SpeedAccelerationProfile2_1" Type="Variable" Row="4" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR20_SpeedProfileDelay2" Class="SpeedProfileDelay_PWRP" Format="io3" Min="0" Max="600" />
+        <Field Name="SpeedAccelerationProfile3_1" Type="Variable" Row="5" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR21_SpeedProfileDelay3" Class="SpeedProfileDelay_PWRP" Format="io3" Min="0" Max="600" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom07_PWRP" Type="Normal" X="3" Y="7" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="Profilo_velocita'_2" Type="Text" Row="1" Column="0" Content="Speed profile" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Delay execution:" />
+        <Field Name="NewField_2" Type="Text" Row="4" Column="0" Content="[022.0]         -----" />
+        <Field Name="NewField_3" Type="Text" Row="6" Column="0" Content="Force freq. 2:" />
+        <Field Name="NewField_4" Type="Text" Row="7" Column="0" Content="[022.1]       -------" />
+        <Field Name="DelayMode_1" Type="Variable" Row="4" Column="16" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR22_0_SpeedProfStartMode" Class="DelayStep_PWRP" Min="0" Max="1" Format="iob" />
+        <Field Name="ForceFreq_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR22_1_SpeedProfStartMode" Class="SpeedProfileFreq2_PWRP" Min="0" Max="1" Format="iob" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom08_PWRP" Type="Normal" X="3" Y="8" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="Power+_Custom_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Profilo_velocita'_2" Type="Text" Row="1" Column="0" Content="Speed profile" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Deceleration ramp:" />
+        <Field Name="NewField_2" Type="Text" Row="4" Column="0" Content="[023]" />
+        <Field Name="Hz/s_4" Type="Text" Row="4" Column="18" Content="Hz/s" />
+        <Field Name="SpeedDecelerationProfile_1" Type="Variable" Row="4" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR23_SpeedProfileDeceleration" Format="io+2.1" Min="BLDC_Mng.Info_PWRP1.UI_FreqLimitMin" Max="BLDC_Mng.Info_PWRP1.UI_FreqLimit50Hz" Class="CL_REAL_1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom09_PWRP" Type="Normal" X="3" Y="9" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="GotoNextField_PWRP" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="V/F boost voltage:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[035]" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="0" Content="V/F freq.adjustment:" />
+        <Field Name="NewField_4" Type="Text" Row="5" Column="0" Content="[036]" />
+        <Field Name="NewField_5" Type="Text" Row="6" Column="0" Content="V/F volt.adjustment:" />
+        <Field Name="NewField_6" Type="Text" Row="7" Column="0" Content="[037]" />
+        <Field Name="NewField_7" Type="Text" Row="3" Column="21" Content="%" />
+        <Field Name="%_1" Type="Text" Row="5" Column="21" Content="%" />
+        <Field Name="%_2" Type="Text" Row="7" Column="21" Content="%" />
+        <Field Name="VFBoostV_1" Type="Variable" Row="3" Column="16" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR35_V_F_BoostV" Format="io+2.1" Min="0.0" Max="25.0" Class="CL_REAL_1" />
+        <Field Name="VFFreqAdj_1" Type="Variable" Row="5" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR36_V_F_FreqAdj" Format="io+3.1" Min="0.0" Max="100.0" Class="CL_REAL_1" />
+        <Field Name="VFVAdj_1" Type="Variable" Row="7" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR37_V_F_VAdj" Format="io+3.1" Min="0.0" Max="100.0" Class="CL_REAL_1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom10_PWRP" Type="Normal" X="3" Y="10" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Motor magn.current:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[045]" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="0" Content="Stator resistance:" />
+        <Field Name="NewField_4" Type="Text" Row="5" Column="0" Content="[046]" />
+        <Field Name="NewField_5" Type="Text" Row="6" Column="0" Content="Rotor resistance:" />
+        <Field Name="NewField_6" Type="Text" Row="7" Column="0" Content="[047]" />
+        <Field Name="NewField_7" Type="Text" Row="7" Column="18" Content="mohm" />
+        <Field Name="NewField_8" Type="Text" Row="5" Column="18" Content="mohm" />
+        <Field Name="MotMagnetizingA_1" Type="Variable" Row="3" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR45_MotMagnetizingCurrent" Format="io+3.1" Min="BLDC_Mng.Info_PWRP1.UI_MotMagnetizingA_MinLim" Max="BLDC_Mng.Info_PWRP1.UI_MotMagnetizingA_MaxLim" Class="CL_REAL_1" />
+        <Field Name="NewField_9" Type="Text" Row="3" Column="21" Content="A" />
+        <Field Name="StatorResistance_1" Type="Variable" Row="5" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR46_StatorResistance" Format="io5" Min="0" Max="30000" Class="CL_UINT" />
+        <Field Name="RotorResistance_1" Type="Variable" Row="7" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR47_RotorResistance" Format="io5" Min="0" Max="30000" Class="CL_UINT" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom11_PWRP" Type="Normal" X="3" Y="11" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Stator/Ld inductance:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[048]" />
+        <Field Name="NewField_3" Type="Text" Row="4" Column="0" Content="Leakage factor:" />
+        <Field Name="NewField_4" Type="Text" Row="5" Column="0" Content="[049]" />
+        <Field Name="NewField_5" Type="Text" Row="6" Column="0" Content="Lq inductance:" />
+        <Field Name="NewField_6" Type="Text" Row="7" Column="0" Content="[050]" />
+        <Field Name="NewField_7" Type="Text" Row="3" Column="20" Content="mH" />
+        <Field Name="NewField_8" Type="Text" Row="7" Column="20" Content="mH" />
+        <Field Name="StatorInductanceLd_1" Type="Variable" Row="3" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR48_StatorInductanceLd" Format="io+3.1" Min="0.0" Max="600.0" Class="CL_REAL_1" />
+        <Field Name="LeakageFactor_1" Type="Variable" Row="5" Column="19" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR49_LeakageFactor" Format="io3" Min="0" Max="250" Class="CL_UINT" />
+        <Field Name="LqInductance_1" Type="Variable" Row="7" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR50_LqInductance" Format="io+3.1" Min="0.0" Max="600.0" Class="CL_REAL_1" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom12_PWRP" Type="Normal" X="3" Y="12" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_2" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Speed loop Kp:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[055]" />
+        <Field Name="NewField_3" Type="Text" Row="5" Column="0" Content="Speed loop Ti:" />
+        <Field Name="NewField_4" Type="Text" Row="6" Column="0" Content="[056]" />
+        <Field Name="NewField_5" Type="Text" Row="3" Column="21" Content="%" />
+        <Field Name="NewField_6" Type="Text" Row="6" Column="18" Content="msec" />
+        <Field Name="SpeedLoopKp_1" Type="Variable" Row="3" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR55_SpeedLoopKp" Format="io+3.1" Min="0.1" Max="200.0" Class="CL_REAL_1" />
+        <Field Name="SpeedLoopTi_1" Type="Variable" Row="6" Column="14" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR56_SpeedLoopTi" Format="io4" Min="1" Max="1000" Class="CL_UINT" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom13_PWRP" Type="Normal" X="3" Y="13" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="GotoNextField_PWRP" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Magnetizing time:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[051]" />
+        <Field Name="NewField_3" Type="Text" Row="3" Column="18" Content="msec" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Starting current:" />
+        <Field Name="NewField_5" Type="Text" Row="5" Column="0" Content="[057]" />
+        <Field Name="NewField_6" Type="Text" Row="5" Column="13" Content="%" />
+        <Field Name="NewField_7" Type="Text" Row="6" Column="0" Content="Freq.for start curr.:" />
+        <Field Name="NewField_8" Type="Text" Row="7" Column="0" Content="[058]" />
+        <Field Name="NewField_9" Type="Text" Row="7" Column="21" Content="%" />
+        <Field Name="MagnetizingT_1" Type="Variable" Row="3" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR51_MagnetizingTime" Format="io5" Min="0" Max="30000" Class="CL_UINT" />
+        <Field Name="StartingA_1" Type="Variable" Row="5" Column="7" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR57_StartingCurrent" Format="io+3.1" Min="0.0" Max="100.0" Class="CL_REAL_1" />
+        <Field Name="StartingAFreq_1" Type="Variable" Row="7" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR58_StartingAFreq" Format="io+3.1" Min="0.0" Max="100.0" Class="CL_REAL_1" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="16" Content="BLDC_Mng.Info_PWRP1.UI_RatedStartingA" Class="CL_REAL_1" Format="o+2.1" Min="0.0" Max="99.9" />
+        <Field Type="Text" Name="Text_1" Row="5" Column="21" Content="A" />
+      </Fields>
+      <EnableOn />
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Custom14_PWRP" Type="Normal" X="3" Y="14" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Crankcase heater mode:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[100.2]" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Crankcase current:" />
+        <Field Name="NewField_5" Type="Text" Row="5" Column="0" Content="[065]" />
+        <Field Name="NewField_6" Type="Text" Row="5" Column="13" Content="%" />
+        <Field Name="NewField_7" Type="Text" Row="6" Column="0" Content="STO alarm management:" />
+        <Field Name="NewField_8" Type="Text" Row="7" Column="0" Content="[066]" />
+        <Field Name="StartingA_1" Type="Variable" Row="5" Column="7" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR65_CrankCaseHeaterCurrent" Format="io+3.1" Min="0.0" Max="100.0" Class="CL_REAL_1" />
+        <Field Name="StartingAFreq_1" Type="Variable" Row="7" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR66_STOResetStrategy" Format="io1" Min="0" Max="2" Class="STOResetMode_PWRP" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="13" Content="BLDC_Mng.CurrCompCfg_PWRP1.CrankCaseHeaterMode" Class="CranckCaseMode_PWRP" Format="io1" Min="0" Max="2" />
+        <Field Type="Text" Name="Text_1" Row="5" Column="21" Content="A" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="16" Content="BLDC_Mng.Info_PWRP1.UI_RatedCrankCaseHeatA" Class="CL_REAL_1" Format="o+2.1" Min="0.0" Max="99.9" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom15_PWRP" Type="Normal" X="3" Y="15" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Phase loss detection:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[076.0]" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="8" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR76_0_DisPhLossDetect" Class="EnDisBool_PWRP" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom16_PWRP" Type="Normal" X="3" Y="16" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Overload at power-on:" />
+        <Field Name="NewField_2" Type="Text" Row="3" Column="0" Content="[076.3]" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="7" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR76_3_EnOvldThProtRetention" Class="ResRestore_PWRP" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom17_PWRP" Type="Normal" X="3" Y="17" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="2" Column="0" Content="Inductance saturation" />
+        <Field Name="NewField_4" Type="Text" Row="3" Column="0" Content="reduction:" />
+        <Field Name="Text_1" Type="Text" Row="4" Column="0" Content="[077]" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="7" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR77_InductSaturFactor" Class="CL_REAL_1" Format="io+3.1" Min="0.0" Max="100.0" />
+        <Field Name="Text_2" Type="Text" Row="4" Column="13" Content="%" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="16" Content="BLDC_Mng.Info_PWRP1.UI_RatedInductsatReductA" Class="CL_REAL_1" Format="o+2.1" Min="-99.9" Max="99.9" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="21" Content="A" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+        <Var Name="BLDC_Mng.Info_PWRP1.Mng_PSDTyp_MotCtrlVer1" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom18_PWRP" Type="Normal" X="3" Y="18">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="DC bus ripple working:" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="DC bus ripple control:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="[107.3]" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="[133]" />
+        <Field Type="Text" Name="Text_7" Row="2" Column="0" Content="[076.7]" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR76_7_Reserved" Class="EnDisBool_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Name="Variable_4" Type="Variable" Row="4" Column="19" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_03" Format="ob" Min="0" Max="1" Class="NoYes_PWRP" SimulationValue="" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="DC bus ripple counter:" />
+        <Field Type="Variable" Name="Variable" Row="6" Column="14" Content="BLDC_Mng.IRparam_PWRP1.IR133_Reserved" Class="CL_UINT" Format="o5" Min="0" Max="65535" />
+        <Field Type="Text" Name="Text_8" Row="6" Column="19" Content="min" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom19_PWRP" Type="Normal" X="3" Y="19">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_1" Row="5" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="[076.10]" />
+        <Field Type="Text" Name="Text_7" Row="3" Column="0" Content="[076.9]" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR76_9_Reserved" Class="EnDisBool_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="15" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR76_10_Reserved" Class="EnDisBool_PWRP" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_Fw20" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom20_PWRP" Type="Normal" X="3" Y="20">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_7" Row="3" Column="0" Content="[106.15]" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="13" Content="BLDC_Mng.Info_PWRP1.StatusReg_Bit_15" Class="ActDeactBool_PWRP" Format="ob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_Fw20" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom21_PWRP" Type="Normal" X="3" Y="21">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_7" Row="3" Column="0" Content="[107.4]" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="13" Content="BLDC_Mng.Info_PWRP1.SpeedReg_Bit_04" Class="ActDeactBool_PWRP" Format="ob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_Fw20" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom22_PWRP" Type="Normal" X="3" Y="22">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_7" Row="2" Column="0" Content="[38]" />
+        <Field Type="Variable" Name="Variable" Row="1" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR38_Reserved" Class="CL_UINT" Format="io3" Min="0" Max="500" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="[60]" />
+        <Field Type="Text" Name="Text_4" Row="3" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="[61]" />
+        <Field Type="Text" Name="Text_6" Row="5" Column="0" Content="Reserved:" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="20" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR60_Reserved" Class="CL_UINT" Format="io1" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR61_Reserved" Class="CL_UINT" Format="io3" Min="0" Max="100" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_Fw20" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom23_PWRP" Type="Normal" X="3" Y="23">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Ingressi/Uscite_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="[62]" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Reserved:" />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="[63]" />
+        <Field Type="Text" Name="Text_6" Row="5" Column="0" Content="Reserved:" />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="16" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR62_Reserved" Class="CL_UINT" Format="io5" Min="0" Max="50000" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="18" Content="BLDC_Mng.CurrCompCfg_PWRP1.HR63_Reserved" Class="CL_UINT" Format="io3" Min="0" Max="100" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_ParamPSD1_En" />
+        <Var Name="BLDC_Mng.Info_PWRP1.UI_Fw20" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Custom24_PWRP" Type="Normal" X="3" Y="24" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Text_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="18" Content="BLDC_Mng.MiscMng_PWRP1.MngCstm_SaveCustomCfg" Class="EnSaveToCustom_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="0" Content="BLDC_Mng.MiscMng_PWRP1.MngCstm_SaveCustomCfgInProgress" Class="CustomSaveProgress_PWRP" Format="ob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Save Custom Data" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="0" Content="BLDC_Mng.PwrpOnline_BLDC1" Class="OfflineTxt_PWRP" Format="ob" Min="0" Max="1" />
+      </Fields>
+    </Mask>
+    <Mask Name="Retry_Setting_01_PWRP" Type="Normal" X="4" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_1" Type="Text" Row="3" Column="0" Content="Retries number:" />
+        <Field Name="NewField_4" Type="Text" Row="5" Column="0" Content="Control time" />
+        <Field Type="Text" Name="Text_1" Row="6" Column="0" Content="retries       :      m" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="19" Content="BLDC_Mng.AlrmResetMng_PWRP1.RetryThrs" Class="CL_DINT" Format="io+1" Min="0" Max="5" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="17" Content="BLDC_Mng.AlrmResetMng_PWRP1.TimeThrs" Class="CL_UDINT" Format="io4" Min="1" Max="1440" />
+        <Field Name="Text_2" Type="Text" Row="1" Column="0" Content="Retries setting" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Retry_Setting_02_PWRP" Type="Normal" X="4" Y="2" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Alarms 09 - 16:" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Alarms 01 - 08:" />
+        <Field Type="Text" Name="Text_1" Row="7" Column="0" Content="  :Manual    :Semiaut." />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al01_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al02_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al03_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al04_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al05_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al06_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al07_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al08_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_9" Row="5" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al09_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al10_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_11" Row="5" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al11_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_12" Row="5" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al12_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_13" Row="5" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al13_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_14" Row="5" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al14_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_15" Row="5" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al15_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_16" Row="5" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al16_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Motor control alarms" />
+        <Field Type="Image" Name="Image" Row="7" Column="0" Content="man.bmp" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="11" Content="aut.bmp" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Retry_Setting_03_PWRP" Type="Normal" X="4" Y="3" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Alarms 25 - 28  98 99:" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Alarms 17 - 24:" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al18_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al19_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al20_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al21_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al22_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al23_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al24_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_9" Row="5" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al25_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al26_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_11" Row="5" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al27_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_12" Row="5" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al28_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_14" Row="5" Column="19" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al99_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al17_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Motor control alarms" />
+        <Field Type="Text" Name="Text_3" Row="7" Column="0" Content="  :Manual    :Semiaut." />
+        <Field Type="Image" Name="Image_2" Row="7" Column="11" Content="aut.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="0" Content="man.bmp" />
+        <Field Type="Variable" Name="Variable_13" Row="5" Column="16" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al98_uMotorResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+    </Mask>
+    <Mask Name="Retry_Setting_04_PWRP" Type="Normal" X="4" Y="4" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Alarms 09 - 16:" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Alarms 01 - 08:" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al101_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al102_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al103_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al104_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al105_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al106_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al107_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al108_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_9" Row="5" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al109_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al110_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_11" Row="5" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al111_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_12" Row="5" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al112_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_13" Row="5" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al113_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_14" Row="5" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al114_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_15" Row="5" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al115_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_16" Row="5" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al116_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="uSafety control alarms" />
+        <Field Type="Text" Name="Text_3" Row="7" Column="0" Content="  :Manual    :Semiaut." />
+        <Field Type="Image" Name="Image_2" Row="7" Column="11" Content="aut.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="0" Content="man.bmp" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.Mng_PSDTyp_PSD2" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Retry_Setting_05_PWRP" Type="Normal" X="4" Y="5" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="dummyField" Type="Variable" Row="0" Column="0" Content="dummy" Class="CL_Move" Min="0" Max="1" Format="ib" />
+        <Field Name="black_row_132x8_bmp_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Power+_Custom_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="NewField_4" Type="Text" Row="4" Column="0" Content="Alarms 25 - 32:" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Alarms 17 - 24:" />
+        <Field Type="Variable" Name="Variable_1" Row="3" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al201_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al202_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al203_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al204_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al205_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al206_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al207_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al208_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_9" Row="5" Column="0" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al209_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="2" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al210_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_11" Row="5" Column="4" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al211_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_12" Row="5" Column="6" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al212_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_13" Row="5" Column="8" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al213_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_14" Row="5" Column="10" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al214_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_15" Row="5" Column="12" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al215_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_16" Row="5" Column="14" Content="BLDC_Mng.AlrmResetMng_PWRP1.Al216_uSafeResetTyp" Class="AlarmConfig_PWRP" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="uSafety control alarms" />
+        <Field Type="Text" Name="Text_3" Row="7" Column="0" Content="  :Manual    :Semiaut." />
+        <Field Type="Image" Name="Image_2" Row="7" Column="11" Content="aut.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="0" Content="man.bmp" />
+      </Fields>
+      <KeyBindings />
+      <ResourceUsedOnInt />
+      <ResourceUsedOnBool />
+      <EnableOn>
+        <Var Name="BLDC_Mng.Info_PWRP1.Mng_PSDTyp_PSD2" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="Info01_PWRP" Type="Normal" X="5" Y="1" Color="WhiteSmoke">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Name="Text_1" Type="Text" Row="0" Column="1" Content="Power+" />
+        <Field Name="Image_1" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="FB version:" />
+        <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="Boot release:" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="FW release:" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="FW checksum:" />
+        <Field Type="Variable" Name="Variable_1" Row="2" Column="13" Content="BLDC_Mng.Info_PWRP1.Dbg_FBVersion_X" Class="CL_UINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_7" Row="2" Column="14" Content="." />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="15" Content="BLDC_Mng.Info_PWRP1.Dbg_FBVersion_Y" Class="CL_UINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_8" Row="2" Column="16" Content="." />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="17" Content="BLDC_Mng.Info_PWRP1.Dbg_FBVersion_Z" Class="CL_UINT" Format="o3" Min="0" Max="999" />
+        <Field Type="Variable" Name="Variable_4" Row="2" Column="20" Content="BLDC_Mng.Info_PWRP1.Dbg_FBVersion_Beta" Class="FBVerBeta_BLDC" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="MC release:" />
+        <Field Type="Text" Name="Text_9" Row="7" Column="0" Content="Hardware ID:" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="17" Content="BLDC_Mng.IRparam_PWRP1.IR141_BootLoaderRelease" Class="CL_UINT" Format="o5" Min="0" Max="65535" />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="17" Content="BLDC_Mng.IRparam_PWRP1.IR142_FirmwareRelease" Class="CL_UINT" Format="o5" Min="0" Max="65535" />
+        <Field Type="Variable" Name="Variable_7" Row="5" Column="17" Content="BLDC_Mng.IRparam_PWRP1.IR143_FirmwareCRC" Class="CL_UINT" Format="o5" Min="0" Max="65535" />
+        <Field Type="Variable" Name="Variable_8" Row="6" Column="17" Content="BLDC_Mng.IRparam_PWRP1.IR144_MotCtrlRelease" Class="CL_UINT" Format="o5" Min="0" Max="65535" />
+        <Field Type="Variable" Name="Variable_9" Row="7" Column="17" Content="BLDC_Mng.IRparam_PWRP1.IR149_HardwareIdentification" Class="CL_UINT" Format="o5" Min="0" Max="65535" />
+        <Field Name="Text_10" Type="Text" Row="1" Column="0" Content="Information" />
+      </Fields>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content=" NO" Type="Text" Font="SimSun" />
+        <Index Value="1" Content="YES" Type="Text" Font="SimSun" />
+      </ResourceUsedOnBool>
+    </Mask>
+  </Loop>
+  <Mask Name="Regulation_PWPR" Type="Normal" X="2" Y="0" Color="Orchid">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Mask Name="Config_PWRP" Type="Normal" X="1" Y="0" Color="Cyan">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Mask Name="Custom_PWRP" Type="Normal" X="3" Y="0" Color="CornflowerBlue">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Mask Name="Retry_Setting_PWRP" Type="Normal" X="4" Y="0" Color="DeepSkyBlue">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+    </Fields>
+  </Mask>
+  <Mask Name="StopReq_P_Plus" Type="Normal" X="6" Y="0">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="RestoreMsk_PWRP" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text" Row="2" Column="5" Content="STOP POWER +" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="6" Content="TO ENABLE" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="2" Content="PARAMETERS ACCESS" />
+    </Fields>
+  </Mask>
+  <Mask Name="Safe_AutoConfig_PWRP" Type="Normal" X="7" Y="0">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="RestoreMsk_PWRP" Format="ib" Min="0" Max="1" />
+      <Field Name="Image_2" Type="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text" Row="0" Column="1" Content="Safety Auto Config." />
+      <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Writing Steps:" />
+      <Field Type="Variable" Name="Variable_4" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeWriteStp_Msk" Min="0" Max="10" Class="uS_SequenceStep_PWRP" Format="o2" />
+      <Field Type="Variable" Name="Variable_5" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeWriteDone" Min="0" Max="1" Class="uS_WriteDone_PWRP" Format="ob" />
+      <Field Type="Variable" Name="Variable_6" Row="3" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeNotEmpty" Min="0" Max="1" Class="uS_NotEmpty_PWRP" Format="ob" />
+      <Field Type="Variable" Name="Variable_7" Row="4" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeReboot" Min="0" Max="1" Class="uS_ProcedureDoneAnimate_PWRP" Format="ob" />
+      <Field Type="Variable" Name="Variable_8" Row="4" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeReboot" Min="0" Max="1" Class="uS_ProcedureDone_PWRP" Format="ob" />
+      <Field Type="Variable" Name="Variable_9" Row="5" Column="0" Content="BLDC_Mng.Info_PWRP1.UI_SafeReboot" Min="0" Max="1" Class="uS_Reboot_PWRP" Format="ob" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ESC" BindOn="Restore_mask_PWRP" />
+      <KeyBinding Key="PRG" BindOn="Restore_mask_PWRP" />
+      <KeyBinding Key="UP" BindOn="Restore_mask_PWRP" />
+      <KeyBinding Key="DOWN" BindOn="Restore_mask_PWRP" />
+      <KeyBinding Key="ENTER" BindOn="Restore_mask_PWRP" />
+    </KeyBindings>
+  </Mask>
+</Worksheet>

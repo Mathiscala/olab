@@ -1,0 +1,33 @@
+Version 1.1 Alarms RepoVersion 3.5.9
+Name	Type	Edge	Description	CounterMax	TimeValue	StorVar1	StorVar2
+RetainMemCheck	User reset	Positive						
+Al_Offline_EBM_1	Auto reset	Positive	Offline EBM 1					
+Al_PhaseFault_EBM_1	User reset	Positive	Phase Failure EBM 1					
+Al_MotBlocked_EBM_1	User reset	Positive	Motor blocked EBM 1					
+Al_MainsUnderV_EBM_1	User reset	Positive	Mains undervolt. EBM 1					
+Al_MainsOverV_EBM_1	User reset	Positive	Mains overvolt. EBM 1					
+Al_DClinkOverV_EBM_1	User reset	Positive	DC-link overvol. EBM 1					
+Al_DClinkUnderV_EBM_1	User reset	Positive	DC-link undervol.EBM 1					
+Al_MotSuperHeating_EBM_1	User reset	Positive	Motor superheat. EBM 1					
+Al_IntCircSuperHeat_EBM_1	User reset	Positive	Intern.circ.superheat. EBM 1					
+Al_OutStageSuperHeat_EBM_1	User reset	Positive	Out stage superheat. EBM 1					
+Al_HallSenErr_EBM_1	User reset	Positive	Hall sensor err. EBM 1					
+Al_CommunicationErr_EBM_1	User reset	Positive	Communic. error EBM 1					
+Al_GenericErr_EBM_1	Auto reset	Positive	Generic error EBM 1					
+Al_OutStageHighTemp_EBM_1	Auto reset	Positive	Out stage high temp. EBM 1					
+Al_InternCircHighTemp_EBM_1	Auto reset	Positive	Int.circ.high temp. EBM 1					
+Al_MotHighTemp_EBM_1	Auto reset	Positive	Motor high temperature EBM 1					
+Al_DClinkV_Low_EBM_1	Auto reset	Positive	DC-link volt.low EBM 1					
+Al_LimMainsPwr_EBM_1	Auto reset	Positive	Lim.mains power EBM 1					
+Al_LimMainsA_EBM_1	Auto reset	Positive	Lim.mains curr. EBM 1					
+Al_BrakeMode_EBM_1	Auto reset	Positive	Brake mode EBM 1					
+Al_CableBreak_EBM_1	Auto reset	Positive	Cable break EBM 1					
+Al_IceProtection_EBM_1	Auto reset	Positive	Ice protection EBM 1					
+Al_HeatMotStopped_EBM_1	Auto reset	Positive	Heating: motor stop EBM 1					
+Al_SpeedUnderLim_EBM_1	Auto reset	Positive	Speed under lim. EBM 1					
+Al_DC_VoltageHigh_EBM_1	Auto reset	Positive	DC-voltage high EBM 1					
+Al_SupplyVoltageHigh_EBM_1	Auto reset	Positive	Supply volt.high EBM 1					
+Al_LineImpHigh_EBM_1	Auto reset	Positive	Line imp. high EBM 1					
+Al_SpeedExeeded_EBM_1	Auto reset	Positive	Speed limit exceed EBM 1					
+Al_RotorCalibErr_EBM_1	Auto reset	Positive	Rotor position sensor calibration error EBM 1					
+Al_RotorCalibRun_EBM_1	Auto reset	Positive	Calibration of rotor position sensor in progress EBM 1					
