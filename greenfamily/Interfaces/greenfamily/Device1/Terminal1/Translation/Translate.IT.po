@@ -18077,6 +18077,11 @@ msgctxt "[Mask:Main][Field:Text_4]"
 msgid ":"
 msgstr ":"
 
+#: 02_Main.otws
+msgctxt "[Mask:Main][Field:Text_5]"
+msgid "Nß"
+msgstr ""
+
 #: 03_EbmpapstFan_1.otws
 msgctxt "[Mask:Main_1][Field:Text_1]"
 msgid "SPEED:"
@@ -20225,6 +20230,11 @@ msgstr ""
 #: 02_Main.otws
 msgctxt "[Mask:Supervision_temp_Clone_3_Clone_2_Clone_3_Clone_2][Field:Text_9]"
 msgid ":"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:Supervision_temp_Clone_3_Clone_2_Clone_3_Clone_2][Field:Text_10]"
+msgid "M3H"
 msgstr ""
 
 #: 02_Main.otws

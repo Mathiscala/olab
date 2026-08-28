@@ -18,6 +18,8 @@
       <Field Type="Variable" Name="Variable_8" Row="0" Column="11" Content="GeneralMng.DayOfWeek" Class="DayOfWeekShort" Format="o1" Min="0" Max="9" />
       <Field Type="Image" Name="Image" Row="2" Column="11" Content="airgaialogo.bmp" />
       <Field Type="Text" Name="Text" Row="5" Column="3" Content="OLAB" />
+      <Field Type="Text" Name="Text_5" Row="6" Column="3" Content="Nß" />
+      <Field Type="Variable" Name="Variable" Row="6" Column="5" Content="IPCfgMng.IPV4Cfg.MskIP[4]" Class="CL_USINT" Format="o3" Min="0" Max="255" />
     </Fields>
     <KeyBindings>
       <KeyBinding Key="PRG" BindOn="GotoMainMenu" />
@@ -713,6 +715,8 @@
         <Field Type="Variable" Name="Variable_3" Row="4" Column="9" Content="AIRGAIA.Differential_Pressure_1_Ui_1" Class="CL_REAL_1" Format="o+5.1" Min="-99999.9" Max="99999.9" />
         <Field Type="Text" Name="Text_3" Row="4" Column="20" Content="Pa" />
         <Field Type="Text" Name="Text_8" Row="5" Column="19" Content="M3H" />
+        <Field Type="Variable" Name="Variable_4" Row="6" Column="9" Content="AIRGAIA.estimationM3H" Class="CL_REAL_1" Format="o+5.1" Min="-99999.9" Max="99999.9" />
+        <Field Type="Text" Name="Text_10" Row="6" Column="19" Content="M3H" />
       </Fields>
       <KeyBindings />
     </Mask>

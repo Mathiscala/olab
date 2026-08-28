@@ -141,6 +141,9 @@
   <AcfElementGuid Guid="230f8af0-db98-497e-922e-b45ff9548c71">
     <File>MAIN_MachineController_EVDEMB.acfmlge</File>
   </AcfElementGuid>
+  <AcfElementGuid Guid="2413a45d-a461-4585-b8fb-675d90d9db91">
+    <File>estimationM3Hvent.AcfMlge</File>
+  </AcfElementGuid>
   <AcfElementGuid Guid="24605ef8-0870-43e2-b1f3-44d65c84c8a2">
     <File>EnvAlrm_BLDC.acfmlge</File>
   </AcfElementGuid>
@@ -887,6 +890,9 @@
   </AcfElementGuid>
   <AcfElementGuid Guid="db47da3a-fbf3-43aa-8609-d79811fddf19">
     <File>RetryAlarmReset_BLDC.acfmlge</File>
+  </AcfElementGuid>
+  <AcfElementGuid Guid="dcad97f3-4077-47ec-a1df-f78d9dd3714e">
+    <File>IoTcp.AcfMlge</File>
   </AcfElementGuid>
   <AcfElementGuid Guid="dcb3ef1a-e3ae-457a-97a8-0d9ec5474988">
     <File>HysterAdv_INT_BLDC.acfmlge</File>

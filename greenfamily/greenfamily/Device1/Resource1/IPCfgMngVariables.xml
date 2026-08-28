@@ -11285,7 +11285,7 @@
           Name="MskIP[4]"
           DataType="USINT"
           IO="false"
-          Protocol="false"
+          Protocol="true"
           UI="true"
           Default="false"
           LogPV="false"
