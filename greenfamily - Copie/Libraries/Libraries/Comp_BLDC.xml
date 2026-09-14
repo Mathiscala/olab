@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Libraries LibVersion="1.0.1">
-  <Library Name="InverterPowerPlus" Version="2.0.94" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\InverterPowerPlus_2_0_94.pp1" GUID="88e0ff38-c9cb-4ce1-9303-2a24b83adb36">
-    <Dependencies />
-  </Library>
-</Libraries>
